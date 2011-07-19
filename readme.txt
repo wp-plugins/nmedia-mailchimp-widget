@@ -41,7 +41,12 @@ You can see this tutorial to get API Key from MailChimp: http://www.najeebmedia.
 == Changelog ==
 
 = 1.0 =
+* you can select First/Last Name optionally.
 
+== Upgrade Notice ==
+
+= 1.0 =
+To must upgrad to this version, jquery bug is fixed in this release.
 
 == A brief Markdown Example ==
 
