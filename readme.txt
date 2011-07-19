@@ -15,10 +15,6 @@ We are proud to bring a cool MailChimp Widget for you. Add MailChimp widget at m
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
 1. Upload `nm_mailchimp` directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Once Plugin is activated, Set the MailChimp API key from `Setting->MailChimp Widget`
@@ -35,7 +31,7 @@ You can see this tutorial to get API Key from MailChimp: http://www.najeebmedia.
 
 == Screenshots ==
 
-1. subscription-box.png
+1. Showing subscription box with Fist and Last Name on one of the WP site.
 
 == Changelog ==
 
