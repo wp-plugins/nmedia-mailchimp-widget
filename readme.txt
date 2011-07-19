@@ -43,9 +43,6 @@ You can see this tutorial to get API Key from MailChimp: http://www.najeebmedia.
 = 1.0 =
 To must upgrad to this version, jquery bug is fixed in this release.
 
-== A brief Markdown Example ==
-
-Ordered list:
 
 1. Select First/Last Name optionally
 2. Graphics background
