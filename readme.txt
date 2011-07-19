@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.2.1
 Tested up to: 2.1
-Stable tag: trunk
+Stable tag: 
 
 Nmedia MailChimp Widget sends email to MailChimp Account.
 
