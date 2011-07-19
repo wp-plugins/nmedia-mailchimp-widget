@@ -37,6 +37,7 @@ You can see this tutorial to get API Key from MailChimp: http://www.najeebmedia.
 
 == Screenshots ==
 
+1. subscription-box.png
 
 == Changelog ==
 
