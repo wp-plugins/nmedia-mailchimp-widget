@@ -10,8 +10,6 @@ Nmedia MailChimp Widget sends email to MailChimp Account.
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
-
 We are proud to bring a cool MailChimp Widget for you. Add MailChimp widget at multiple location on your site. Get all your subscription emails into your MailChimp List. This plugin will help you to organize your site users. It just need API key.
 
 
