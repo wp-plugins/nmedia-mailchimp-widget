@@ -1,6 +1,6 @@
 === Nmedia MailChimp Widget ===
 Contributors: nmedia
-Donate link: http://www.najeebmedia.com/
+Donate link: http://www.najeebmedia.com/2011/07/13/mailchimp-wordpress-plugin-by-nmedia/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.2.1
 Tested up to: 2.1
@@ -27,6 +27,10 @@ Yes, you can. It is multi instance supported.
 
 = How to get API Keys =
 
+http://www.najeebmedia.com/2011/07/18/how-to-install-nmedia-mailchimp-widget/
+
+= How to get API Keys =
+
 You can see this tutorial to get API Key from MailChimp: http://www.najeebmedia.com/2011/07/18/where-can-i-find-my-mailchimp-api-key/
 
 == Screenshots ==
@@ -47,4 +51,5 @@ To must upgrad to this version, jquery bug is fixed in this release.
 1. Select First/Last Name optionally
 2. Graphics background
 3. Multi instance supported
+4. More graphics backgrounds are coming soon.
 
