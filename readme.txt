@@ -25,7 +25,7 @@ We are proud to bring a cool MailChimp Widget for you. Add MailChimp widget at m
 
 Yes, you can. It is multi instance supported.
 
-= How to get API Keys =
+= How to install this Widget? =
 
 http://www.najeebmedia.com/2011/07/18/how-to-install-nmedia-mailchimp-widget/
 
@@ -33,9 +33,17 @@ http://www.najeebmedia.com/2011/07/18/how-to-install-nmedia-mailchimp-widget/
 
 You can see this tutorial to get API Key from MailChimp: http://www.najeebmedia.com/2011/07/18/where-can-i-find-my-mailchimp-api-key/
 
+= Can I use background boxes with different boxes? =
+
+In our next update/version you can choose background box in different colors.
+
+
 == Screenshots ==
 
-1. Showing subscription box with Fist and Last Name on one of the WP site.
+1. How to activate MailChimp Widget
+2. Mail Chimp API Key Settings from `Setting -> MailChimp Widget`
+3. Now go to `Appearance->Widgets` and drag widget to sidebar or footer. And set the Title and select List then Save
+4. Mail Chimp Widget at Frontend.
 
 == Changelog ==
 
