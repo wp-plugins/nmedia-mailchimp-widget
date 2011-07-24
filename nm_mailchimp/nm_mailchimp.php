@@ -109,7 +109,7 @@ class nmMailChimp extends WP_Widget {
 }
 
 /* register widget when loading the WP core */
-add_action('widgets_init', just_register_widgets);
+add_action('widgets_init', 'just_register_widgets');
 
 add_action('admin_menu', array('nmMailChimp', 'set_up_admin_page'));
 

@@ -6,7 +6,7 @@ class and do some basic error checking.
 require_once 'inc/MCAPI.class.php';
 //require_once 'inc/config.inc.php'; //contains apikey
 
-$api = new MCAPI(get_option('nm_mc_apikey'));
+$api = new nm_MCAPI(get_option('nm_mc_apikey'));
 
 $retval = $api->lists();
 

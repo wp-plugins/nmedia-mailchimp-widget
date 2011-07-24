@@ -1,6 +1,6 @@
 <?php
 
-class MCAPI {
+class nm_MCAPI {
     var $version = "1.3";
     var $errorMessage;
     var $errorCode;
@@ -36,7 +36,7 @@ class MCAPI {
      * @param string $apikey Your MailChimp apikey
      * @param string $secure Whether or not this should use a secure connection
      */
-    function MCAPI($apikey, $secure=false) {
+    function nm_MCAPI($apikey, $secure=false) {
         $this->secure = $secure;
         $this->apiUrl = parse_url("http://api.mailchimp.com/" . $this->version . "/?output=php");
         $this->api_key = $apikey;
@@ -1562,7 +1562,7 @@ class MCAPI {
      * @param bool $update_existing optional flag to control whether a existing subscribers should be updated instead of throwing and error, defaults to false
      * @param bool $replace_interests optional flag to determine whether we replace the interest groups with the groups provided, or we add the provided groups to the member's interest groups (optional, defaults to true)
      * @param bool $send_welcome optional if your double_optin is false and this is true, we will send your lists Welcome Email if this subscribe succeeds - this will *not* fire if we end up updating an existing subscriber. If double_optin is true, this has no effect. defaults to false.
-     * @return boolean true on success, false on failure. When using MCAPI.class.php, the value can be tested and error messages pulled from the MCAPI object (see below)
+     * @return boolean true on success, false on failure. When using nm_MCAPI.class.php, the value can be tested and error messages pulled from the nm_MCAPI object (see below)
      */
     function listSubscribe($id, $email_address, $merge_vars=NULL, $email_type='html', $double_optin=true, $update_existing=false, $replace_interests=true, $send_welcome=false) {
         $params = array();
@@ -1589,7 +1589,7 @@ class MCAPI {
      * @param boolean $delete_member flag to completely delete the member from your list instead of just unsubscribing, default to false
      * @param boolean $send_goodbye flag to send the goodbye email to the email address, defaults to true
      * @param boolean $send_notify flag to send the unsubscribe notification email to the address defined in the list email notification settings, defaults to true
-     * @return boolean true on success, false on failure. When using MCAPI.class.php, the value can be tested and error messages pulled from the MCAPI object (see below)
+     * @return boolean true on success, false on failure. When using nm_MCAPI.class.php, the value can be tested and error messages pulled from the nm_MCAPI object (see below)
      */
     function listUnsubscribe($id, $email_address, $delete_member=false, $send_goodbye=true, $send_notify=true) {
         $params = array();
@@ -1613,7 +1613,7 @@ class MCAPI {
      * @param array $merge_vars array of new field values to update the member with.  See merge_vars in listSubscribe() for details.
      * @param string $email_type change the email type preference for the member ("html", "text", or "mobile").  Leave blank to keep the existing preference (optional)
      * @param boolean $replace_interests flag to determine whether we replace the interest groups with the updated groups provided, or we add the provided groups to the member's interest groups (optional, defaults to true)
-     * @return boolean true on success, false on failure. When using MCAPI.class.php, the value can be tested and error messages pulled from the MCAPI object
+     * @return boolean true on success, false on failure. When using nm_MCAPI.class.php, the value can be tested and error messages pulled from the nm_MCAPI object
      */
     function listUpdateMember($id, $email_address, $merge_vars, $email_type='', $replace_interests=true) {
         $params = array();
@@ -2413,7 +2413,7 @@ class MCAPI {
         
         $payload = "POST " . $this->apiUrl["path"] . "?" . $this->apiUrl["query"] . "&method=" . $method . " HTTP/1.0\r\n";
         $payload .= "Host: " . $host . "\r\n";
-        $payload .= "User-Agent: MCAPI/" . $this->version ."\r\n";
+        $payload .= "User-Agent: nm_MCAPI/" . $this->version ."\r\n";
         $payload .= "Content-type: application/x-www-form-urlencoded\r\n";
         $payload .= "Content-length: " . strlen($post_vars) . "\r\n";
         $payload .= "Connection: close \r\n\r\n";
