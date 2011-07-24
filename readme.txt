@@ -35,7 +35,7 @@ You can see this tutorial to get API Key from MailChimp: http://www.najeebmedia.
 
 = Can I use background boxes with different boxes? =
 
-In our next update/version you can choose background box in different colors.
+Yes you can choose among six different color: Black, Blue, Green, Magenta, Pink and Green.
 
 
 == Screenshots ==
@@ -50,14 +50,19 @@ In our next update/version you can choose background box in different colors.
 = 1.0 =
 * you can select First/Last Name optionally.
 
+= 1.1 =
+* Now you can select BG box from six different colors: Black, Blue, Green, Magenta, Pink and Green.
+
 == Upgrade Notice ==
 
 = 1.0 =
 To must upgrad to this version, jquery bug is fixed in this release.
 
+= 1.1 =
+Choose BG Boxes among six different colors: Black, Blue, Green, Magenta, Pink and Green.
+
 
 1. Select First/Last Name optionally
-2. Graphics background
+2. Graphics background (Black, Blue, Green, Magenta, Pink and Green.)
 3. Multi instance supported
-4. More graphics backgrounds are coming soon.
 
