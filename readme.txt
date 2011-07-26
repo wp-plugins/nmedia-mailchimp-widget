@@ -15,7 +15,7 @@ We are proud to bring a cool MailChimp Widget for you. Add MailChimp widget at m
 
 == Installation ==
 
-1. Upload `nm_mailchimp` directory to the `/wp-content/plugins/` directory
+1. Upload plugin directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Once Plugin is activated, Set the MailChimp API key from `Setting->MailChimp Widget`
 
