@@ -3,7 +3,7 @@ Contributors: nmedia
 Donate link: http://www.najeebmedia.com/2011/07/13/mailchimp-wordpress-plugin-by-nmedia/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.2.1
-Tested up to: 2.1
+Tested up to: 2.9
 Stable tag: 1.1
 
 Nmedia MailChimp Widget sends email to MailChimp Account.
