@@ -11,6 +11,7 @@ Nmedia MailChimp Widget sends email to MailChimp Account.
 == Description ==
 
 We are proud to bring a cool MailChimp Widget for you. Add MailChimp widget at multiple location on your site. Get all your subscription emails into your MailChimp List. This plugin will help you to organize your site users. It just need API key.
+<a href="http://www.najeebmedia.com/2011/07/21/post-highlighter-plugin/">View Demo</a>
 
 
 == Installation ==
