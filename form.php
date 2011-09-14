@@ -1,9 +1,5 @@
 <?php
 
-//echo '<link rel="stylesheet" type="text/css" href="'.plugins_url('nm_mailchimp_style.css', __FILE__).'"/>';
-plugins_url('nm_mailchimp_style.css', __FILE__);
-wp_register_style('myStyleSheets', plugins_url('nm_mailchimp_style.css', __FILE__));
-wp_enqueue_style( 'myStyleSheets');
 wp_enqueue_script('jquery');
 
 $bgURL = plugins_url('/images/'.$bgbox, __FILE__);
