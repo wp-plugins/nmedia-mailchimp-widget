@@ -3,7 +3,7 @@
 Plugin Name: Simple MailChimp Email List Subscriber
 Plugin URI: http://www.najeebmedia.com/2011/07/13/mailchimp-wordpress-plugin-by-nmedia/
 Description: This is just one from field collection email and sending this to your MailChimp Account List.
-Version: 1.1
+Version: 1.2
 Author: Najeeb Ahmad
 Author URI: http://www.najeebmedia.com/
 */
@@ -101,6 +101,7 @@ class nmMailChimp extends WP_Widget {
  
   function nm_load_form($list_id, $show_names, $bgbox)
   {
+  	
 	$file = dirname(__FILE__).'/form.php';
 	include($file);
   }
@@ -110,8 +111,21 @@ class nmMailChimp extends WP_Widget {
 
 /* register widget when loading the WP core */
 add_action('widgets_init', 'just_register_widgets');
-
 add_action('admin_menu', array('nmMailChimp', 'set_up_admin_page'));
+
+add_action('wp_print_styles', 'add_nm_stylesheet');
+
+    /*
+     * Enqueue style-file, if it exists.
+     */
+
+    function add_nm_stylesheet() {
+		$myStyleFile = dirname(__FILE__).'/nm_mailchimp_style.css';	
+        if ( file_exists($myStyleFile) ) {
+            wp_register_style('nm_mailchimp_stylesheet', plugins_url('nm_mailchimp_style.css', __FILE__));
+            wp_enqueue_style( 'nm_mailchimp_stylesheet');
+        }
+    }
 
 function just_register_widgets(){
 	// curl need to be installed

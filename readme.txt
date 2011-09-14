@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/2011/07/13/mailchimp-wordpress-plugin-by
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.2.1
 Tested up to: 2.9
-Stable tag: 1.1
+Stable tag: 1.2
 
 Nmedia MailChimp Widget sends email to MailChimp Account.
 
@@ -13,9 +13,10 @@ Nmedia MailChimp Widget sends email to MailChimp Account.
 We are proud to bring a cool MailChimp Widget for you. Add MailChimp widget at multiple location on your site. Get all your subscription emails into your MailChimp List. This plugin will help you to organize your site users. It just need API key.
 <a href="http://www.najeebmedia.com/2011/07/21/post-highlighter-plugin/">View Demo</a>
 
+
 == Installation ==
 
-1. Upload plugin directory to the `/wp-content/plugins/` directory
+1. Upload `nm_mailchimp` directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Once Plugin is activated, Set the MailChimp API key from `Setting->MailChimp Widget`
 
@@ -53,6 +54,9 @@ Yes you can choose among six different color: Black, Blue, Green, Magenta, Pink 
 = 1.1 =
 * Now you can select BG box from six different colors: Black, Blue, Green, Magenta, Pink and Green.
 
+= 1.2 =
+* W3C Validations errors are fixed now
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -60,6 +64,9 @@ To must upgrad to this version, jquery bug is fixed in this release.
 
 = 1.1 =
 Choose BG Boxes among six different colors: Black, Blue, Green, Magenta, Pink and Green.
+
+= 1.2 =
+W3C Validations errors are fixed now
 
 
 1. Select First/Last Name optionally

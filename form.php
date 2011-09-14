@@ -1,6 +1,5 @@
 <?php
 
-echo '<link rel="stylesheet" type="text/css" href="'.plugins_url('nm_mailchimp_style.css', __FILE__).'"/>';
 wp_enqueue_script('jquery');
 
 $bgURL = plugins_url('/images/'.$bgbox, __FILE__);
@@ -21,14 +20,14 @@ $bgURL = plugins_url('/images/'.$bgbox, __FILE__);
 	<p>Enter Your Email Address</p><p>(We Respect Your Privacy)</p>
 	<p>
     <?php if($show_names):?>
-    	<input type="text" id="fname" class="field_names" onClick="nm_clickclear(this, 'First Name')" onBlur="nm_clickrecall(this,'First Name')" value="First Name" />
-        <input type="text" id="lname" class="field_names" onClick="nm_clickclear(this, 'Last Name')" onBlur="nm_clickrecall(this,'Last Name')" value="Last Name" />
+    	<input type="text" id="fname" class="field_names" onclick="nm_clickclear(this, 'First Name')" onblur="nm_clickrecall(this,'First Name')" value="First Name" />
+        <input type="text" id="lname" class="field_names" onclick="nm_clickclear(this, 'Last Name')" onblur="nm_clickrecall(this,'Last Name')" value="Last Name" />
     <?php endif?>
         
-       	<input type="text" id="subsc_email" class="field_email" onClick="nm_clickclear(this, 'Email')" onBlur="nm_clickrecall(this,'Email')" value="Email" />
+       	<input type="text" id="subsc_email" class="field_email" onclick="nm_clickclear(this, 'Email')" onblur="nm_clickrecall(this,'Email')" value="Email" />
         <input type="hidden" value="<?php echo get_option('nm_mc_apikey');?>" id="nm_mailchimp_api_key" />
         <input type="hidden" value="<?php echo $list_id;?>" id="nm_mailchimp_list_id" />
-        <input type="button" class="btn_email" onClick="postToMailChimp()" />
+        <input type="button" class="btn_email" onclick="postToMailChimp()" />
     </p>
 </div>	
 
