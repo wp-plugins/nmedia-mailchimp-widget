@@ -41,9 +41,8 @@ echo '<link rel="stylesheet" type="text/css" href="'.plugins_url('nm_mailchimp_s
 
 <a href="http://www.najeebmedia.com/"><img src="http://www.najeebmedia.com/logo.png" alt="Nmedia Logo" border="0" width="175" /></a>
 <p>
-Nmedia providing Web Application Development and Designing services with a team of Skilled and Professional Yound guys. We have developed many E-commerce, Wordpress, Bespoke web projects at very reasonable prices. Must see our projects and feedbacks from our respected clients by visiting company site: <a href="http://www.najeebmedia.com/">Nmedia</a><br />
+Nmedia providing Web Application Development and Designing services with a team of Skilled and Professional Buddies. We have developed many E-commerce, Wordpress, Bespoke web projects at very reasonable prices. Must see our projects and feedbacks from our respected clients by visiting company site: <a href="http://www.najeebmedia.com/">Nmedia</a><br />
 <br />
-<a href="http://www.najeebmedia.com/mailing-list-subscription/">Subscribe our Mailing List</a><br />
 Thanks<br />
 Najeeb Ahmad<br />
 <a href="mailto:ceo@najeebmedia.com">ceo@najeebmedia.com</a>
