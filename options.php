@@ -13,7 +13,6 @@ if ( count($_POST) > 0 && isset($_POST['btn_options']) )
 $api_key = get_option('nm_mc_apikey');
 //$data = get_option('widget_nmedia_mail_chimp');
 
-echo '<link rel="stylesheet" type="text/css" href="'.plugins_url('nm_mailchimp_style.css', __FILE__).'"/>';
 
 ?>
 

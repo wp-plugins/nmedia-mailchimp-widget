@@ -21,8 +21,16 @@ class nmMailChimp extends WP_Widget {
 	function nmMailChimp() {
 		parent::WP_Widget('nmedia_mail_chimp', 'MailChimp Widget', array('description' => 'MailChimp Widget by najeebmedia.com.'));	
 		
+		nmMailChimp::loadJS();	
 	}
 	
+	
+	public function loadJS()
+	{
+		//wp_deregister_script( 'jquery' );
+    	//wp_register_script( 'jquery', plugins_url('js/jquery-1.4.4.min.js', __FILE__));
+	    wp_enqueue_script( 'jquery' );		
+	}
 	
   
   public function set_up_admin_page () {

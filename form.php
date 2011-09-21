@@ -1,20 +1,9 @@
 <?php
 
-wp_enqueue_script('jquery');
+//wp_enqueue_script('jquery');
 
 $bgURL = plugins_url('/images/'.$bgbox, __FILE__);
 ?>
-<script type="text/javascript">
- if (typeof jQuery == 'undefined') { 
-   var head = document.getElementsByTagName("head")[0];
-   script = document.createElement('script');
-   script.id = 'jQuery';
-   script.type = 'text/javascript';
-   script.src = '<?php echo plugins_url('/js/jquery-1.4.4.min.js', __FILE__)?>';
-   head.appendChild(script);
-}
-</script>
-<!--<script type="application/javascript" src="<?php echo plugins_url('/js/jquery-1.4.4.min.js', __FILE__)?>"></script>-->
 
 <div id="email-subscription-box" style="background-image: url(<?php echo $bgURL?>)">
 	<p>Enter Your Email Address</p><p>(We Respect Your Privacy)</p>
@@ -33,27 +22,28 @@ $bgURL = plugins_url('/images/'.$bgbox, __FILE__);
 
 
 <script type="text/javascript">
+$.noConflict();
 function postToMailChimp()
 {
-	var e 		= $('#subsc_email').val();
-	var apikey 	= $('#nm_mailchimp_api_key').val();
-	var listid	= $('#nm_mailchimp_list_id').val();
-	var f		= $('#fname').val();
-	var l		= $('#lname').val();	
+	var e 		= jQuery('#subsc_email').val();
+	var apikey 	= jQuery('#nm_mailchimp_api_key').val();
+	var listid	= jQuery('#nm_mailchimp_list_id').val();
+	var f		= jQuery('#fname').val();
+	var l		= jQuery('#lname').val();	
 	
 	//alert(e);
-	$('#subsc_email').val('Subscribing...');
+	jQuery('#subsc_email').val('Subscribing...');
 	
 	var url_api_mailchimp = "<?php echo plugins_url('api_mailchimp/store-address.php', __FILE__)?>";
 	//alert(url_api_mailchimp);
 	
-	$.post(url_api_mailchimp, {email: e,
+	jQuery.post(url_api_mailchimp, {email: e,
 								api_key: apikey,
 								list_id: listid,
 								fname: f,
 								lname: l}, function(data){
 			alert(data);
-			$('#subsc_email').val('Thanks');
+			jQuery('#subsc_email').val('Thanks');
 	});
 }
 

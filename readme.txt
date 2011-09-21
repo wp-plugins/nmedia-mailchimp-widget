@@ -3,8 +3,8 @@ Contributors: nmedia
 Donate link: http://www.najeebmedia.com/2011/07/13/mailchimp-wordpress-plugin-by-nmedia/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.2.1
-Tested up to: 2.9
-Stable tag: 1.2
+Tested up to: 3.2.1
+Stable tag: 1.3
 
 Nmedia MailChimp Widget sends email to MailChimp Account.
 
@@ -57,6 +57,9 @@ Yes you can choose among six different color: Black, Blue, Green, Magenta, Pink 
 = 1.2 =
 * W3C Validations errors are fixed now
 
+= 1.3 =
+* jQuery conflicts are now fixed
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -67,6 +70,9 @@ Choose BG Boxes among six different colors: Black, Blue, Green, Magenta, Pink an
 
 = 1.2 =
 W3C Validations errors are fixed now
+
+= 1.3 = 
+jquery conlict issue is fixed
 
 
 1. Select First/Last Name optionally
