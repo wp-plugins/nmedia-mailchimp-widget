@@ -3,7 +3,7 @@
 Plugin Name: Simple MailChimp Email List Subscriber
 Plugin URI: http://www.najeebmedia.com/2011/07/13/mailchimp-wordpress-plugin-by-nmedia/
 Description: This is just one from field collection email and sending this to your MailChimp Account List.
-Version: 1.2
+Version: 1.3
 Author: Najeeb Ahmad
 Author URI: http://www.najeebmedia.com/
 */
