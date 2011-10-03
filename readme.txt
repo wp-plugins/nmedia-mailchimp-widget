@@ -6,7 +6,7 @@ Requires at least: 3.2.1
 Tested up to: 3.2.1
 Stable tag: 1.3
 
-Nmedia MailChimp Widget sends email to MailChimp Account.
+This is just one from field collection email and sending this to your MailChimp Account List
 
 == Description ==
 
