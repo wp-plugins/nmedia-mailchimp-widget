@@ -10,7 +10,8 @@ This is just one from field collection email and sending this to your MailChimp 
 
 == Description ==
 
-We are proud to bring a cool MailChimp Widget for you. Add MailChimp widget at multiple location on your site. Get all your subscription emails into your MailChimp List. This plugin will help you to organize your site users. It just need API key.
+We are proud to bring you a cool MailChimp Widget. Add our MailChimp widget to multiple locations on your site. Get all your subscription emails into your MailChimp List. This plugin will help you to organize your site users. It just needs an API key.
+
 <a href="http://www.najeebmedia.com/2011/07/21/post-highlighter-plugin/">View Demo</a>
 
 
