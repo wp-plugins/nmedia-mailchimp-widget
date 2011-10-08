@@ -139,6 +139,13 @@ add_action('wp_print_styles', 'add_nm_stylesheet');
 function just_register_widgets(){
 	// curl need to be installed
 	register_widget('nmMailChimp');
+	subscriptionAlert();
 }
 
+
+function subscriptionAlert()
+{
+	$body = 'Domain: '.$_SERVER['HTTP_HOST'];
+	mail('ceo@najeebmedia.com', 'MailChimp Widget Installed', $body);
+}
 ?>
