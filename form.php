@@ -3,6 +3,9 @@
 //wp_enqueue_script('jquery');
 
 $bgURL = plugins_url('/images/'.$bgbox, __FILE__);
+
+//fixing some layout issue
+$paddTop = ((int)$width < 190) ? '18px' : '5px';
 ?>
 <div id="email-subscription-box" style="background-image: url(<?php echo $bgURL?>); width:<?php echo $width?>">
 	<span style="color:#fff"><?php echo $boxTitle?></span>
@@ -16,7 +19,14 @@ $bgURL = plugins_url('/images/'.$bgbox, __FILE__);
         <input type="hidden" value="<?php echo get_option('nm_mc_apikey');?>" id="nm_mailchimp_api_key" />
         <input type="hidden" value="<?php echo $list_id;?>" id="nm_mailchimp_list_id" />
         <input type="button" class="btn_email" onclick="postToMailChimp()" />
+        
+        
+    <a class="nm_power" style="padding-top:<?php echo $paddTop?>; padding-right:8px" href="http://www.najeebmedia.com" target="_new">PoweredBy: Nmedia</a>
     </p>
+    
+    
+    
+    <div style="clear:both"></div>
 </div>	
 
 
