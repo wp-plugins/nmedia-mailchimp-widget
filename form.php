@@ -4,13 +4,12 @@
 
 $bgURL = plugins_url('/images/'.$bgbox, __FILE__);
 ?>
-
-<div id="email-subscription-box" style="background-image: url(<?php echo $bgURL?>)">
-	<p>Enter Your Email Address</p><p>(We Respect Your Privacy)</p>
-	<p>
+<div id="email-subscription-box" style="background-image: url(<?php echo $bgURL?>); width:<?php echo $width?>">
+	<span style="color:#fff"><?php echo $boxTitle?></span>
+    
     <?php if($show_names):?>
     	<input type="text" id="fname" class="field_names" onclick="nm_clickclear(this, 'First Name')" onblur="nm_clickrecall(this,'First Name')" value="First Name" />
-        <input type="text" id="lname" class="field_names" onclick="nm_clickclear(this, 'Last Name')" onblur="nm_clickrecall(this,'Last Name')" value="Last Name" />
+        <!--<input type="text" id="lname" class="field_names" onclick="nm_clickclear(this, 'Last Name')" onblur="nm_clickrecall(this,'Last Name')" value="Last Name" />-->
     <?php endif?>
         
        	<input type="text" id="subsc_email" class="field_email" onclick="nm_clickclear(this, 'Email')" onblur="nm_clickrecall(this,'Email')" value="Email" />
@@ -30,6 +29,7 @@ function postToMailChimp()
 	var listid	= jQuery('#nm_mailchimp_list_id').val();
 	var f		= jQuery('#fname').val();
 	var l		= jQuery('#lname').val();	
+	var thanks	= '<?php echo $thanksMessage?>';
 	
 	//alert(e);
 	jQuery('#subsc_email').val('Subscribing...');
@@ -42,7 +42,7 @@ function postToMailChimp()
 								list_id: listid,
 								fname: f,
 								lname: l}, function(data){
-			alert(data);
+			alert(thanks);
 			jQuery('#subsc_email').val('Thanks');
 	});
 }

@@ -41,15 +41,16 @@
 	width: 140px;
 	background: none;
 	height: 21px;
-	line-height: 21px;
+	/*line-height: 21px;*/
 	background-color: #fff;
 	border: 1px solid #0d2c52;
 	color: #000;
-	margin-top: 5px;
+	margin-right: 5px;
+	/*margin-top: 5px;*/
 }
 
 #email-subscription-box .field_names {
-	width: 95px;
+	width: 140px;
 	background: none;
 	height: 21px;
 	background-color: #fff;
@@ -67,6 +68,5 @@
 	background-repeat: no-repeat;
 	color: #FFF;
 	margin-top: 10px;
-	margin-left: 10px;
 	cursor: pointer;
 }

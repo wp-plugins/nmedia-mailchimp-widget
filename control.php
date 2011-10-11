@@ -6,7 +6,30 @@ $selected = 'selected = "selected"';
 	<label>Title<br>
     <input type="text" class="widefat" id="<?php echo $field_id_title?>" name="<?php echo $field_name_title?>" value="<?php echo attribute_escape( $instance['nm_mc_title'] )?>" />
     </label>
-    
+   
+</p>
+
+
+<p>
+	<label>Box Title<br>
+    <input type="text" class="widefat" id="<?php echo $field_id_box_title?>" name="<?php echo $field_name_box_title?>" value="<?php echo attribute_escape( $instance['nm_mc_box_title'] )?>" />
+    </label>
+   
+</p>
+
+
+<p>
+	<label>Widget Width<br>
+    <select name="<?php echo $field_name_width?>" id="<?php echo $field_id_width?>">
+    <option value="">Select Width</option>
+    <?php foreach(nmMailChimp::$widgetWidth as $width):
+			$selected = ($width == $instance['nm_mc_width']) ? 'selected = "selected"' : '';
+	?>
+    <option value="<?php echo $width?>" <?php echo $selected?> ><?php echo $width?></option>
+    <?php endforeach;?>
+    </select>
+    </label>
+   
 </p>
 
 <p>
@@ -23,7 +46,7 @@ $selected = 'selected = "selected"';
 </p>
 
 <p>
-	<label>Show F/L Names [Optional]<br>
+	<label>Show First Name [Optional]<br>
      <select name="<?php echo $field_name_names?>" id="<?php echo $field_id_names?>">
     <option value="">Select Option</option>
     <option value="1" <?php echo ($instance['nm_mc_show_names'] == 1) ? $selected : ''?>>Yes</option>
@@ -43,4 +66,11 @@ $selected = 'selected = "selected"';
     <option value="bg-pink.png" <?php echo ($instance['nm_mc_bg'] == 'bg-pink.png') ? $selected : ''?>>Pink</option>
     </select>
     </label>
- </p>
+</p>
+
+<p>
+  <label>Thanks Message<br>
+    <textarea name="<?php echo $field_name_thanks?>" class="widefat" id="<?php echo $field_id_thanks?>"><?php echo attribute_escape( $instance['nm_mc_thanks'] )?></textarea>
+    </label>
+   
+</p>
