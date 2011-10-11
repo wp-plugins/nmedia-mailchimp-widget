@@ -5,6 +5,15 @@
 	font-style:italic;
 }
 
+a.nm_power
+{
+	font-size:10px;
+	font-style:italic;
+	float:right;
+	color:#FFF;
+	
+}
+
 
 /* ============= Email subscriptbox ============== */
 #email-subscription-box {
@@ -12,7 +21,7 @@
 	height: auto;
 	background-image: url(emailbox-back.jpg);
 	background-repeat: no-repeat;
-	padding: 15px;
+	padding: 8px;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
