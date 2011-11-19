@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/2011/07/13/mailchimp-wordpress-plugin-by
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.2.1
 Tested up to: 3.2.1
-Stable tag: 1.4
+Stable tag: 1.5
 
 This is just one from field collection email and sending this to your MailChimp Account List
 
@@ -69,6 +69,11 @@ Yes you can choose among six different color: Black, Blue, Green, Magenta, Pink 
 * Last name field eleminated 
 * fixed some styling issue
 
+= 1.5 =
+* four new backgrounds are placed
+
+
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -85,6 +90,9 @@ jquery conlict issue is fixed
 
 = 1.4 =
 This version has major changes in this plugin. Please download/update for this version to enjoy new features.
+
+= 1.5 =
+New Exciting, Cool Backgrounds
 
 
 1. Select First/Last Name optionally

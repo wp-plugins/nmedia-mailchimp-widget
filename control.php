@@ -64,6 +64,10 @@ $selected = 'selected = "selected"';
     <option value="bg-green.png" <?php echo ($instance['nm_mc_bg'] == 'bg-green.png') ? $selected : ''?>>Green</option>
     <option value="bg-magenta.png" <?php echo ($instance['nm_mc_bg'] == 'bg-magenta.png') ? $selected : ''?>>Magenta</option>
     <option value="bg-pink.png" <?php echo ($instance['nm_mc_bg'] == 'bg-pink.png') ? $selected : ''?>>Pink</option>
+    <option value="bg-w-1.jpg" <?php echo ($instance['nm_mc_bg'] == 'bg-w-1.jpg') ? $selected : ''?>>White1</option>
+    <option value="bg-w-2.jpg" <?php echo ($instance['nm_mc_bg'] == 'bg-w-2.jpg') ? $selected : ''?>>White2</option>
+    <option value="bg-w-3.jpg" <?php echo ($instance['nm_mc_bg'] == 'bg-w-3.jpg') ? $selected : ''?>>White3</option>
+    <option value="bg-w-4.jpg" <?php echo ($instance['nm_mc_bg'] == 'bg-w-4.jpg') ? $selected : ''?>>White4</option>
     </select>
     </label>
 </p>
