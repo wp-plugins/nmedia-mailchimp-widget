@@ -1,6 +1,6 @@
 === Nmedia MailChimp Widget ===
 Contributors: nmedia
-Donate link: http://www.najeebmedia.com/2011/07/13/mailchimp-wordpress-plugin-by-nmedia/
+Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.2.1
 Tested up to: 3.2.1
@@ -12,7 +12,7 @@ This is just one from field collection email and sending this to your MailChimp 
 
 We are proud to bring you a cool MailChimp Widget. Add our MailChimp widget to multiple locations on your site. Get all your subscription emails into your MailChimp List. This plugin will help you to organize your site users. It just needs an API key.
 
-<a href="http://www.najeebmedia.com/2011/07/21/post-highlighter-plugin/">View Demo</a>
+<a href="http://www.najeebmedia.com/mailchimp-wordpress-plugin-by-nmedia/">View Demo</a>
 
 
 == Installation ==
@@ -29,11 +29,13 @@ Yes, you can. It is multi instance supported.
 
 = How to install this Widget? =
 
-http://www.najeebmedia.com/2011/07/18/how-to-install-nmedia-mailchimp-widget/
+http://www.najeebmedia.com/mailchimp-wordpress-plugin-by-nmedia/
 
 = How to get API Keys =
 
-You can see this tutorial to get API Key from MailChimp: http://www.najeebmedia.com/2011/07/18/where-can-i-find-my-mailchimp-api-key/
+You can see this tutorial to get API Key from MailChimp: http://www.najeebmedia.com/
+
+where-can-i-find-my-mailchimp-api-key/
 
 = Can I use background boxes with different boxes? =
 
