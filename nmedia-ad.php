@@ -1,5 +1,18 @@
 <div class="nm-about-us">
 
+<!-- Get Pro Version -->
+<div class="box">
+<h2>Get Pro Version</h2>
+We will send you Pro Version within 24 Hours once we receive the payment notification.
+
+<div id="donate">
+<form style="text-align: center;" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick" /> <input type="hidden" name="hosted_button_id" value="KS2FTKU7GLSJY" /> <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" alt="PayPal — The safer, easier way to pay online." /> <img src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></form>
+</div>
+
+</div>
+
+
+
 <!-- Nmedia client File Uploader Plugin -->
 <div class="box">
 <h2>Nmedia Client/User File Uploader Plugin</h2>
