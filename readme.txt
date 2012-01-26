@@ -2,17 +2,35 @@
 Contributors: nmedia
 Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
-Requires at least: 3.2.1
-Tested up to: 3.2.1
-Stable tag: 1.5
+Requires at least: 3.0
+Tested up to: 3.3.1
+Stable tag: 2.0
 
 This is just one from field collection email and sending this to your MailChimp Account List
 
 == Description ==
 
-We are proud to bring you a cool MailChimp Widget. Add our MailChimp widget to multiple locations on your site. Get all your subscription emails into your MailChimp List. This plugin will help you to organize your site users. It just needs an API key.
+Nmedia just launched a new version for Nmedia MailChimp Plugin. It is like RE-BORN version of this plugin. Now you can control each and every element of subscription form for color, text, title etc. Following is features list:
 
-<a href="http://www.najeebmedia.com/mailchimp-wordpress-plugin-by-nmedia/">View Demo</a>
+<ul>
+	<li>Graphics background or use your own background color and border color</li>
+	<li>Optional title with</li>
+	<li>Optional First name, Last name</li>
+	<li>Button title text, color</li>
+	<li>Button background color, border color</li>
+	<li>Multilingual support (English, German)</li>
+	<li>Other languages can be added very quickly using .po files</li>
+	<li>Customize Thanks message on submit the data</li>
+</ul>
+
+<h3>SECURITY BUG REMOVED</h3>
+Yes, there was a bug in older version exposing the Mailchimp API key in source code. But now everything is wrapped under secure code.
+
+<h3>Responsive Design</h3>
+No matter what is size of your widget area, this plugin design is responsive. It will automatically adjust the positions of elements.
+
+<h3>New Setting Panel</h3>
+Well designed new setting panel allow you to control almost every inch of the subscription form.
 
 
 == Installation ==
@@ -27,20 +45,17 @@ We are proud to bring you a cool MailChimp Widget. Add our MailChimp widget to m
 
 Yes, you can. It is multi instance supported.
 
-= How to install this Widget? =
-
-http://www.najeebmedia.com/mailchimp-wordpress-plugin-by-nmedia/
-
 = How to get API Keys =
 
-You can see this tutorial to get API Key from MailChimp: http://www.najeebmedia.com/
-
-where-can-i-find-my-mailchimp-api-key/
+You can see this tutorial to get API Key from MailChimp: <a href="http://www.najeebmedia.com/where-can-i-find-my-mailchimp-api-key/" target="_blank">Click here</a>
 
 = Can I use background boxes with different boxes? =
 
 Yes you can choose among six different color: Black, Blue, Green, Magenta, Pink and Green.
 
+= Can I use my own colors as box background? =
+
+Yes you can now enter your own color code for almost every element of this form.
 
 == Screenshots ==
 
@@ -74,6 +89,8 @@ Yes you can choose among six different color: Black, Blue, Green, Magenta, Pink 
 = 1.5 =
 * four new backgrounds are placed
 
+= 2.0 =
+* It is like Re-Born of plugin, Please MUST update to this version, it has Security Fixes and many more options to control your widget.
 
 
 == Upgrade Notice ==
@@ -96,8 +113,10 @@ This version has major changes in this plugin. Please download/update for this v
 = 1.5 =
 New Exciting, Cool Backgrounds
 
+= 2.0 =
+It is like Re-Born of plugin, Please MUST update to this version, it has Security Fixes and many more options to control your widget.
+
 
 1. Select First/Last Name optionally
 2. Graphics background (Black, Blue, Green, Magenta, Pink and Green.)
 3. Multi instance supported
-
