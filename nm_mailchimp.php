@@ -37,7 +37,7 @@ class nmMailChimp extends WP_Widget {
 	
 		wp_register_script( 'nm_mailchimp_custom_script', 
 							plugins_url('js/nm_mc_js.js', __FILE__), 
-							'jquery');
+							array('jquery'));
 							
 							
 		wp_enqueue_script('nm_mailchimp_custom_script');
