@@ -19,8 +19,8 @@ function postToMailChimp(post_url, abspath, widget_id)
 							fname: fullname,
 							abs_path: abspath}, function(data){
 			alert(data);
-			jQuery('#nm_mc_email').val('');
-			jQuery('#nm_mc_fullname').val('');
+			jQuery('#nm_mc_email-'+widget_id).val('');
+			jQuery('#nm_mc_fullname-'+widget_id).val('');
 	});
 }
 
@@ -63,7 +63,7 @@ function nm_setDesign(widget_id, button_bg, button_border, button_text, bgImageU
 
 function nm_setLayout(widget_id)
 {
-	alert(widget_id);
+	//alert(widget_id);
 	
 	var mc_box		= jQuery('#box-'+widget_id);
 	var title 		= jQuery('#nm_mc_title-'+widget_id);
