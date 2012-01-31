@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 2.0
+Stable tag: 2.1
 
 This is just one from field collection email and sending this to your MailChimp Account List
 
@@ -92,6 +92,9 @@ Yes you can now enter your own color code for almost every element of this form.
 = 2.0 =
 * It is like Re-Born of plugin, Please MUST update to this version, it has Security Fixes and many more options to control your widget.
 
+= 2.1 =
+* There was bug left in new version, multi-instance of widget were not working, now it is fixed
+
 
 == Upgrade Notice ==
 
@@ -115,6 +118,9 @@ New Exciting, Cool Backgrounds
 
 = 2.0 =
 It is like Re-Born of plugin, Please MUST update to this version, it has Security Fixes and many more options to control your widget.
+
+= 2.1 =
+Pleas must update to this version if you want to use multi instances of widget on same page.
 
 
 1. Select First/Last Name optionally
