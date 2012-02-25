@@ -6,6 +6,9 @@
 <p>Get 26 Cool backgrounds<br />
 Free support to adjust mailchimp with your site design</p>
 
+<a href='https://www.2checkout.com/checkout/purchase?sid=1686663&quantity=1&product_id=4'>Buy Pro Version</a>
+<p>2CheckOut.com Inc. (Ohio, USA) is an authorized retailer for goods and services provided by N-Media.</p>
+
 <div id="donate">
 <form style="text-align: center;" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick" /> <input type="hidden" name="hosted_button_id" value="KS2FTKU7GLSJY" /> <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" alt="PayPal — The safer, easier way to pay online." /> <img src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></form>
 </div>
