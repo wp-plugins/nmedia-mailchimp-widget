@@ -3,8 +3,12 @@
 <!-- Get Pro Version -->
 <div class="box">
 <h2>Pro Version for only $8.00 USD</h2>
-<p>Get 26 Cool backgrounds<br />
-Free support to adjust mailchimp with your site design</p>
+<p>
+<ul style="list-style:circle">
+<li>Get 26 Cool backgrounds</li>
+<li>Free support to adjust mailchimp with your site design</li>
+</ul>
+</p>
 
 <div id="donate">
 <a href='https://www.2checkout.com/checkout/purchase?sid=1686663&quantity=1&product_id=4'>Buy Pro Version</a>
