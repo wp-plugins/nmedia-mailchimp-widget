@@ -62,7 +62,7 @@ If you think we have developed something useful for you please:
 <a href="http://www.najeebmedia.com/"><img src="http://www.najeebmedia.com/logo.png" alt="Nmedia Logo" border="0" width="175" /></a>
 <h2>About Nmedia</h2>
 <p>Nmedia has dedicated itself to serve the Wordpress Community  and You. We just Think, Write and Develop in Wordpress and thus loaded ourselves  with all Wordpress features to develop Plugins, Themes. If you site Need:</p>
-<ul>
+<ul style="list-style:circle">
   <li><span dir="LTR"> </span>Cosmetic changes</li>
   <li><span dir="LTR"> </span>Theme integration</li>
   <li><span dir="LTR"> </span>Plugin customization</li>
