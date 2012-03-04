@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 2.2
+Stable tag: 2.3
 
 This is just one from field collection email and sending this to your MailChimp Account List
 
@@ -99,6 +99,10 @@ Yes you can now enter your own color code for almost every element of this form.
 * Turkish Language support is added
 * code is optimized to make it more light
 
+= 2.3 =
+* fixed some IE bug for placeholder text, mentioned by Julia Linde
+
+
 
 
 == Upgrade Notice ==
@@ -131,6 +135,8 @@ Pleas must update to this version if you want to use multi instances of widget o
 Turkish Language support is added
 Code is optimized to make it more light
 
+= 2.3 =
+fixed some IE bug for placeholder text, mentioned by Julia Linde
 
 1. Select First/Last Name optionally
 2. Graphics background (Black, Blue, Green, Magenta, Pink and Green.)
