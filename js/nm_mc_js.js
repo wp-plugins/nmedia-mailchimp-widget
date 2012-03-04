@@ -129,14 +129,19 @@ function fix_placeHolder(widget_id)
 	if (!testAttribute("input", "placeholder")) 
 	{
 
-		var text_content = jQuery("#placehoder_ie_fix_email").html();
+		//var text_content = jQuery("#placehoder_ie_fix_email").html();
+	    putPlaceHolder(email, jQuery("#placehoder_ie_fix_email").html());
+		putPlaceHolder(fullname, jQuery("#placehoder_ie_fix_fname").html());
+	}
 	    
-	    email.css("color", "gray");
-	    email.val(text_content);
-		
-		
-		
-	    email.focus(function() {
+}
+
+
+function putPlaceHolder(element, text_content)
+{
+		element.css("color", "gray");
+	    element.val(text_content);
+	    element.focus(function() {
 		if (jQuery(this).val().trim() == text_content.trim())
 	    { 
 			//alert('focused');
@@ -145,15 +150,14 @@ function fix_placeHolder(widget_id)
 		}
 	    });
 	
-	    email.blur(function() {
+	    element.blur(function() {
 	    if (jQuery(this).val() == "")
 	    { 
 			jQuery(this).css("color", "gray");
 			jQuery(this).val(text_content);
 			}
 	    });
-		
-	  } 
+	  
 }
 
 function testAttribute(element, attribute)
