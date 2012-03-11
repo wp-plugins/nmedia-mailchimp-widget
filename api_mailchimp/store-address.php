@@ -1,15 +1,4 @@
 <?php
-/*///////////////////////////////////////////////////////////////////////
-Part of the code from the book 
-Building Findable Websites: Web Standards, SEO, and Beyond
-by Aarron Walter (aarron@buildingfindablewebsites.com)
-http://buildingfindablewebsites.com
-
-Distrbuted under Creative Commons license
-http://creativecommons.org/licenses/by-sa/3.0/us/
-///////////////////////////////////////////////////////////////////////*/
-
-
 function storeAddress(){
 	
 	// Validation
