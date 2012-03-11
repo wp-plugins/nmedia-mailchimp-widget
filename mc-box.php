@@ -34,8 +34,7 @@ $title_size_type= get_option($shortname . '_title_size_type');
 	<input type"text" id="nm_mc_email" placeholder="<?php _e('Email', 'nm_mailchimp_plugin')?>" / >
     <input type="hidden" value="<?php echo $list_id;?>" id="nm_mc_list_id" />
 	<input type="button" class="button" value="<?php echo get_option($shortname . '_button_title')?>" id="nm_mc_button" onclick="postToMailChimp('<?php echo $post_url?>', '<?php echo ABSPATH?>')" / >
-	<!--<p>Powered By: Nmedia</p>-->
-    <!--<span class="tooltip">Here is the tooltip</span>-->
+
 </div>
 
 <script type="text/javascript">
