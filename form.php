@@ -21,7 +21,7 @@ $paddTop = ((int)$width < 190) ? '18px' : '5px';
         <input type="button" class="btn_email" onclick="postToMailChimp()" />
         
         
-    <a class="nm_power" style="padding-top:<?php echo $paddTop?>; padding-right:8px" href="http://www.najeebmedia.com" target="_new">PoweredBy: Nmedia</a>
+    
     </p>
     
     
