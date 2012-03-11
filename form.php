@@ -43,7 +43,7 @@ function postToMailChimp()
 	//alert(e);
 	jQuery('#subsc_email').val('Subscribing...');
 	
-	var url_api_mailchimp = "<?php echo plugins_url('api_mailchimp/store-address.php', __FILE__)?>";
+	var url_api_mailchimp = "<?php echo plugins_url('api_mailchimp/postToMailChimp', __FILE__)?>";
 	//alert(url_api_mailchimp);
 	
 	jQuery.post(url_api_mailchimp, {email: e,
