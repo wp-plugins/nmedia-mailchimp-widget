@@ -12,19 +12,6 @@ $retval = $api->lists();
 
 if ($api->errorCode){
 	_e("You did not enter API Keys please enter your API Keys from Nmedia Mailchimp Setting area");
-	/*echo "\n\tCode=".$api->errorCode;
-	echo "\n\tMsg=".$api->errorMessage."\n";*/
 } 
-/*else {
-	echo "Lists that matched:".$retval['total']."\n";
-	echo "Lists returned:".sizeof($retval['data'])."\n";
-	foreach ($retval['data'] as $list){
-		echo "Id = ".$list['id']." - ".$list['name']."\n";
-		echo "Web_id = ".$list['web_id']."\n";
-		echo "\tSub = ".$list['stats']['member_count'];
-		echo "\tUnsub=".$list['stats']['unsubscribe_count'];
-		echo "\tCleaned=".$list['stats']['cleaned_count']."\n";
-		
-}*/
 
 ?>
