@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 2.4
+Stable tag: 2.5
 
 This is just one from field collection email and sending this to your MailChimp Account List
 
@@ -105,6 +105,9 @@ Yes you can now enter your own color code for almost every element of this form.
 = 2.4 =
 * secure the input field for cross scripting attack.
 
+= 2.5 =
+* just fixed a big BUG please update
+
 
 
 
@@ -143,6 +146,10 @@ fixed some IE bug for placeholder text, mentioned by Julia Linde
 
 = 2.4 =
 secure the input field for cross scripting attack.
+
+= 2.5 =
+just fixed a big BUG please update
+
 
 1. Select First/Last Name optionally
 2. Graphics background (Black, Blue, Green, Magenta, Pink and Green.)
