@@ -3,7 +3,7 @@ $options_file = dirname(__FILE__).'/get-plugin-options.php';
 include ($options_file);
 $shortname = "nm_mc";
 
-$post_url = plugins_url('api_mailchimp/postToMailChimp', __FILE__);
+$post_url = plugins_url('api_mailchimp/postToMailChimp.php', __FILE__);
 
 /*
 * Designs options
