@@ -3,18 +3,15 @@
 Plugin Name: Simple MailChimp Email List Subscriber
 Plugin URI: http://www.najeebmedia.com/wordpress-mailchimp-plugin-2-0-released/
 Description: Form to capture email subscriptions and send them to your MailChimp account list
-Version: 2.4
+Version: 2.5
 Author: Najeeb Ahmad
 Author URI: http://www.najeebmedia.com/
 */
 
-/*ini_set('display_errors',1);
-error_reporting(E_ALL);*/
 
 class nmMailChimp extends WP_Widget {
 	
 	 
-	
 	/*
 	** constructor
 	*/	
@@ -180,6 +177,7 @@ add_action('init', array('nmMailChimp', 'nm_mc_textdomain'));
 
 /* book: register widget when loading the WP core */
 add_action('widgets_init', 'nm_mc_register_widgets');
+
 /* hook: loading js stuff */
 add_action('wp_enqueue_scripts', array('nmMailChimp', 'load_js'));
 /* hook: styilng */
