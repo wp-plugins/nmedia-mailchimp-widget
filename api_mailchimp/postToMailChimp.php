@@ -6,9 +6,6 @@ postToMailChimp class is interface class between NMedia Mailchimp plugin and Mai
 Do not modify this.
 */
 
-/*ini_set('display_errors',1);
-error_reporting(E_ALL);*/
-
 
 $path = $_POST['abs_path'] . 'wp-load.php';
 //echo $path; die;
@@ -99,14 +96,14 @@ class postToMailChimp
 }
 
 
-//print_r($_POST);
-$mc = new postToMailChimp();
 $api_key = get_option('nm_mc_api_key');
 $thanksMessage = get_option('nm_mc_thanks_message');
 
-if($mc -> setPostedData($_POST['email'], $_POST['list_id'], $_POST['fname'], $api_key, $thanksMessage))
-	echo $mc -> saveToList();
+$mailchimp = new postToMailChimp();
+
+if($mailchimp -> setPostedData($_POST['email'], $_POST['list_id'], $_POST['fname'], $api_key, $thanksMessage))
+	echo $mailchimp -> saveToList();
 else
-	echo $mc -> err;
+	echo $mailchimp -> err;
 
 ?>
