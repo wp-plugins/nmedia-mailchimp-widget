@@ -36,7 +36,7 @@ $title_size_type= get_option($shortname . '_title_size_type');
 	<input type="button" class="button" value="<?php echo get_option($shortname . '_button_title')?>" id="nm_mc_button-<?php echo $widget_id?>" onclick="postToMailChimp('<?php echo $post_url?>', '<?php echo ABSPATH?>', '<?php echo $widget_id?>')" / >
     
     <span id="placehoder_ie_fix_email" style="display:none"><?php _e('Email', 'nm_mailchimp_plugin')?></span>
-    <span id="placehoder_ie_fix_fname" style="display:none"><?php _e('Fristname, Lastname', 'nm_mailchimp_plugin')?></span>
+    <span id="placehoder_ie_fix_fname" style="display:none"><?php _e('Firstname, Lastname', 'nm_mailchimp_plugin')?></span>
 </div>
 
 <script type="text/javascript">
