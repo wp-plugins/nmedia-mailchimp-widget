@@ -14,7 +14,6 @@ error_reporting(E_ALL);*/
 class nmMailChimp extends WP_Widget {
 	
 	 
-	
 	/*
 	** constructor
 	*/	
@@ -82,6 +81,7 @@ class nmMailChimp extends WP_Widget {
 		
 		echo $after_widget;
 	}
+	
 	
 	
 	/*
