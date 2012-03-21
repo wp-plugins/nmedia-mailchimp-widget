@@ -180,7 +180,7 @@ function nm_mc_admin() {
 <div class="wrap rm_wrap">
 <h2><?php echo $plugin_name; ?> Settings</h2>
 
-<div class="rm_opts">
+<div class="nm_opts">
 <form method="post">
 
 <?php foreach ($nm_mc_options as $value) {
@@ -326,10 +326,10 @@ case "section":
 $i++;
 ?>
 
-<div class="rm_section">
+<div class="nm_section">
 <div class="rm_title"><h3><img src="<?php plugins_url('css/images/trans.gif', __FILE__)?>" class="inactive" alt="""><?php _e($value['name'], 'nm_mailchimp_plugin') ?></h3><span class="submit"><input name="save<?php echo $i; ?>" type="submit" value="<?php _e('Save Changes', 'nm_mailchimp_plugin')?>" />
 </span><div class="clearfix"></div></div>
-<div class="rm_options">
+<div class="nm_options">
 
 <?php break;
 
