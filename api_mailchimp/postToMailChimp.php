@@ -16,7 +16,7 @@ class postToMailChimp
 	var $email;
 	var $list_id;
 	var $full_name;
-	var $address;
+	var $address = array();
 	
 	var $api_key;
 	var $thanks;
@@ -35,10 +35,15 @@ class postToMailChimp
 
 		
 		$names 	 = explode(',', $this -> full_name);
-		$address = explode(',' $this -> address);
-		
-		$mergeVars = array( 'FNAME'	=> $names['0'],
-							'LNAME'	=> $names['1']);
+				
+		$mergeVars = array( 'FNAME'		=> $names['0'],
+							'LNAME'		=> $names['1'],
+							'ADDRESS'	=>$this -> address['addr1'],
+							'CITY'		=>$this -> address['city'],
+							'STATE'		=>$this -> address['state']
+							);
+						
+		//var_dump($mergeVars); exit;
 		
 		if($comm->listSubscribe($this -> list_id, $this -> email, $mergeVars) === true) {
 			if($this -> thanks == '')
@@ -55,7 +60,7 @@ class postToMailChimp
 	/*
 	** setting data posted here
 	*/
-	function setPostedData($email1, $list_id1, $fname1, $api_key1, $thanks1, $addr1='')
+	function setPostedData($email1, $list_id1, $fname1, $api_key1, $thanks1)
 	{
 		if(!$email1)
 		{ 
@@ -106,14 +111,37 @@ $thanksMessage = get_option('nm_mc_thanks_message');
 
 $mailchimp = new postToMailChimp();
 
-if($mailchimp -> setPostedData( $_POST['email'], 
-								$_POST['list_id'], 
-								$_POST['fname'], 
-								$api_key, 
-								$thanksMessage,
-								$_POST['address']))
-	echo $mailchimp -> saveToList();
+print_r($_POST);
+
+if($_POST['act'] == 'get_vars')
+{
+	echo 'Hello var';
+}
+
 else
-	echo $mailchimp -> err;
+{
+	
+	if($mailchimp -> setPostedData( $_POST['email'], 
+									$_POST['list_id'], 
+									$_POST['fname'], 
+									$api_key, 
+									$thanksMessage))
+	{
+									
+		$mailchimp ->address['addr1'] 	= $_POST['addr1'];
+		/*$mailchimp ->address['addr2'] 	= $_POST['addr2'];*/
+		$mailchimp ->address['city'] 	= $_POST['city'];
+		$mailchimp ->address['state'] 	= $_POST['state'];
+		$mailchimp ->address['zip'] 	= $_POST['zip'];
+		$mailchimp ->address['country'] = $_POST['country'];
+		
+		
+		echo $mailchimp -> saveToList();
+	}
+	else
+	{
+		echo $mailchimp -> err;
+	}
+}
 
 ?>

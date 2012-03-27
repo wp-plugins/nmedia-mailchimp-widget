@@ -92,7 +92,19 @@ input:focus {
 	color: #666;
 	letter-spacing: 1px;
 	background: url(images/field-bg.png) repeat-x;
+	clear:both;
 }
+
+
+.nm_mc_button
+{
+	border: #CCC 2px solid;
+	cursor: pointer;
+	background-color:#093;
+	color:#fff;
+	padding:2px;
+}
+
 
 .nm_mc_form ul
 {
@@ -103,5 +115,5 @@ input:focus {
 
 .nm_mc_form ul li
 {
-	line-height:15px;
+	line-height:40px;
 }

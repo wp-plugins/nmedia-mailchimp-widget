@@ -156,6 +156,30 @@ class nmMailChimp extends WP_Widget {
 		 }
 		 
 	}
+	
+	
+	/*
+	** Getting Merge vars attached to a list
+	*/
+	function getMergeVars($list_id)
+	{
+		$api_dir = dirname(__FILE__).'/api_mailchimp/inc/MCAPI.class.php';
+		
+		require_once ($api_dir);
+		
+		$api = new nm_MCAPI(get_option('nm_mc_api_key'));
+		
+		$retval = $api->listMergeVars($list_id);
+		
+		if ($api->errorCode){
+		  	_e("You did not enter API Keys please enter your API Keys from Nmedia Mailchimp Setting area");
+		 }
+		 else
+		 {
+			 return $retval;
+		 }
+		 
+	}
   
   
   /*
@@ -220,6 +244,22 @@ class nmMailChimp extends WP_Widget {
     	}
   }
   
+  
+  /*
+  ** listing all countries with ISO standard required by Mailchimp
+  */
+  
+  function listCountries($w_id)
+  {
+	  global $country_list;
+	  $cmb_name = "country-$w_id";
+	  echo '<select id="'.$cmb_name.'" class="nm_mc_text">';
+	  foreach($country_list as $country => $code)
+	  {
+		  echo '<option value="'.$code.'">'.$country.'</option>';
+	  }
+	  echo '</select>';
+  }
   
   /*
   ** Enqueue style-file, if it exists.

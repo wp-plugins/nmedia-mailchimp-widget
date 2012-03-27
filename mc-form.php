@@ -39,24 +39,26 @@ $title_size_type= get_option($shortname . '_title_size_type');
 	//print_r($country_list);
 		foreach($show_address as $info):
 		
+		echo '<li>';
 		if($info == 'country')
 		{
-			//echo 'hello';
+			nmMailChimp::listCountries($widget_id);
 		}
 		else
 		{
 	?>
-    	<li><input type="text" id="<?php echo $info.'-'.$widget_id?>" class="nm_mc_text" placeholder="<?php echo $info?>" />
-        </li>
+    	<input type="text" id="<?php echo $info.'-'.$widget_id?>" class="nm_mc_text" placeholder="<?php echo $info?>" />
+        
     <?php 
+		echo '</li>';
 		}
 	endforeach;
 	endif;
 	?>
     
-    
-    
-	<input type="button" class="button" value="<?php echo $button_text?>" id="nm_mc_button-<?php echo $widget_id?>" onclick="postToMailChimp('<?php echo $post_url?>', '<?php echo ABSPATH?>', '<?php echo $widget_id?>')" / >
+    <li> 
+	<input type="button" class="nm_mc_button" value="<?php echo $button_text?>" id="nm_mc_button-<?php echo $widget_id?>" onclick="postToMailChimp('<?php echo $post_url?>', '<?php echo ABSPATH?>', '<?php echo $widget_id?>')" / >
+    </li>
     
     <span id="placehoder_ie_fix_email" style="display:none"><?php _e('Email', 'nm_mailchimp_plugin')?></span>
     <span id="placehoder_ie_fix_fname" style="display:none"><?php _e('Firstname, Lastname', 'nm_mailchimp_plugin')?></span>

@@ -35,6 +35,9 @@ function postToMailChimp(post_url, abspath, widget_id)
 	});
 }
 
+
+
+
 /*
 * setting the design based on options selected by user
 */

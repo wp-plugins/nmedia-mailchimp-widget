@@ -4,9 +4,11 @@
 */
 
 $arrList = nmMailChimp::getAccountLists();
-
+$post_url = plugins_url('api_mailchimp/postToMailChimp.php', __FILE__);
 //print_r($arrList);
 ?>
+
+
 <h2><?php _e('N-Media Mailchimp Shortcodes', 'nm_mailchimp_plugin')?></h2>
 <p>
 
@@ -20,6 +22,17 @@ foreach($arrList as $list):
 	<?php echo $list['name']?></li>
 <?php endforeach?>
 </ol>
+
+<strong>Variables attached with selelecte List</strong>
+<p>
+<?php 
+$vars = nmMailChimp::getMergeVars('2a5fae950f');
+echo '<pre>';
+//print_r($vars);
+echo '</pre>';
+?>
+</p>
+
 </p>
 
 <p>
@@ -80,5 +93,23 @@ function updateShortcode(val, area)
 	{
 		jQuery("."+area).html(val);
 	}
+	
+	
+	getMergVars('<?php echo $post_url?>', val);
+}
+
+
+/*
+** getting Merge Vars attached to list
+*/
+
+function getMergVars(post_url, listid)
+{
+	jQuery.post(post_url, 	{act: 'get_vars', list_id: listid}, function(data){
+		
+			alert(data);
+			
+	});
+	
 }
 </script>
