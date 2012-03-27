@@ -191,6 +191,17 @@ class nmMailChimp extends WP_Widget {
 	$file = dirname(__FILE__).'/shortcodes.php';
 	include($file);
   }
+  
+  
+  /*
+  ** this function rendering List Manager page
+  */
+  
+  function renderListManager()
+  {
+	$file = dirname(__FILE__).'/list-manager.php';
+	include($file);
+  }
  
   /*
   ** this is rendering form in widget area
