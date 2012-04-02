@@ -50,12 +50,10 @@ if(isset($_POST['new-group']))
 		echo '<div class="error"><p>'.$mc -> mc -> errorMessage.'</p></div>';
 	}
 }
-
-
-/* ====> Deleting new Merge Variable <====== */
+/* ====> Deleting group<====== */
 if($_GET['act'] == 'del-group')
 {
-	if($mc -> XGroup($_GET['lid'], $_GET['group']))
+	if($mc -> XGroup($_GET['gid']))
 	{
 		echo '<div class="updated"><p>Group deleted from list</p></div>';
 	}
@@ -64,6 +62,22 @@ if($_GET['act'] == 'del-group')
 		echo '<div class="error"><p>'.$mc -> mc -> errorMessage.'</p></div>';
 	}
 }					
+
+
+
+/* ====> Adding new Interest Group <====== */
+if(isset($_POST['new-interest']))
+{
+	if($mc -> addInterestGroup($_GET['lid'], $_POST['new-interest'], $_POST['group-id']))
+	{
+		echo '<div class="updated"><p>Group added into list</p></div>';
+	}
+	else
+	{
+		echo '<div class="error"><p>'.$mc -> mc -> errorMessage.'</p></div>';
+	}
+}
+
 
 /* ============== processing block ========================== */
 
@@ -157,7 +171,7 @@ endforeach;
 
 <form action="" method="post" onsubmit="return validateMe('new-group')">
 <input placeholder="Group title e.g: Students" class="nm_mc_text" type="text" name="new-group" id="new-group" /><br />
-<input placeholder="Interest in (sub group)e.g: Seniors" class="nm_mc_text" type="text" name="new-interest" id="new-interest" /><br />
+<input placeholder="Interest in (sub group)e.g: Seniors" class="nm_mc_text" type="text" name="new-interest" id="new-interest-group" /><br />
 <input type="submit" value="+Add" class="button" />
 </form>
 </li>
@@ -176,7 +190,7 @@ endforeach;
 <?php
 $c=0;
 foreach($arrGroups as $group):
-$urlDel = get_admin_url('', 'admin.php?page=lists-manager').'&lid='.$_GET['lid'].'&group='.$group['name'].'&act=del-group';
+$urlDel = get_admin_url('', 'admin.php?page=lists-manager').'&gid='.$group['id'].'&group='.$group['name'].'&act=del-group&lid='.$_GET['lid'];
 
 $urlGroups = get_admin_url('', 'admin.php?page=lists-manager').'&lid='.$_GET['lid'].'&group='.$group['name'].'&gid='.$group['id'];
 ?>
@@ -198,21 +212,31 @@ endforeach;
 
 <!-- groups interest (sub groups) -->
 <?php
-if($_GET['gid'])
+if($_GET['gid'] and $_GET['act'] != 'del-group')
 {
-	echo '<pre>';
+	/*echo '<pre>';
 	print_r($arrGroups);
-	echo '</pre>';
+	echo '</pre>';*/
+	
+//getting the active group
+foreach($arrGroups as $grp)
+{
+	if($grp['id'] == $_GET['gid'])
+	{
+		$activeGroup = $grp['name'];
+		$subGroups = $grp['groups'];
+	}
+}
 	
 ?>
-<h3>Groups interest (sub group)</h3>
+<h3>Groups interest (sub group) of <?php echo $activeGroup?></h3>
 <ul>
-<li class="good-links">+ <a href="javascript:toggleArea('c-new-group')">Add new group</a></li>
+<li class="good-links">+ <a href="javascript:toggleArea('c-new-interest')">Add interest group</a></li>
 
-<li id="c-new-group" style="display:none">
+<li id="c-new-interest" style="display:none">
 
-<form action="" method="post" onsubmit="return validateMe('new-group')">
-<input placeholder="Group title e.g: Students" class="nm_mc_text" type="text" name="new-group" id="new-group" /><br />
+<form action="" method="post" onsubmit="return validateMe('new-interest')">
+<input type="hidden" name="group-id" value="<?php echo $arrGroups[0]['id']?>" />
 <input placeholder="Interest in (sub group)e.g: Seniors" class="nm_mc_text" type="text" name="new-interest" id="new-interest" /><br />
 <input type="submit" value="+Add" class="button" />
 </form>
@@ -231,7 +255,7 @@ if($_GET['gid'])
 <tbody>
 <?php
 $c=0;
-foreach($arrGroups as $group):
+foreach($subGroups as $group):
 $urlDel = get_admin_url('', 'admin.php?page=lists-manager').'&lid='.$_GET['lid'].'&group='.$group['name'].'&act=del-group';
 
 $urlGroups = get_admin_url('', 'admin.php?page=lists-manager').'&lid='.$_GET['lid'].'&group='.$group['name'].'&gid='.$group['id'];

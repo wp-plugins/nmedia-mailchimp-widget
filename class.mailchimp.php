@@ -111,9 +111,9 @@ class clsMailchimp extends MCAPI
 	/*
 	** Adding new Group to a list
 	*/
-	function addInterestGroup($list_id, $name)
+	function addInterestGroup($list_id, $name, $group_id)
 	{
-		$retval = $this -> mc -> listInterestGroupAdd($list_id, $name);
+		$retval = $this -> mc -> listInterestGroupAdd($list_id, $name, $group_id);
 		
 		if ($this -> mc -> errorCode){
 		  	//echo $this -> mc -> errorMessage;
@@ -151,9 +151,9 @@ class clsMailchimp extends MCAPI
 	/*
 	** Deleting Group from a list
 	*/
-	function XGroup($list_id, $name)
+	function XGroup($group_id)
 	{
-		$retval = $this -> mc -> listInterestGroupDel($list_id, $name);
+		$retval = $this -> mc -> listInterestGroupingDel($group_id);
 		
 		if ($this -> mc -> errorCode){
 		  	//echo $this -> mc -> errorMessage;
