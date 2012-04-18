@@ -6,7 +6,7 @@ Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: 2.5
 
-This is just one from field collection email and sending this to your MailChimp Account List
+This is simple, ajaxed based list subscriber form send data to your MailChimp List
 
 == Description ==
 
