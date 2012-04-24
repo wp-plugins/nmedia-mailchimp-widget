@@ -1,6 +1,6 @@
 <?php
-$plugin_name = "NajeebMedia MailChimp List Subscriber Plugin";
-$shortname = "nm_mc";
+$nm_mc_name = "NajeebMedia MailChimp List Subscriber Plugin";
+$nm_mc_shortname = "nm_mc";
 
 
 $categories = get_categories('hide_empty=0&orderby=name');
@@ -24,7 +24,7 @@ $nm_bgs = array('Black'		=>	'bg-black.png',
 
 $nm_mc_options = array (
 
-array( "name" => $plugin_name." Options",
+array( "name" => $nm_mc_name." Options",
 	"type" => "title"),
 
 array( 	"name" => __("General Settings", "nm_mailchimp_plugin"),	
@@ -33,17 +33,17 @@ array( 	"name" => __("General Settings", "nm_mailchimp_plugin"),
 		
 		array(  "name" => __("API Key", "nm_mailchimp_plugin"),
 				"desc" => __("Enter your MailChimp API Key, don't know where to get? please visit this link, <a href=http://www.najeebmedia.com/where-can-i-find-my-mailchimp-api-key/ target=_blank>Get API Key</a>", "nm_mailchimp_plugin"),
-				"id" => $shortname."_api_key",
+				"id" => $nm_mc_shortname."_api_key",
 				"type" => "text"),
 		array( 	"name" => __("Thanks Message", "nm_mailchimp_plugin"),
 		  		"desc" => __("Type a message here, it will be shown when user will submit the email/info for subscription", "nm_mailchimp_plugin"),
-				"id" => $shortname."_thanks_message",
+				"id" => $nm_mc_shortname."_thanks_message",
 				"type" => "textarea",
 				"std" => ""),	
 		
 		array( 	"name" => __("Button Title", "nm_mailchimp_plugin"),
 				"desc" => __("Enter button title text e.g: Subscribe", "nm_mailchimp_plugin"),
-				"id" => $shortname."_button_title",
+				"id" => $nm_mc_shortname."_button_title",
 				"type" => "text",
 				"std" => "Subscribe"),
 		
@@ -56,38 +56,38 @@ array( 	"name" => __("General Settings", "nm_mailchimp_plugin"),
 		
 		array( 	"name" => __("Select Background Image", "nm_mailchimp_plugin"),
 				"desc" => __("Select background image", "nm_mailchimp_plugin"),
-				"id" => $shortname."_bg_image",
+				"id" => $nm_mc_shortname."_bg_image",
 				"type" => "bgs",
 				"std" => ""),
 		
 		array( 	"name" => __("Container Background Color", "nm_mailchimp_plugin"),
 				"desc" => __("If no background image is selected then you can enter background color code like: #999", "nm_mailchimp_plugin"),
-				"id" => $shortname."_box_bg",
+				"id" => $nm_mc_shortname."_box_bg",
 				"type" => "text",
 				"std" => ""),
 	  
 	  	array( 	"name" => __("Container Border Color", "nm_mailchimp_plugin"),
 				"desc" => __("If no background image is selected then you can enter border color code like: #999 1px solid", "nm_mailchimp_plugin"),
-				"id" => $shortname."_box_border",
+				"id" => $nm_mc_shortname."_box_border",
 				"type" => "text",
 				"std" => ""),
 		
 		array( 	"name" => __("Title Text Color", "nm_mailchimp_plugin"),
 				"desc" => __("Enter title text color code like: #999", "nm_mailchimp_plugin"),
-				"id" => $shortname."_title_color",
+				"id" => $nm_mc_shortname."_title_color",
 				"type" => "text",
 				"std" => "#fff"),
 				
 		array( 	"name" => __("Title Text Size/Type", "nm_mailchimp_plugin"),
 				"desc" => __("Enter title text size and type like: 16px arial,sans-serif", "nm_mailchimp_plugin"),
-				"id" => $shortname."_title_size_type",
+				"id" => $nm_mc_shortname."_title_size_type",
 				"type" => "text",
 				"std" => "16px arial,sans-serif"),
 				
 				
 		array( 	"name" => __("Button Background Color", "nm_mailchimp_plugin"),
 				"desc" => __("Enter Background color code like: #999", "nm_mailchimp_plugin"),
-				"id" => $shortname."_button_bg",
+				"id" => $nm_mc_shortname."_button_bg",
 				"type" => "text",
 				"std" => "#093"),
 				
@@ -95,13 +95,13 @@ array( 	"name" => __("General Settings", "nm_mailchimp_plugin"),
 		
 		array( 	"name" => __("Button Border Color", "nm_mailchimp_plugin"),
 				"desc" => __("Enter Background color code like: #999 1px solid", "nm_mailchimp_plugin"),
-				"id" => $shortname."_button_border",
+				"id" => $nm_mc_shortname."_button_border",
 				"type" => "text",
 				"std" => ""),
 				
 		array( 	"name" => __("Button Text Color", "nm_mailchimp_plugin"),
 				"desc" => __("Enter Background color code like: #999", "nm_mailchimp_plugin"),
-				"id" => $shortname."_button_text",
+				"id" => $nm_mc_shortname."_button_text",
 				"type" => "text",
 				"std" => "#000"),
 		
@@ -113,7 +113,7 @@ array( 	"name" => __("General Settings", "nm_mailchimp_plugin"),
 		
 		array( 	"name" => __("Background Image", "nm_mailchimp_plugin"),
 				"desc" => __("Once you get Pro Version of this plugin, you can use all these Pro Backgrounds with Gradiant Colors. For Buy Pro Version click <a href=http://www.najeebmedia.com/wordpress-mailchimp-plugin-2-0-released/>here</a>", "nm_mailchimp_plugin"),
-				"id" => $shortname."_bg_image",
+				"id" => $nm_mc_shortname."_bg_image",
 				"type" => "bgs_pro",
 				"std" => ""),
 		
@@ -125,7 +125,7 @@ array( 	"name" => __("General Settings", "nm_mailchimp_plugin"),
 
 function nm_plugin_add_admin() {
 
-    global $plugin_name, $shortname, $nm_mc_options;
+    global $nm_mc_name, $nm_mc_shortname, $nm_mc_options;
 
     if ( $_GET['page'] == basename(__FILE__) ) {
     
@@ -151,34 +151,34 @@ function nm_plugin_add_admin() {
         } 
     }
 
-    //add_plugins_page($plugin_name." Options", "Mailchimp Options", 'edit_plugins', basename(__FILE__), 'nm_mc_admin');
-	add_menu_page($plugin_name, "Nmedia MailChimp", 'edit_plugins', basename(__FILE__), 'nm_mc_admin', plugin_dir_url(__FILE__ ).'images/option.png');
+    //add_plugins_page($nm_mc_name." Options", "Mailchimp Options", 'edit_plugins', basename(__FILE__), 'nm_mc_admin');
+	add_menu_page($nm_mc_name, "Nmedia MailChimp", 'edit_plugins', basename(__FILE__), 'nm_mc_admin', plugin_dir_url(__FILE__ ).'images/option.png');
 
 }
 
 
 function nm_plugin_add_init() {
-  	wp_register_style('nm_plugin_option_style', plugins_url('css/options.css', __FILE__));
-	wp_enqueue_style( 'nm_plugin_option_style');
+  	wp_register_style('nm_mc_option_style', plugins_url('css/options.css', __FILE__));
+	wp_enqueue_style( 'nm_mc_option_style');
 	
-	wp_enqueue_script("nm_plugin_script", plugins_url('js/nm_plugin_option.js', __FILE__), false, "1.0"); 
+	wp_enqueue_script("nm_mc_script", plugins_url('js/nm_plugin_option.js', __FILE__), false, "1.0"); 
 	
 }
 
 
 function nm_mc_admin() {
 
-    global $plugin_name, $shortname, $nm_mc_options, $nm_bgs;
+    global $nm_mc_name, $nm_mc_shortname, $nm_mc_options, $nm_bgs;
 	//print_r($nm_mc_options);
 	
 
-    if ( $_REQUEST['saved'] ) echo '<div id="message" class="updated fade"><p><strong>'.$plugin_name.' '.__('Settings saved.','nm_mailchimp_plugin').'</strong></p></div>';
-    if ( $_REQUEST['reset'] ) echo '<div id="message" class="updated fade"><p><strong>'.$plugin_name.' '.__('Settings reset.','nm_mailchimp_plugin').'</strong></p></div>';
-    if ( $_REQUEST['reset_widgets'] ) echo '<div id="message" class="updated fade"><p><strong>'.$plugin_name.' '.__('Widgets reset.','nm_mailchimp_plugin').'</strong></p></div>';
+    if ( $_REQUEST['saved'] ) echo '<div id="message" class="updated fade"><p><strong>'.$nm_mc_name.' '.__('Settings saved.','nm_mailchimp_plugin').'</strong></p></div>';
+    if ( $_REQUEST['reset'] ) echo '<div id="message" class="updated fade"><p><strong>'.$nm_mc_name.' '.__('Settings reset.','nm_mailchimp_plugin').'</strong></p></div>';
+    if ( $_REQUEST['reset_widgets'] ) echo '<div id="message" class="updated fade"><p><strong>'.$nm_mc_name.' '.__('Widgets reset.','nm_mailchimp_plugin').'</strong></p></div>';
     
 ?>
 <div class="wrap rm_wrap">
-<h2><?php echo $plugin_name; ?> Settings</h2>
+<h2><?php echo $nm_mc_name; ?> Settings</h2>
 
 <div class="nm_opts">
 <form method="post">
