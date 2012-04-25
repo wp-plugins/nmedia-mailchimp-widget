@@ -188,7 +188,7 @@ class nmMailChimp extends WP_Widget {
   
   function renderShortcodes()
   {
-	$file = dirname(__FILE__).'/shortcodes.php';
+	$file = dirname(__FILE__).'/gen-shortcode.php';
 	include($file);
   }
   

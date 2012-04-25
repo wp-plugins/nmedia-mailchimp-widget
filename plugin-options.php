@@ -3,13 +3,6 @@ $plugin_name = "NajeebMedia MailChimp List Subscriber Plugin";
 $shortname = "nm_mc";
 $option_page_name = 'nm-mailchimp';
 
-$categories = get_categories('hide_empty=0&orderby=name');
-$wp_cats = array();
-foreach ($categories as $category_list ) {
-       $wp_cats[$category_list->cat_ID] = $category_list->cat_name;
-}
-array_unshift($wp_cats, "Choose a category");
-
 //color array
 $nm_bgs = array('Black'		=>	'bg-black.png', 
 				'Green'		=> 	'bg-green.png',
@@ -50,7 +43,7 @@ array( 	"name" => __("General Settings", "nm_mailchimp_plugin"),
 		
 		array( "type" => "close"),
 		
-		array( 	"name" => __("Shortcodes", "nm_mailchimp_plugin"),	
+		/*array( 	"name" => __("Shortcodes", "nm_mailchimp_plugin"),	
 		"type" => "section"),	
 		array( "type" => "open"),
 		
@@ -66,7 +59,7 @@ array( 	"name" => __("General Settings", "nm_mailchimp_plugin"),
 				"std" => ""),	
 		
 	
-		array( "type" => "close"),
+		array( "type" => "close"),*/
 		
 		array( "name" => __("Design Settings", "nm_mailchimp_plugin"),
 				"type" => "section"),

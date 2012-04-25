@@ -96,8 +96,12 @@ $arrList 	= $mc -> getAccountLists();
 foreach($arrList as $list):
 $urlLoadDetail = get_admin_url('', 'admin.php?page=lists-manager').'&lid='.$list['id'].'&lname='.$list['name'];	
 
+$current = (@$_REQUEST['lid'] == $list['id']) ? 'current-list' : '';
 ?>
-	<li class="good-links"><a href="<?php echo $urlLoadDetail?>"><?php echo $list['name']?></a></li>
+	<li class="good-links <?php echo $current?>">
+    <a href="<?php echo $urlLoadDetail?>">
+	<?php echo $list['name']?>
+    </a></li>
 <?php
 endforeach;
 ?>

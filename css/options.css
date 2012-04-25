@@ -181,6 +181,7 @@
 	width:45%;
 	float:left;
 	margin-right:1%;
+	background-color:#ead3b1;
 }
 
 .nm_mc_text
@@ -203,3 +204,52 @@
 	background-color:#FFF;
 	padding:5px;
 }
+
+.current-list
+{
+	background-color:#ead3b1;
+}
+.current-list a
+{
+	color:#fff;
+}
+
+
+/* shortcode */
+
+#shortcode-container
+{
+	margin:20px 10px;
+	
+}
+
+#shortcode-left
+{
+	padding:10px;
+	width:30%;
+	float:left;
+	background-color:#eeeeee;
+	border:#999 1px dashed;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+
+#shortcode-right
+{
+	width:65%;
+	float:right;
+	background-color:#eeeeee;
+	border:#999 1px dashed;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#shortcode-right .detail
+{
+	padding:5px;
+}
+
+/* shortcodd */
