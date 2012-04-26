@@ -210,7 +210,7 @@ case 'text':
 
 <div class="rm_input rm_text">
 	<label for="<?php echo $value['id']; ?>"><?php _e($value['name'], 'nm_mailchimp_plugin') ?></label>
- 	<input name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_settings( $value['id'] ) != "") { echo stripslashes(get_settings( $value['id'])  ); } else { echo $value['std']; } ?>" />
+ 	<input name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != "") { echo stripslashes(get_option( $value['id'])  ); } else { echo $value['std']; } ?>" />
  <small><?php _e($value['desc'], 'nm_mailchimp_plugin') ?></small><div class="clearfix"></div>
 
  </div>
@@ -222,7 +222,7 @@ case 'textarea':
 
 <div class="rm_input rm_textarea">
 	<label for="<?php echo $value['id']; ?>"><?php _e($value['name'], 'nm_mailchimp_plugin') ?></label>
- 	<textarea name="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" cols="" rows=""><?php if ( get_settings( $value['id'] ) != "") { echo stripslashes(get_settings( $value['id']) ); } else { echo $value['std']; } ?></textarea>
+ 	<textarea name="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" cols="" rows=""><?php if ( get_option( $value['id'] ) != "") { echo stripslashes(get_option( $value['id']) ); } else { echo $value['std']; } ?></textarea>
  <small><?php _e($value['desc'], 'nm_mailchimp_plugin') ?></small><div class="clearfix"></div>
 
  </div>
@@ -243,7 +243,7 @@ case 'bgs'		//custom field set by Najeeb
 	?>
     <div class="item">
         	<img src="<?php echo plugins_url($bg_img_name, __FILE__)?>" alt="<?php echo $bg ?>" width="75" /><br />
-			<input type="radio" name="<?php echo $value['id']; ?>" value="<?php echo $val?>" <?php if (get_settings( $value['id'] ) == $val) { echo 'checked="checked"'; } ?> />
+			<input type="radio" name="<?php echo $value['id']; ?>" value="<?php echo $val?>" <?php if (get_option( $value['id'] ) == $val) { echo 'checked="checked"'; } ?> />
             <?php echo $bg ?>
         </div>
     <?php endforeach;?>
@@ -277,7 +277,7 @@ case 'bgs_pro'		//custom field set by Najeeb for Pro Backgrounds
 	?>
     <div class="item">
         	<img src="<?php echo plugins_url($bg_img_name, __FILE__)?>" alt="<?php $bg_title?>" width="75" /><br />
-			<input type="radio" name="<?php echo $value['id']; ?>" value="<?php echo $val?>" <?php if (get_settings( $value['id'] ) == $val) { echo 'checked="checked"'; } ?> />
+			<input type="radio" name="<?php echo $value['id']; ?>" value="<?php echo $val?>" <?php if (get_option( $value['id'] ) == $val) { echo 'checked="checked"'; } ?> />
             <?php echo $bg_title ?>
         </div>
     <?php endfor;?>
@@ -301,7 +301,7 @@ case 'select':
 
 <select name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>">
 <?php foreach ($value['nm_mc_options'] as $option) { ?>
-		<option <?php if (get_settings( $value['id'] ) == $option) { echo 'selected="selected"'; } ?>><?php echo $option; ?></option><?php } ?>
+		<option <?php if (get_option( $value['id'] ) == $option) { echo 'selected="selected"'; } ?>><?php echo $option; ?></option><?php } ?>
 </select>
 
 	<small><?php _e($value['desc'], 'nm_mailchimp_plugin') ?></small><div class="clearfix"></div>
