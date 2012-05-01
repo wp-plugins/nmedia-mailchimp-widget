@@ -5,6 +5,9 @@ Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: 2.5
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
 
 This is simple, ajaxed based list subscriber form send data to your MailChimp List
 
