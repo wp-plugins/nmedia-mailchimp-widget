@@ -3,15 +3,6 @@ $plugin_name = "NajeebMedia MailChimp List Subscriber Plugin";
 $shortname = "nm_mc";
 $option_page_name = 'nm-mailchimp';
 
-//color array
-$nm_bgs = array('Black'		=>	'bg-black.png', 
-				'Green'		=> 	'bg-green.png',
-				'Blue'		=> 	'bg-blue.png',
-				'Magenta'	=> 'bg-magenta.png',
-				'Pink'		=> 'bg-pink.png', 
-				'None'		=> 'none.png'
-				);
-
 
 // Create Plugin nm_mc_options
 
@@ -43,93 +34,21 @@ array( 	"name" => __("General Settings", "nm_mailchimp_plugin"),
 		
 		array( "type" => "close"),
 		
-		/*array( 	"name" => __("Shortcodes", "nm_mailchimp_plugin"),	
-		"type" => "section"),	
-		array( "type" => "open"),
-		
-		array(  "name" => __("Available Lists", "nm_mailchimp_plugin"),
-				"desc" => __("All your Lists associated with your account, you will use these list in your shortcode below", "nm_mailchimp_plugin"),
-				"id" => $shortname."_api_key",
-				"type" => "text"),
-				
-		array( 	"name" => __("Shorcode simple", "nm_mailchimp_plugin"),
-		  		"desc" => __("To display just email field", "nm_mailchimp_plugin"),
-				"id" => $shortname."_thanks_message",
-				"type" => "textarea",
-				"std" => ""),	
-		
-	
-		array( "type" => "close"),*/
-		
-		array( "name" => __("Design Settings", "nm_mailchimp_plugin"),
+
+		array( "name" => __("Style/CSS", "nm_mailchimp_plugin"),
 				"type" => "section"),
 		array( "type" => "open"),
 		
-		array( 	"name" => __("Select Background Image", "nm_mailchimp_plugin"),
-				"desc" => __("Select background image", "nm_mailchimp_plugin"),
-				"id" => $shortname."_bg_image",
-				"type" => "bgs",
-				"std" => ""),
-		
-		array( 	"name" => __("Container Background Color", "nm_mailchimp_plugin"),
-				"desc" => __("If no background image is selected then you can enter background color code like: #999", "nm_mailchimp_plugin"),
-				"id" => $shortname."_box_bg",
-				"type" => "text",
-				"std" => ""),
-	  
-	  	array( 	"name" => __("Container Border Color", "nm_mailchimp_plugin"),
-				"desc" => __("If no background image is selected then you can enter border color code like: #999 1px solid", "nm_mailchimp_plugin"),
-				"id" => $shortname."_box_border",
-				"type" => "text",
-				"std" => ""),
-		
-		array( 	"name" => __("Title Text Color", "nm_mailchimp_plugin"),
-				"desc" => __("Enter title text color code like: #999", "nm_mailchimp_plugin"),
-				"id" => $shortname."_title_color",
-				"type" => "text",
-				"std" => "#fff"),
-				
-		array( 	"name" => __("Title Text Size/Type", "nm_mailchimp_plugin"),
-				"desc" => __("Enter title text size and type like: 16px arial,sans-serif", "nm_mailchimp_plugin"),
-				"id" => $shortname."_title_size_type",
-				"type" => "text",
-				"std" => "16px arial,sans-serif"),
-				
-				
-		array( 	"name" => __("Button Background Color", "nm_mailchimp_plugin"),
-				"desc" => __("Enter Background color code like: #999", "nm_mailchimp_plugin"),
-				"id" => $shortname."_button_bg",
-				"type" => "text",
-				"std" => "#093"),
-				
-		
-		
-		array( 	"name" => __("Button Border Color", "nm_mailchimp_plugin"),
-				"desc" => __("Enter Background color code like: #999 1px solid", "nm_mailchimp_plugin"),
-				"id" => $shortname."_button_border",
-				"type" => "text",
-				"std" => ""),
 				
 		array( 	"name" => __("Button Text Color", "nm_mailchimp_plugin"),
-				"desc" => __("Enter Background color code like: #999", "nm_mailchimp_plugin"),
-				"id" => $shortname."_button_text",
-				"type" => "text",
-				"std" => "#000"),
+				"desc" => __("Style/css will be loaded on plugin page", "nm_mailchimp_plugin"),
+				"id" => $shortname."_custom_css",
+				"type" => "textarea",
+				"std" => ".nm_mc_input{width:250px;}"),
 		
 		array( "type" => "close"),
 		
-		array( "name" => __("Get More Cool Backgrounds in Pro Vesion for just $8 USD", "nm_mailchimp_plugin"),
-				"type" => "section"),
-		array( "type" => "open"),
-		
-		array( 	"name" => __("Background Image", "nm_mailchimp_plugin"),
-				"desc" => __("Once you get Pro Version of this plugin, you can use all these Pro Backgrounds with Gradiant Colors. For Buy Pro Version click <a href=http://www.najeebmedia.com/wordpress-mailchimp-plugin-2-0-released/>here</a>", "nm_mailchimp_plugin"),
-				"id" => $shortname."_bg_image",
-				"type" => "bgs_pro",
-				"std" => ""),
-		
-		array( "type" => "close"),
-
+	
 );	//end of nm_mc_options array
 											
 											
@@ -179,8 +98,8 @@ function nm_plugin_add_admin() {
 					  array('nmMailChimp', 'renderListManager'));
 	
 	add_submenu_page( $option_page_name,
-					  'Shortcodes', 
-					  'Shortcodes', 
+					  'Forms Wizard', 
+					  'Forms Wizard', 
 					  'manage_options', 
 					  'mailchimp-shortcodes', 
 					  array('nmMailChimp', 'renderShortcodes'));

@@ -50,10 +50,23 @@ if(isset($_POST['new-group']))
 		echo '<div class="error"><p>'.$mc -> mc -> errorMessage.'</p></div>';
 	}
 }
+/* ====> Deleting interest group<====== */
+if($_GET['act'] == 'del-interest-group')
+{
+	if($mc -> XInterestGroup($_GET['gid']))
+	{
+		echo '<div class="updated"><p>Group deleted from list</p></div>';
+	}
+	else
+	{
+		echo '<div class="error"><p>'.$mc -> mc -> errorMessage.'</p></div>';
+	}
+}					
+
 /* ====> Deleting group<====== */
 if($_GET['act'] == 'del-group')
 {
-	if($mc -> XGroup($_GET['gid']))
+	if($mc -> XGroup($_GET['lid'], $_GET['group'], $_GET['gid']))
 	{
 		echo '<div class="updated"><p>Group deleted from list</p></div>';
 	}
@@ -83,10 +96,12 @@ if(isset($_POST['new-interest']))
 
 
 $arrList 	= $mc -> getAccountLists();
-//print_r($arrList);
+/*echo '<pre>';
+print_r($arrList);
+echo '</pre>';*/
 ?>
 
-<h2>Listing Manager</h2>
+<h2><?php _e('Mailchimp Account Lists', 'nm_mailchimp_plugin')?></h2>
 
 <div class="nm_mc_div">
 
@@ -101,7 +116,13 @@ $current = (@$_REQUEST['lid'] == $list['id']) ? 'current-list' : '';
 	<li class="good-links <?php echo $current?>">
     <a href="<?php echo $urlLoadDetail?>">
 	<?php echo $list['name']?>
-    </a></li>
+    </a>
+    <?php 
+	if(!isset($_GET['lid'])):
+		$mc -> renderListStats($list['stats']);
+	endif;
+	?>
+    </li>
 <?php
 endforeach;
 ?>
@@ -116,16 +137,16 @@ $arrVars	= $mc -> getMergeVars($_GET['lid']);
 $arrGroups	= $mc -> getListGroups($_GET['lid']);
 ?>
 
-<h2>Selected List: <?php echo $_GET['lname']?></h2>
+<h2><?php _e('Click on list', 'nm_mailchimp_plugin')?>: <?php echo $_GET['lname']?></h2>
 
 <div class="nm_mc_div lists_data">
-<h3>List variables</h3>
+<h3><?php _e('List Variables', 'nm_mailchimp_plugin')?></h3>
 <ul>
-<li class="good-links">+ <a href="javascript:toggleArea('c-new-var')">Add new merge variable</a></li>
+<li class="good-links">+ <a href="javascript:toggleArea('c-new-var')"><?php _e('Add new Merge Var', 'nm_mailchimp_plugin')?></a></li>
 <li id="c-new-var" style="display:none">
 
 <form action="" method="post" onsubmit="return validateMe('new-var')">
-<input placeholder="Tag name e.g: PHONE" class="nm_mc_text" type="text" name="new-var" id="new-var" /><em>Must be ALL CAPS</em><br />
+<input placeholder="Tag name e.g: PHONE" class="nm_mc_text" type="text" name="new-var" id="new-var" /><em><?php _e('Must be all CAPS', 'nm_mailchimp_plugin')?></em><br />
 <input placeholder="Detail e.g: Phone Number" class="nm_mc_text" type="text" name="var-detail" /><br />
 <input type="submit" value="+Add" class="button" />
 </form>
@@ -167,9 +188,9 @@ endforeach;
 
 
 <div class="nm_mc_div lists_data">
-<h3>List Groups</h3>
+<h3><?php _e('Groupings', 'nm_mailchimp_plugin')?></h3>
 <ul>
-<li class="good-links">+ <a href="javascript:toggleArea('c-new-group')">Add new group</a></li>
+<li class="good-links">+ <a href="javascript:toggleArea('c-new-group')"><?php _e('Add new grouping', 'nm_mailchimp_plugin')?></a></li>
 
 <li id="c-new-group" style="display:none">
 
@@ -194,7 +215,7 @@ endforeach;
 <?php
 $c=0;
 foreach($arrGroups as $group):
-$urlDel = get_admin_url('', 'admin.php?page=lists-manager').'&gid='.$group['id'].'&group='.$group['name'].'&act=del-group&lid='.$_GET['lid'];
+$urlDel = get_admin_url('', 'admin.php?page=lists-manager').'&gid='.$group['id'].'&group='.$group['name'].'&act=del-interest-group&lid='.$_GET['lid'];
 
 $urlGroups = get_admin_url('', 'admin.php?page=lists-manager').'&lid='.$_GET['lid'].'&group='.$group['name'].'&gid='.$group['id'];
 ?>
@@ -233,9 +254,9 @@ foreach($arrGroups as $grp)
 }
 	
 ?>
-<h3>Groups interest (sub group) of <?php echo $activeGroup?></h3>
+<h3><?php _e('Interest groups', 'nm_mailchimp_plugin')?> of <?php echo $activeGroup?></h3>
 <ul>
-<li class="good-links">+ <a href="javascript:toggleArea('c-new-interest')">Add interest group</a></li>
+<li class="good-links">+ <a href="javascript:toggleArea('c-new-interest')"><?php _e('Add interest', 'nm_mailchimp_plugin')?></a></li>
 
 <li id="c-new-interest" style="display:none">
 
@@ -260,16 +281,13 @@ foreach($arrGroups as $grp)
 <?php
 $c=0;
 foreach($subGroups as $group):
-$urlDel = get_admin_url('', 'admin.php?page=lists-manager').'&lid='.$_GET['lid'].'&group='.$group['name'].'&act=del-group';
-
-$urlGroups = get_admin_url('', 'admin.php?page=lists-manager').'&lid='.$_GET['lid'].'&group='.$group['name'].'&gid='.$group['id'];
+$urlDel = get_admin_url('', 'admin.php?page=lists-manager').'&lid='.$_GET['lid'].'&group='.$group['name'].'&gid='.$_GET['gid'].'&act=del-group';
 ?>
 
   <tr>
     <td><?php echo ++$c?></td>
     <td><a href=""><?php echo $group['name']?></a></li></td>
-    <td><a href="javascript:confirmDel('<?php echo $urlDel?>')">Delete</a>
-    | <a href="<?php echo $urlGroups?>">View groups</a></td>
+    <td><a href="javascript:confirmDel('<?php echo $urlDel?>')">Delete</a></td>
   </tr>
    
 <?php

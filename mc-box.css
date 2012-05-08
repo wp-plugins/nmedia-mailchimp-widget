@@ -117,3 +117,9 @@ input:focus {
 {
 	line-height:40px;
 }
+
+.nm_mc_form label
+{
+	display:block;
+	clear:right;
+}

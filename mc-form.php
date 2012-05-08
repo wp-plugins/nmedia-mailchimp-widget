@@ -19,7 +19,6 @@ $box_bg			= get_option($shortname . '_box_bg');
 $box_border     = get_option($shortname . '_box_border');
 $title_color    = get_option($shortname . '_title_color');
 $title_size_type= get_option($shortname . '_title_size_type');
-
 ?>
 
 <div class="nm_mc_form">

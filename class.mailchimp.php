@@ -149,9 +149,9 @@ class clsMailchimp extends MCAPI
 	
 	
 	/*
-	** Deleting Group from a list
+	** Deleting Interest Group from a list
 	*/
-	function XGroup($group_id)
+	function XInterestGroup($group_id)
 	{
 		$retval = $this -> mc -> listInterestGroupingDel($group_id);
 		
@@ -163,6 +163,43 @@ class clsMailchimp extends MCAPI
 		 {
 			 return $retval;
 		 }
+	}
+	
+	
+	/*
+	** Deleting Group (sub group) from a list
+	*/
+	function XGroup($list_id, $group_name, $grouping_id)
+	{
+		$retval = $this -> mc -> listInterestGroupDel($list_id, $group_name, $grouping_id);
+		
+		if ($this -> mc -> errorCode){
+		  	//echo $this -> mc -> errorMessage;
+			return false;
+		 }
+		 else
+		 {
+			 return $retval;
+		 }
+	}
+	
+	
+	/*
+	** this function rendering list stats
+	*/
+	
+	function renderListStats($arrStats)
+	{	
+		$html = '<ul>';
+		foreach($arrStats as $key => $val)
+		{
+			$html .= '<li style="float:left; text-align:center; margin:5px; border:#ccc 1px dashed">'.$key.':<br /> '.$val.'</li>';
+		}
+		$html .='</ul>';
+		
+		$html .='<div style="clear:both"></div>';
+		
+		echo $html;
 	}
 }
 ?>

@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Simple MailChimp Email List Subscriber
+Plugin Name: Simple MailChimp Email List Subscriber PRO V3
 Plugin URI: http://www.najeebmedia.com/wordpress-mailchimp-plugin-2-0-released/
 Description: Form to capture email subscriptions and send them to your MailChimp account list
 Version: 2.6
@@ -14,26 +14,55 @@ error_reporting(E_ALL);*/
 
 class nmMailChimp extends WP_Widget {
 	
+	var $nmmc_db_version = "1.0";
+	/*
+	** plugin table name
+	*/
+	static $tblName = 'nm_mc_forms';
 	 
 	/*
 	** constructor
 	*/	
 	function nmMailChimp() {
 		parent::WP_Widget(  'nmedia_mail_chimp', 
-							'MailChimp Widget',
+							'N-Media MailChimp',
 							array('description' => 'MailChimp Widget by najeebmedia.com.'));	
 		
 	}
 	
+	/*
+	** Installing database table for this plugin: nm_convo
+	*/
+	public function nmmc_install() {
+		global $wpdb;
+		global $nmmc_db_version;
+	
+		$table_name = $wpdb->prefix . nmMailChimp::$tblName;
+		  
+		$sql = "CREATE TABLE `$table_name` (
+				`form_id` INT( 7 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+				`form_name` VARCHAR( 150 ) NOT NULL,
+				`form_detail` VARCHAR( 250 ) NOT NULL,
+				`form_meta` MEDIUMTEXT NOT NULL ,
+				`form_created` DATETIME NOT NULL
+				);";
+	
+	   require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+	   dbDelta($sql);
+	 
+	   add_option("nmmc_db_version", $nmmc_db_version);
+	}
 	
 	/*
 	** loading js/jquery stuff
 	*/
 	public function load_js()
 	{
-		wp_deregister_script( 'jquery' );
-    	wp_register_script( 'jquery', plugins_url('js/jquery-1.4.4.min.js', __FILE__));
-		wp_enqueue_script( 'jquery' );
+		/*wp_deregister_script( 'jquery' );
+	    wp_register_script( 'jquery', plugins_url('js/jquery-1.4.4.min.js', __FILE__));
+	  	wp_enqueue_script( 'jquery' );*/
+	  	
+	  	wp_enqueue_script("jquery");
 	
 		wp_register_script( 'nm_mailchimp_custom_script', 
 							plugins_url('js/nm_mc_js.js', __FILE__), 
@@ -75,9 +104,9 @@ class nmMailChimp extends WP_Widget {
 		if ( !empty( $title ) ) { echo $before_title . $title . $after_title; };
 		
 		/*print_r($args);*/
-		nmMailChimp::nm_load_form(	$instance['nm_mc_list_id'], 
-									$instance['nm_mc_show_names'],
+		nmMailChimp::nm_load_form(	$instance['nm_mc_form_id'], 
 									$instance['nm_mc_box_title'],
+									$instance['nm_mc_button_text'],
 									$args['widget_id']);
 		
 		echo $after_widget;
@@ -90,9 +119,8 @@ class nmMailChimp extends WP_Widget {
 	function update($new_instance, $old_instance) {
 		$instance = $old_instance;
 		$instance['nm_mc_title'] = strip_tags($new_instance['nm_mc_title']);
-		$instance['nm_mc_box_title'] = strip_tags($new_instance['nm_mc_box_title']);
-		$instance['nm_mc_list_id'] = strip_tags($new_instance['nm_mc_list_id']);
-		$instance['nm_mc_show_names'] = strip_tags($new_instance['nm_mc_show_names']);
+		$instance['nm_mc_form_id'] = strip_tags($new_instance['nm_mc_form_id']);
+		$instance['nm_mc_button_text'] = strip_tags($new_instance['nm_mc_button_text']);
 		return $instance;
 	}
 	
@@ -101,9 +129,8 @@ class nmMailChimp extends WP_Widget {
 	*/	 	
 	function form($instance) {
 		$default = 	array( 'nm_mc_title' 		=> __('MailChimp Widget'),
-						   'nm_mc_box_title'	=> __('Your Caption Here'),
-						   'nm_mc_list_id' 		=> 0,
-						   'nm_mc_show_names' 	=> 0,
+						   'nm_mc_form_id' 		=> 0,
+						   'nm_mc_button_text'	=> 'Subscribe'
 						   );
 						   
 		$instance = wp_parse_args( (array) $instance, $default );
@@ -111,16 +138,11 @@ class nmMailChimp extends WP_Widget {
 		$field_id_title = $this->get_field_id('nm_mc_title');
 		$field_name_title = $this->get_field_name('nm_mc_title');
 		
-		$field_id_box_title = $this->get_field_id('nm_mc_box_title');
-		$field_name_box_title = $this->get_field_name('nm_mc_box_title');
+		$field_id_form = $this->get_field_id('nm_mc_form_id');
+		$field_name_form = $this->get_field_name('nm_mc_form_id');
 		
-		$field_id_list = $this->get_field_id('nm_mc_list_id');
-		$field_name_list = $this->get_field_name('nm_mc_list_id');
-		
-				
-		$field_id_names = $this->get_field_id('nm_mc_show_names');
-		$field_name_names = $this->get_field_name('nm_mc_show_names');
-		
+		$field_id_button = $this->get_field_id('nm_mc_button_text');
+		$field_name_button = $this->get_field_name('nm_mc_button_text');
 		
 				
 		/*$api_dir = dirname(__FILE__).'/api_mailchimp/mcapi_lists.php';
@@ -128,7 +150,7 @@ class nmMailChimp extends WP_Widget {
 		$arrList = nmMailChimp::getAccountLists();
 		
 		
-		$file = dirname(__FILE__).'/control.php';
+		$file = dirname(__FILE__).'/mc-widget-options.php';
 		include($file);
 		
 	}
@@ -148,7 +170,7 @@ class nmMailChimp extends WP_Widget {
 		$retval = $api->lists();
 		
 		if ($api->errorCode){
-		  	_e("You did not enter API Keys please enter your API Keys from Nmedia Mailchimp Setting area");
+		  	return false;
 		 }
 		 else
 		 {
@@ -206,10 +228,10 @@ class nmMailChimp extends WP_Widget {
   /*
   ** this is rendering form in widget area
   */
-  function nm_load_form($list_id, $show_names, $boxTitle, $widget_id)
+  function nm_load_form($fid, $boxTitle, $buttonText, $widget_id)
   {
   	
-	$file = dirname(__FILE__).'/mc-box.php';
+	$file = dirname(__FILE__).'/nm-mc-form-widget.php';
 	include($file);
   }
   
@@ -219,21 +241,17 @@ class nmMailChimp extends WP_Widget {
   function renderForm($atts)
   {
 	  extract(shortcode_atts(array(
-		  'field'			=> 'email',
-		  'list_id'			=> '',
 		  'button_text'		=> 'Subscribe',
-		  'show_address' 	=> '',
+		  'fid'				=> '',
        		), $atts));
   	
 	
-	$list_id = "{$list_id}";
 	$button_text = "{$button_text}";
 	$widget_id = time();
-	$show_names = ("{$field}" == 'fname') ? true : false;
-	$show_address = explode(",", "{$show_address}");
+	$fid = "{$fid}";
 	
 	ob_start();
-	$file = dirname(__FILE__).'/mc-form.php';
+	$file = dirname(__FILE__).'/nm-mc-form.php';
 	include($file);
 	$output_string = ob_get_contents();
 	ob_end_clean();
@@ -255,7 +273,115 @@ class nmMailChimp extends WP_Widget {
     	}
   }
   
+  /*
+  ** getting the form
+  */
   
+  function getForms()
+  {
+	  global $wpdb;
+	  
+	  $res = $wpdb->get_results("SELECT * FROM ".
+	  							$wpdb->prefix . nmMailChimp::$tblName." 
+								ORDER BY form_created DESC");
+								
+	  return $res;
+  }
+  
+  /*
+  ** getting single entry for rendering
+  */
+  
+  function getForm($fid)
+  {
+	  global $wpdb;
+	  
+	  $res = $wpdb->get_row("SELECT * FROM ".
+	  							$wpdb->prefix . nmMailChimp::$tblName." 
+								WHERE form_id = $fid");
+								
+	  return $res;
+  }
+  
+  
+  /*
+  ** delete form entry
+  */
+  
+  function deleteForm($fid)
+  {
+	  global $wpdb;
+	  
+	  $res = $wpdb->query("DELETE FROM ".$wpdb->prefix . nmMailChimp::$tblName."
+							WHERE form_id = $fid"
+					);
+		if($res){
+			return true;
+		}
+  }
+  /*
+  ** saving the form
+  */
+  
+  function saveForm($formName, $formDetail, $lid, $groups, $vars)
+  {
+	  global $wpdb;
+	  // making group array in desired format
+	  
+				
+	  $interest = array();
+	  $temp = array();
+	  foreach($groups as $g)
+	  {
+		  
+		  if(!is_array($g))
+		  {
+			   $temp['id'] = $g;
+		  }else
+		  {
+			  $temp['groups'] = implode(',',$g);
+			  $interest[] = $temp;
+			  unset($temp);
+		  }
+	  }
+	  
+	  $refine_vars = array();
+	  foreach($vars as $key => $val)
+	  {
+		  if($val['tag'] != '')
+		  	$refine_vars[] = $val;
+	  }
+	  
+	  	/*echo '<pre>';					
+		print_r($refine_vars);
+		echo '</pre>';
+		exit;*/
+		
+	  $form_meta = array('list_id'		=> $lid,
+	  						'interest'	=> $interest,
+							'vars'		=> $refine_vars
+					);
+					
+	  $dt = array('form_name'		=> $formName,
+	  				'form_detail'	=> $formDetail,
+					'form_meta'		=> json_encode($form_meta),
+					'form_created'	=> current_time('mysql')
+					);
+					
+					
+	  $wpdb -> insert($wpdb->prefix . nmMailChimp::$tblName,
+						$dt		
+						);
+		
+		/*$wpdb->show_errors();
+		$wpdb->print_error();*/
+		if($wpdb->insert_id)
+		{
+			return true;
+		}
+						
+						
+  }
   /*
   ** listing all countries with ISO standard required by Mailchimp
   */
@@ -272,13 +398,48 @@ class nmMailChimp extends WP_Widget {
 	  echo '</select>';
   }
   
+  
+ 	
+  	/*
+	** to fix url re-occuring, written by Naseer sb
+	*/
+	
+	function fixRequestURI($vars){
+		$uri = str_replace( '%7E', '~', $_SERVER['REQUEST_URI']);
+		$parts = explode("?", $uri);
+		
+		$qsArr = array();
+		if(isset($parts[1])){	////// query string present explode it
+			$qsStr = explode("&", $parts[1]);
+			foreach($qsStr as $qv){
+				$p = explode("=",$qv);
+				$qsArr[$p[0]] = $p[1];
+			}
+		}
+		
+		//////// updatig query string
+		foreach($vars as $key=>$val){
+			if($val==NULL) unset($qsArr[$key]); else $qsArr[$key]=$val;
+		}
+		
+		////// rejoin query string
+		$qsStr="";
+		foreach($qsArr as $key=>$val){
+			$qsStr.=$key."=".$val."&";
+		}
+		if($qsStr!="") $qsStr=substr($qsStr,0,strlen($qsStr)-1);
+		$uri = $parts[0];
+		if($qsStr!="") $uri.="?".$qsStr;
+		return $uri;
+	} 
+  
   /*
   ** Enqueue style-file, if it exists.
   */
   function add_nm_stylesheet() {
-	$myStyleFile = dirname(__FILE__).'/mc-box.css';	
+	$myStyleFile = dirname(__FILE__).'/nm_mc_style.css';	
      if ( file_exists($myStyleFile) ) {
-        wp_register_style('nm_mailchimp_stylesheet', plugins_url('mc-box.css', __FILE__));
+        wp_register_style('nm_mailchimp_stylesheet', plugins_url('nm_mc_style.css', __FILE__));
    		wp_enqueue_style( 'nm_mailchimp_stylesheet');
 	 }        
   }
@@ -291,6 +452,11 @@ class nmMailChimp extends WP_Widget {
   
 }
 
+
+/* hook activating plugin */
+register_activation_hook(__FILE__, array('nmMailChimp','nmmc_install'));
+
+
 // activate textdomain for translations
 add_action('init', array('nmMailChimp', 'nm_mc_textdomain'));
 
@@ -300,13 +466,16 @@ add_action('widgets_init', 'nm_mc_register_widgets');
 
 /* hook: loading js stuff */
 add_action('wp_enqueue_scripts', array('nmMailChimp', 'load_js'));
+
 /* hook: styilng */
 add_action('wp_print_styles', array('nmMailChimp', 'add_nm_stylesheet'));
+
+
 /* hook deactivating plugin */
 register_deactivation_hook(__FILE__, array('nmMailChimp', 'nm_mc_unistall'));
 
 /*shortcode introduced in version 2.6*/
-add_shortcode( 'nm-mc-render', array('nmMailChimp', 'renderForm'));
+add_shortcode( 'nm-mc-form', array('nmMailChimp', 'renderForm'));
 
 $options_file = dirname(__FILE__).'/plugin-options.php';
 include ($options_file);
