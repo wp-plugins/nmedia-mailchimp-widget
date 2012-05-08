@@ -90,12 +90,6 @@ function nm_plugin_add_admin() {
 				plugin_dir_url(__FILE__ ).'images/option.png');
 				
 	
-	add_submenu_page( $option_page_name,
-					  'Lists Manager', 
-					  'Lists Manager', 
-					  'manage_options', 
-					  'lists-manager', 
-					  array('nmMailChimp', 'renderListManager'));
 	
 	add_submenu_page( $option_page_name,
 					  'Forms Wizard', 
@@ -104,8 +98,12 @@ function nm_plugin_add_admin() {
 					  'mailchimp-shortcodes', 
 					  array('nmMailChimp', 'renderShortcodes'));
 
-   
-	/*add_menu_page($plugin_name, "", 'edit_plugins', basename(__FILE__), 'nm_mc_admin', plugin_dir_url(__FILE__ ).'images/option.png');*/
+   add_submenu_page( $option_page_name,
+					  'Pro: Lists Manager', 
+					  'Pro: Lists Manager', 
+					  'manage_options', 
+					  'lists-manager', 
+					  array('nmMailChimp', 'renderListManager'));
 
 }
 
