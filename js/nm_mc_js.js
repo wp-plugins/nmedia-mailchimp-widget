@@ -7,7 +7,8 @@ String.prototype.trim = function () {
 
 function postToMailChimp(post_url, abspath, widget_id)
 {
-	jQuery("#mc-working-area").show();
+	//var img_loading = '<img src="http://theproductionarea.net/wp-content/plugins/nmedia-mailchimp-pro-v3/images/loading.gif">';
+	jQuery("#nm-mc-loading").show();
 	
 	var e 		 = jQuery('#nm_mc_email-'+widget_id).val();
 	var formid	 = jQuery('#nm_mc_form_id-'+widget_id).val();
@@ -27,7 +28,8 @@ function postToMailChimp(post_url, abspath, widget_id)
 							form_meta: formmeta,
 							abs_path: abspath}, function(data){
 			//alert(data);
-			jQuery("#mc-working-area").html(data);
+			jQuery("#nm-mc-loading").hide();
+			jQuery("#mc-response-area").html(data);
 			jQuery('#nm_mc_email-'+widget_id).val('');
 			jQuery('#nm_mc_fullname-'+widget_id).val('');
 	});

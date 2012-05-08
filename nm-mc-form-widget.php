@@ -35,11 +35,11 @@ if($boxTitle)	echo '<div class="nm_mc_title" id="nm_mc_title-'.$widget_id.'">'.$
     <?php endforeach;?>
     <li>
       <input type="button" class="nm_mc_button" value="<?php echo $buttonText?>" id="nm_mc_button-<?php echo $widget_id?>" onclick="postToMailChimp('<?php echo $post_url?>', '<?php echo ABSPATH?>', '<?php echo $widget_id?>')" / >
-      <div id="mc-working-area" style="display:none">
-		<?php
-			echo "<img src=".plugins_url( 'images/loading.gif' , __FILE__)." />";
-		?>
-    </div>
+      <?php
+		echo '<img style="display:none" id="nm-mc-loading" src="'.plugins_url( 'images/loading.gif' , __FILE__).'" />';
+	?>
+    <div id="mc-response-area">
+	</div>
     </li>
   </ul>
 </div>

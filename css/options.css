@@ -214,6 +214,10 @@
 	color:#fff;
 }
 
+.hide-others
+{
+	display:none;
+}
 
 /* shortcode */
 

@@ -241,12 +241,11 @@ class nmMailChimp extends WP_Widget {
   function renderForm($atts)
   {
 	  extract(shortcode_atts(array(
-		  'button_text'		=> 'Subscribe',
 		  'fid'				=> '',
        		), $atts));
   	
 	
-	$button_text = "{$button_text}";
+	$button_text = get_option('nm_mc_button_title');
 	$widget_id = time();
 	$fid = "{$fid}";
 	

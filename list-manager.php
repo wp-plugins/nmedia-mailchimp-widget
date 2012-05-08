@@ -104,22 +104,30 @@ echo '</pre>';*/
 <h2><?php _e('Mailchimp Account Lists', 'nm_mailchimp_plugin')?></h2>
 
 <div class="nm_mc_div">
+<p>Following lists are attached to your Mailchimp Account</p>
 
-<h3>Select a List</h3>
+<?php if($_REQUEST['lid'])
+	echo '<a href="'.get_admin_url('', 'admin.php?page=lists-manager').'">Back to list</a>';
+?>
+    
+    
 <ul>
 <?php
+$current = '';
 foreach($arrList as $list):
 $urlLoadDetail = get_admin_url('', 'admin.php?page=lists-manager').'&lid='.$list['id'].'&lname='.$list['name'];	
 
-$current = (@$_REQUEST['lid'] == $list['id']) ? 'current-list' : '';
+if($_REQUEST['lid'])
+	$current = (@$_REQUEST['lid'] == $list['id']) ? 'current-list' : 'hide-others';
 ?>
 	<li class="good-links <?php echo $current?>">
-    <a href="<?php echo $urlLoadDetail?>">
-	<?php echo $list['name']?>
-    </a>
+    <h3><?php echo $list['name']?></h3>
+    <br />
+	<a href="javascript:toggleArea('list-detail-<?php echo $list['id']?>')">Detail</a> |
+    <a href="<?php echo $urlLoadDetail?>">Add Variables and Groups</a>
     <?php 
 	if(!isset($_GET['lid'])):
-		$mc -> renderListStats($list['stats']);
+		$mc -> renderListStats($list['stats'], $list['id']);
 	endif;
 	?>
     </li>

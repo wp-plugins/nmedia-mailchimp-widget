@@ -188,9 +188,9 @@ class clsMailchimp extends MCAPI
 	** this function rendering list stats
 	*/
 	
-	function renderListStats($arrStats)
+	function renderListStats($arrStats, $lid)
 	{	
-		$html = '<ul>';
+		$html = '<ul style="display:none" id="list-detail-'.$lid.'">';
 		foreach($arrStats as $key => $val)
 		{
 			$html .= '<li style="float:left; text-align:center; margin:5px; border:#ccc 1px dashed">'.$key.':<br /> '.$val.'</li>';
