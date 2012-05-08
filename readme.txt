@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 2.5
+Stable tag: 2.6
 
 This is simple, ajaxed based list subscriber form send data to your MailChimp List
 
