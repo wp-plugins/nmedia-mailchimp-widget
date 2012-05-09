@@ -18,7 +18,7 @@ echo '</pre>';*/
 <h2><?php _e('Mailchimp Account Lists', 'nm_mailchimp_plugin')?></h2>
 <div class="get-pro">
 <h3><?php _e('It is Not PRO Version, You cannot use these features', 'nm_mailchimp_plugin')?></h3>
-<a href="http://www.najeebmedia.com/pro3">Buy here</a>
+<a href="http://www.najeebmedia.com/n-media-mailchimp-plugin-for-wordpress/">Buy here</a>
 </div>
 
 <div class="nm_mc_div">
