@@ -106,7 +106,8 @@ Yes you can now enter your own color code for almost every element of this form.
 = 2.5 =
 * just fixed a big BUG please update
 
-
+= 3.0 =
+* Pull List (its variables, groups) and allow generate form using Wizard, it is new generation of this plugin
 
 
 == Upgrade Notice ==
@@ -147,6 +148,9 @@ secure the input field for cross scripting attack.
 
 = 2.5 =
 just fixed a big BUG please update
+
+= 3.0 =
+Pull List (its variables, groups) and allow generate form using Wizard, it is new generation of this plugin
 
 
 1. Select First/Last Name optionally
