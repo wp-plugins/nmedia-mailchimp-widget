@@ -473,7 +473,7 @@ add_action('wp_print_styles', array('nmMailChimp', 'add_nm_stylesheet'));
 /* hook deactivating plugin */
 register_deactivation_hook(__FILE__, array('nmMailChimp', 'nm_mc_unistall'));
 
-/*shortcode introduced in version 2.6*/
+/*shortcode introduced in version 3.0*/
 add_shortcode( 'nm-mc-form', array('nmMailChimp', 'renderForm'));
 
 $options_file = dirname(__FILE__).'/plugin-options.php';
