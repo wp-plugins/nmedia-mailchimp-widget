@@ -4,40 +4,36 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 2.6
+Stable tag: 3.0
 
-This is simple, ajaxed based list subscriber form send data to your MailChimp List
+This plugin pulls all List, variables and groups from Mailchimp account then allow you to create subscription form using Form Wizard Tool.
 
 == Description ==
 
-Nmedia just launched a new version for Nmedia MailChimp Plugin. It is like RE-BORN version of this plugin. Now you can control each and every element of subscription form for color, text, title etc. Following is features list:
+N-Media Mailchimp Version 3.0 bring many features. It allows you to see all your Lists, variables, Groups (Interest Groups) under one place, even List statistics like no. of subscribers, compaigngs sent etc.
 
+<h3>Features</h3>
 <ul>
-	<li>Graphics background or use your own background color and border color</li>
-	<li>Optional title with</li>
-	<li>Optional First name, Last name</li>
-	<li>Button title text, color</li>
-	<li>Button background color, border color</li>
+	<li>Create unlimited subscription forms using Form Wizard Tool</li>
+	<li>Use shortcodes in Post/Pages<li>
+	<li>Widget support<li>
+	<li>Control validation on each field</li>
+	<li>Write your own Style/CSS</li>
 	<li>Multilingual support (English, German, Turkish)</li>
 	<li>Other languages can be added very quickly using .po files</li>
-	<li>Customize Thanks message on submit the data</li>
 </ul>
 
-<h3>SECURITY BUG REMOVED</h3>
-Yes, there was a bug in older version exposing the Mailchimp API key in source code. But now everything is wrapped under secure code.
+<h3>How to use it?</h3>
+<a href="http://www.najeebmedia.com/m-media-mailchimp-video">See a quick video</a>
 
-<h3>Responsive Design</h3>
-No matter what is size of your widget area, this plugin design is responsive. It will automatically adjust the positions of elements.
-
-<h3>New Setting Panel</h3>
-Well designed new setting panel allow you to control almost every inch of the subscription form.
-
+<h3>What is hidden in Pro Version</h3>
+In addition to all standard features, the Pro version allows you to create new Variables, Groups, Interest within the plugin `List Manager` page. It was not so easy to create variables and groups in Mailchimp Account but N-Media made it easy to do all these action in one place.
 
 == Installation ==
 
 1. Upload `nm_mailchimp` directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Once Plugin is activated, Set the MailChimp API key from `Setting->MailChimp Widget`
+3. Once Plugin is activated, Set the MailChimp API key from `Admin / N-Media MailChimp / General Settings`
 
 == Frequently Asked Questions ==
 

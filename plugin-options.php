@@ -1,5 +1,5 @@
 <?php
-$plugin_name = "NajeebMedia MailChimp List Subscriber Plugin";
+$plugin_name = "N-Media MailChimp List Subscriber Plugin";
 $shortname = "nm_mc";
 $option_page_name = 'nm-mailchimp';
 
@@ -83,7 +83,7 @@ function nm_plugin_add_admin() {
 	
 	
 	 add_menu_page($plugin_name, 
-  				"Nmedia MailChimp", 
+  				"N-Media MailChimp", 
 				'edit_plugins', 
 				$option_page_name, 
 				'nm_mc_admin', 
@@ -92,8 +92,8 @@ function nm_plugin_add_admin() {
 	
 	
 	add_submenu_page( $option_page_name,
-					  'Forms Wizard', 
-					  'Forms Wizard', 
+					  'Forms Wizard Tool', 
+					  'Forms Wizard Tool', 
 					  'manage_options', 
 					  'mailchimp-shortcodes', 
 					  array('nmMailChimp', 'renderShortcodes'));

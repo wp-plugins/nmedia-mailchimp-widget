@@ -37,25 +37,25 @@ For free version please visit: <a href="http://wordpress.org/extend/plugins/nmed
 
 <!-- Donation -->
 <div class="box">
-<h2>Do we Deserve?</h2>
+<h2>Make Donation</h2>
+<p align="center">
 If you think we have developed something useful for you please:
+<br />
 
-<div id="donate">
-<form style="text-align:center" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="XW3TKDPLZQ59Y">
-<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-</form>
-</div>
+<a href="http://www.najeebmedia.com/donate">Donate</a>
+</p>
 
 <div id="social">
-<iframe src="//www.facebook.com/plugins/like.php?href=https://www.facebook.com/pages/Nmedia/191722830857549&amp;send=false&amp;layout=box_count&amp;width=50&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90&amp;appId=218026514894348" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:90px;text-align:center" allowTransparency="true"></iframe>
+<a href="https://twitter.com/nmedia82" class="twitter-follow-button" data-show-count="true" data-count="horizontal">Follow @nmedia82</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<br />
 
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FNmedia%2F191722830857549&amp;width=292&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;appId=262696150470787" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:258px;" allowTransparency="true"></iframe>
 </div>
 
-
 </div>
+<br />
+
 
 
 <!-- About us -->
