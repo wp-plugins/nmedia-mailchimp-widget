@@ -2,7 +2,7 @@
 
 <!-- Get Pro Version -->
 <div class="box">
-<h2>Pro Version for only $20.00 USD</h2>
+<h2>Pro Version for only $15.00 USD</h2>
 <p>
 <ul style="list-style:circle">
   <li><strong>Get Premuim Support</strong></li>
