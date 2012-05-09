@@ -30,8 +30,8 @@ A great addition in Wordpress Plugin repository. This Plugin allow the site user
 For free version please visit: <a href="http://wordpress.org/extend/plugins/nmedia-user-file-uploader">Wordpress</a></p>
 
 <p>
-<strong>For Pro Version ($20 USD only)</strong> please visit here for features list:
-<a href="http://www.najeebmedia.com/pro-feature/">Pro Version</a>
+<strong>For Pro Version ($15 USD only)</strong> please visit here for features list:
+<a href="<?= $urlDwnld?>">Pro Version</a>
 </p>
 </div>
 

@@ -237,7 +237,7 @@ function toggleArea(a)
 
 function validateMe(elementID)
 {
-	alert('It is Pro Feature, get Pro version to use these features for only $20.00 USD');
+	alert('It is Pro Feature, get Pro version to use these features for only $15.00 USD');
 	return false
 }
 

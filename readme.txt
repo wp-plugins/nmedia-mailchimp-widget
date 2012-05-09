@@ -27,7 +27,7 @@ N-Media Mailchimp Version 3.0 bring many features. It allows you to see all your
 <a href="http://www.najeebmedia.com/m-media-mailchimp-video">See a quick video</a>
 
 <h3>What is hidden in Pro Version</h3>
-In addition to all standard features, the Pro version allows you to create new Variables, Groups, Interest within the plugin `List Manager` page. It was not so easy to create variables and groups in Mailchimp Account but N-Media made it easy to do all these action in one place.
+In addition to all standard features, the Pro version allows you to create new Variables, Groups, Interest within the plugin `List Manager` page. It was not easy to create variables and groups in Mailchimp Account but N-Media made it easy to do all these action in one place.
 
 == Installation ==
 
@@ -55,10 +55,11 @@ Yes you can now enter your own color code for almost every element of this form.
 
 == Screenshots ==
 
-1. How to activate MailChimp Widget
-2. Mail Chimp API Key Settings from `Setting -> MailChimp Widget`
-3. Now go to `Appearance->Widgets` and drag widget to sidebar or footer. And set the Title and select List then Save
-4. Mail Chimp Widget at Frontend.
+1. Enter Mailchimp API Key from `Admin / N-Media MailChimp / General Settings`
+2. Listing all your Mailchimp Lists (Variables, Groups of selected List)	
+3. Pasting shortcode on page/post to render form
+4. Form rendered on page/post
+5. Widget
 
 == Changelog ==
 
