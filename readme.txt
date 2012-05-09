@@ -12,13 +12,13 @@ This plugin pulls all List, variables and groups from Mailchimp account then all
 
 == Description ==
 
-N-Media Mailchimp Version 3.0 bring many features. It allows you to see all your Lists, variables, Groups (Interest Groups) under one place, even List statistics like no. of subscribers, compaigngs sent etc.
+N-Media Mailchimp Version 3.0 is new Generation of this plugin. Now it allows you to see all your Lists, variables, Groups (Interest Groups) under one place, even List statistics like no. of subscribers, compaigngs sent etc. Control validation against each variable.
 
 <h3>Features</h3>
 <ul>
 	<li>Create unlimited subscription forms using Form Wizard Tool</li>
-	<li>Use shortcodes in Post/Pages<li>
-	<li>Widget support<li>
+	<li>Use shortcodes in Post/Pages</li>
+	<li>Widget support</li>
 	<li>Control validation on each field</li>
 	<li>Write your own Style/CSS</li>
 	<li>Multilingual support (English, German, Turkish)</li>
@@ -28,9 +28,7 @@ N-Media Mailchimp Version 3.0 bring many features. It allows you to see all your
 
 <h3>What is hidden in Pro Version</h3>
 In addition to all standard features, the Pro version allows you to create new Variables, Groups, Interest within the plugin `List Manager` page. It was not easy to create variables and groups in Mailchimp Account but N-Media made it easy to do all these action in one place.
-
-<h3>More detail</h3>
-<a href="http://www.najeebmedia.com/n-media-mailchimp-plugin-for-wordpress/">Click here</a>
+<a href="http://www.najeebmedia.com/n-media-mailchimp-plugin-for-wordpress/">More info</a>
 
 == Installation ==
 
