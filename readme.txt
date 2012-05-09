@@ -5,6 +5,8 @@ Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: 3.0
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This plugin pulls all List, variables and groups from Mailchimp account then allow you to create subscription form using Form Wizard Tool.
 
