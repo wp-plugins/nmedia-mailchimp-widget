@@ -25,8 +25,9 @@ N-Media Mailchimp Version 3.0 is new Generation of this plugin. Now it allows yo
 	<li>Other languages can be added very quickly using .po files</li>
 </ul>
 
-<h3>See in action</h3>
-<object width="530" height="299"><param name="movie" value="http://www.youtube.com/v/vq6ytW9klRY?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/vq6ytW9klRY?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="530" height="299" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+<h3>Watch quick video</h3>
+<a href="http://www.najeebmedia.com/n-media-mailchimp-plugin-v-3/">Click here</a>
+
 
 <h3>What is hidden in Pro Version</h3>
 In addition to all standard features, the Pro version allows you to create new Variables, Groups, Interest within the plugin `List Manager` page. It was not easy to create variables and groups in Mailchimp Account but N-Media made it easy to do all these action in one place.
