@@ -95,6 +95,7 @@ echo '</pre>';*/
 <tbody>
 <?php
 $c=0;
+if($arrGroups):
 foreach($arrGroups as $group):
 $urlDel = get_admin_url('', 'admin.php?page=lists-manager').'&gid='.$group['id'].'&group='.$group['name'].'&act=del-group&lid='.$_GET['lid'];
 
@@ -123,6 +124,7 @@ $urlGroups = get_admin_url('', 'admin.php?page=lists-manager').'&lid='.$_GET['li
    
 <?php
 endforeach;
+endif;	//if($arrGroups):
 ?>
 
 </tbody>
