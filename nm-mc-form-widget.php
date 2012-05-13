@@ -23,7 +23,8 @@ if($boxTitle)	echo '<div class="nm_mc_title" id="nm_mc_title-'.$widget_id.'">'.$
 
   <input type="hidden" value="<?php echo $fid?>" id="nm_mc_form_id-<?php echo $widget_id?>" />
   <ul>
-    <?php 
+    <?php
+	if($arrVars):
 	foreach($arrVars as $key => $val):
   		$tag = $val -> tag;
 		$label = $val -> label;
@@ -32,7 +33,8 @@ if($boxTitle)	echo '<div class="nm_mc_title" id="nm_mc_title-'.$widget_id.'">'.$
       <label for="<?php echo $tag.'-'.$widget_id?>"><?php echo $label?></label>
       <input type="text" name="nm-form-meta[<?php echo $tag?>]" id="<?php echo $tag.'-'.$widget_id?>" class="nm_mc_input" />
     </li>
-    <?php endforeach;?>
+    <?php endforeach;
+	endif;		//if($arrVars):?>
     <li>
       <input type="button" class="nm_mc_button" value="<?php echo $buttonText?>" id="nm_mc_button-<?php echo $widget_id?>" onclick="postToMailChimp('<?php echo $post_url?>', '<?php echo ABSPATH?>', '<?php echo $widget_id?>')" / >
       <?php
