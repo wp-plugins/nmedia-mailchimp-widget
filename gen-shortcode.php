@@ -103,7 +103,7 @@ $urlGroups = get_admin_url('', 'admin.php?page=lists-manager').'&lid='.$_GET['li
 ?>
 
   <tr>
-    <td><input type="checkbox" name="chk-groups[gid-<?php echo $group['id']?>]" value="<?php echo $group['id']?>" id="chk-group-<?php echo $group['id']?>" onclick="checkSub('<?php echo $group['id']?>', this.checked)" /></td>
+    <td><input type="checkbox" name="chk-groups[gid-<?php echo $group['id']?>]" value="<?php echo $group['id'].','.$group['name']?>" id="chk-group-<?php echo $group['id']?>" onclick="checkSub('<?php echo $group['id']?>', this.checked)" /></td>
     <td><a href=""><?php echo $group['name']?></a></li></td>
     <td>
     <ul>

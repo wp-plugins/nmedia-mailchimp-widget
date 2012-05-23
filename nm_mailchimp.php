@@ -325,9 +325,8 @@ class nmMailChimp extends WP_Widget {
   function saveForm($formName, $formDetail, $lid, $groups, $vars)
   {
 	  global $wpdb;
-	  // making group array in desired format
 	  
-				
+	  // making group array in desired format
 	  $interest = array();
 	  $temp = array();
 	  foreach($groups as $g)
@@ -335,7 +334,9 @@ class nmMailChimp extends WP_Widget {
 		  
 		  if(!is_array($g))
 		  {
-			   $temp['id'] = $g;
+			   $breakG = explode(',', $g);
+			   $temp['id'] = $breakG[0];
+			   $temp['name'] = $breakG[1];
 		  }else
 		  {
 			  $temp['groups'] = implode(',',$g);
