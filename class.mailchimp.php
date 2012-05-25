@@ -60,14 +60,7 @@ class clsMailchimp extends MCAPI
 	function getListGroups($list_id)
 	{
 		$retval = $this -> mc -> listInterestGroupings($list_id);
-		
-		if ($this -> mc -> errorCode){
-		  	return $this -> mc -> errorMessage;
-		 }
-		 else
-		 {
-			 return $retval;
-		 }
+			return $retval;		
 	}
 	
 	
