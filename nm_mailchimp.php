@@ -330,17 +330,20 @@ class nmMailChimp extends WP_Widget {
 				
 	  $interest = array();
 	  $temp = array();
-	  foreach($groups as $g)
-	  {
-		  
-		  if(!is_array($g))
+	  
+	  if($groups){
+		  foreach($groups as $g)
 		  {
-			   $temp['id'] = $g;
-		  }else
-		  {
-			  $temp['groups'] = implode(',',$g);
-			  $interest[] = $temp;
-			  unset($temp);
+			  
+			  if(!is_array($g))
+			  {
+				   $temp['id'] = $g;
+			  }else
+			  {
+				  $temp['groups'] = implode(',',$g);
+				  $interest[] = $temp;
+				  unset($temp);
+			  }
 		  }
 	  }
 	  
