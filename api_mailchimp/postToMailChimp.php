@@ -54,7 +54,7 @@ class postToMailChimp
 	/*
 	** validating posted data
 	*/
-	function validateCredentials()
+	function validateCredentials($posted_meta)
 	{
 		global $arrVars;
 		
@@ -65,13 +65,13 @@ class postToMailChimp
 		
 			$tag = $val -> tag;
 			
-			if($val -> req == 1 and $_POST['form_meta'][$i] == '')
+			if($val -> req == 1 and $posted_meta[$i] == '')
 			{
 				$this -> err = true;
 				$this -> errMessage .= $val -> tag." is required<br />";
 			}
 			
-			$this -> vars [$tag] = sanitize_text_field($_POST['form_meta'][$i]);
+			$this -> vars [$tag] = sanitize_text_field($posted_meta[$i]);
 			$i++;
 		endforeach;
 		
@@ -103,12 +103,13 @@ class postToMailChimp
 	}
 }
 
-
 $mailchimp = new postToMailChimp();
 
 $form = nmMailChimp::getForm($_POST['form_id']);
-/*print_r($_POST['form_meta']);
-exit;*/
+/* print_r(unserialize(stripcslashes($_POST['form_meta'])));
+exit; */
+
+$posted_meta = unserialize(stripcslashes($_POST['form_meta']));
 
 $meta = json_decode($form -> form_meta);
 $arrVars = $meta -> vars;
@@ -117,7 +118,7 @@ $mailchimp -> list_id = $meta -> list_id;
 $mailchimp -> api_key = get_option('nm_mc_api_key');
 $mailchimp -> thanks  = get_option('nm_mc_thanks_message');
 
-$mailchimp -> validateCredentials();
+$mailchimp -> validateCredentials($posted_meta);
 
 /* pushing list interest/groups into VARS array */
 $interest = array();
