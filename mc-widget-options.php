@@ -11,7 +11,7 @@ $arrForms = nmMailChimp::getForms();
 </p>
 
 
-<p>These forms created <a href="link">here</a>
+<p>
 	<label><?php _e('Select form', 'nm_mailchimp_plugin')?><br>
     <select name="<?php echo $field_name_form?>" id="<?php echo $field_id_form?>">
     <option value=""><?php _e('Select', 'nm_mailchimp_plugin')?></option>
