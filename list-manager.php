@@ -113,12 +113,15 @@ echo '</pre>';*/
 <?php 
 /*
  * show subscriber chart
- */
-$file_template = dirname(__FILE__) . '/include/list-chart.php';
-if(file_exists($file_template))
-	include ($file_template);
-else
-	echo 'file not found '.$file_template;
+*/
+if(!@$_REQUEST['lid'])
+{
+	$file_template = dirname(__FILE__) . '/include/list-chart.php';
+	if(file_exists($file_template))
+		include ($file_template);
+	else
+		echo 'file not found '.$file_template;
+}
 ?>
     
 <ul>
