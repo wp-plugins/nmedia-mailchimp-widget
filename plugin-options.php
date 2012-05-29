@@ -310,6 +310,7 @@ $i++;
 $file = dirname(__FILE__).'/nmedia-ad.php';
 include($file);
 }
+
 /*add_action('admin_menu', 'mytheme_add_admin');*/
 add_action('admin_init', 'nm_plugin_add_init');
 add_action('admin_menu' , 'nm_plugin_add_admin');

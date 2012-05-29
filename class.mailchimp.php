@@ -186,7 +186,7 @@ class clsMailchimp extends MCAPI
 		$html = '<ul style="display:none" id="list-detail-'.$lid.'">';
 		foreach($arrStats as $key => $val)
 		{
-			$html .= '<li style="float:left; text-align:center; margin:5px; border:#ccc 1px dashed">'.$key.':<br /> '.$val.'</li>';
+			$html .= '<li style="float:left; text-align:center; margin:5px; border:#ccc 1px dashed;padding:5px;width:30%"><strong>'.$key.'</strong>: '.$val.'</li>';
 		}
 		$html .='</ul>';
 		
