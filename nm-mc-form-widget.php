@@ -9,9 +9,9 @@ $form = nmMailChimp::getForm($fid);
 $meta = json_decode($form -> form_meta);
 $arrVars = $meta -> vars;
 
-/* echo '<pre>';
+echo '<pre>';
 print_r($meta);
-echo '</pre>'; */
+echo '</pre>';
 ?>
 <!-- loading custom css here -->
 <style>

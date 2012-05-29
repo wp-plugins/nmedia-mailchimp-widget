@@ -20,21 +20,6 @@
 
 
 
-<!-- Nmedia client File Uploader Plugin -->
-<div class="box">
-<h2>Nmedia Client/User File Uploader Plugin</h2>
-<p>
-A great addition in Wordpress Plugin repository. This Plugin allow the site users to upload and manage files on your site. It do the magic with just one short code: [nm-file-upload].</p>
-
-<p>
-For free version please visit: <a href="http://wordpress.org/extend/plugins/nmedia-user-file-uploader">Wordpress</a></p>
-
-<p>
-<strong>For Pro Version ($15 USD only)</strong> please visit here for features list:
-<a href="<?= $urlDwnld?>">Pro Version</a>
-</p>
-</div>
-
 <!-- Donation -->
 <div class="box">
 <h2>Make Donation</h2>
@@ -49,11 +34,16 @@ If you think we have developed something useful for you please:
 <a href="https://twitter.com/nmedia82" class="twitter-follow-button" data-show-count="true" data-count="horizontal">Follow @nmedia82</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <br />
+</div>
 
+</div>
+
+
+<div class="box">
+<h2>LIKE us, please</h2>
 <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FNmedia%2F191722830857549&amp;width=292&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;appId=262696150470787" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:258px;" allowTransparency="true"></iframe>
 </div>
 
-</div>
 <br />
 
 

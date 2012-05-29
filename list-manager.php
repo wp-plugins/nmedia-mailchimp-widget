@@ -8,6 +8,92 @@ include ( $mailchimp );
 
 $mc = new clsMailchimp();
 
+/* ============== processing block ========================== */
+
+  					/* ====> Adding new Merge Variable <====== */
+if(isset($_POST['new-var']))
+{
+	if($mc -> addMergeVar($_GET['lid'], $_POST['new-var'], $_POST['var-detail']))
+	{
+		echo '<div class="updated"><p>Variable added into list</p></div>';
+	}
+	else
+	{
+		echo '<div class="error"><p>'.$mc -> mc -> errorMessage.'</p></div>';
+	}
+}
+
+/* ====> Deleting new Merge Variable <====== */
+if($_GET['act'] == 'del-var')
+{
+	if($mc -> XMergeVar($_GET['lid'], $_GET['tag']))
+	{
+		echo '<div class="updated"><p>Variable deleted from list</p></div>';
+	}
+	else
+	{
+		echo '<div class="error"><p>'.$mc -> mc -> errorMessage.'</p></div>';
+	}
+}					
+
+
+
+/* ====> Adding new Group <====== */
+if(isset($_POST['new-group']))
+{
+	if($mc -> addGroup($_GET['lid'], $_POST['new-group'], $_POST['new-interest']))
+	{
+		echo '<div class="updated"><p>Group added into list</p></div>';
+	}
+	else
+	{
+		echo '<div class="error"><p>'.$mc -> mc -> errorMessage.'</p></div>';
+	}
+}
+/* ====> Deleting interest group<====== */
+if($_GET['act'] == 'del-interest-group')
+{
+	if($mc -> XInterestGroup($_GET['gid']))
+	{
+		echo '<div class="updated"><p>Group deleted from list</p></div>';
+	}
+	else
+	{
+		echo '<div class="error"><p>'.$mc -> mc -> errorMessage.'</p></div>';
+	}
+}					
+
+/* ====> Deleting group<====== */
+if($_GET['act'] == 'del-group')
+{
+	if($mc -> XGroup($_GET['lid'], $_GET['group'], $_GET['gid']))
+	{
+		echo '<div class="updated"><p>Group deleted from list</p></div>';
+	}
+	else
+	{
+		echo '<div class="error"><p>'.$mc -> mc -> errorMessage.'</p></div>';
+	}
+}					
+
+
+
+/* ====> Adding new Interest Group <====== */
+if(isset($_POST['new-interest']))
+{
+	if($mc -> addInterestGroup($_GET['lid'], $_POST['new-interest'], $_POST['group-id']))
+	{
+		echo '<div class="updated"><p>Group added into list</p></div>';
+	}
+	else
+	{
+		echo '<div class="error"><p>'.$mc -> mc -> errorMessage.'</p></div>';
+	}
+}
+
+
+/* ============== processing block ========================== */
+
 
 $arrList 	= $mc -> getAccountLists();
 /*echo '<pre>';
@@ -16,10 +102,6 @@ echo '</pre>';*/
 ?>
 
 <h2><?php _e('Mailchimp Account Lists', 'nm_mailchimp_plugin')?></h2>
-<div class="get-pro">
-<h3><?php _e('It is Not PRO Version, You cannot use these features', 'nm_mailchimp_plugin')?></h3>
-<a href="http://www.najeebmedia.com/n-media-mailchimp-plugin-for-wordpress/">Buy here</a>
-</div>
 
 <div class="nm_mc_div">
 <p>Following lists are attached to your Mailchimp Account</p>
@@ -237,8 +319,14 @@ function toggleArea(a)
 
 function validateMe(elementID)
 {
-	alert('It is Pro Feature, get Pro version to use these features for only $15.00 USD');
-	return false
+	if(jQuery("#"+elementID).val() == ''){
+		jQuery("#"+elementID).css({'border':'#f00 1px solid'});
+		return false;
+	}
+	else
+	{
+		return true;
+	}
 }
 
 function confirmDel(url)

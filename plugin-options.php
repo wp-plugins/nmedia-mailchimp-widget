@@ -105,8 +105,8 @@ function nm_plugin_add_admin() {
 					  array('nmMailChimp', 'renderShortcodes'));
 
    add_submenu_page( $option_page_name,
-					  'Pro: Lists Manager', 
-					  'Pro: Lists Manager', 
+					  'Lists Manager', 
+					  'Lists Manager', 
 					  'manage_options', 
 					  'lists-manager', 
 					  array('nmMailChimp', 'renderListManager'));
