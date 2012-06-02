@@ -302,7 +302,8 @@ $i++;
 <input type="hidden" name="action" value="reset" />
 </p>
 </form>
-<div style="font-size:9px; margin-bottom:10px;">2012 © <a href="http://www.najeebmedia.com">Nmedia</a></div>
+<a href="http://www.najeebmedia.com/n-media-mailchimp-plugin/"><img src="<?php echo plugins_url('images/extended-banner-for-ad.jpg', __FILE__)?>" alt="N-Media MailChimp Extended Version" border="0" /></a>
+<div style="font-size:9px; margin-bottom:10px;">2012 © <a href="http://www.najeebmedia.com">N-Media</a></div>
  </div> 
 
 <?php
