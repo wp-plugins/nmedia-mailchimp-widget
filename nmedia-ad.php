@@ -1,25 +1,5 @@
 <div class="nm-about-us">
 
-<!-- Get Pro Version -->
-<div class="box">
-<h2>Pro Version for only $15.00 USD</h2>
-<p>
-<ul style="list-style:circle">
-  <li><strong>Get Premuim Support</strong></li>
-  <li><strong>Create List Variables </strong></li>
-  <li><strong id="internal-source-marker_0.0015717009082436562">Create List Groups</strong></li>
-  <li><strong id="internal-source-marker_0.0015717009082436562">Create List Interest Groups</strong></p>
-  </li>
-</ul>
-<div id="donate">
-  <a href='https://www.2checkout.com/checkout/purchase?sid=1686663&quantity=1&product_id=4'>Buy Pro Version</a>
-  <p>2CheckOut.com Inc. (Ohio, USA) is an authorized retailer for goods and services provided by N-Media.</p>
-</div>
-
-</div>
-
-
-
 <!-- Donation -->
 <div class="box">
 <h2>Make Donation</h2>
