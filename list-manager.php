@@ -344,7 +344,7 @@ function validateMe(elementID)
 
 function confirmDel(url)
 {
-	var a = confirm("Do you want to remove this variable?");
+	var a = confirm("<?php _e('Do you want to remove this variable?', 'nm_mailchimp_plugin')?>");
 	
 	if(a)
 	{

@@ -37,9 +37,8 @@ if(isset($_POST['btn-form']))
 }
 ?>
 
-<h2>Form shortcode Wizard</h2>
-<p>
-This wizard will create shortcode based on your selected List, Groups and Vars, unlimited forms shortcodes can be genegrated. Once form shortcode is created you can simply put it in your Post/Page and even can put into widgets.
+<h2><?php _e('Form shortcode Wizard', 'nm_mailchimp_plugin')?></h2>
+<p><?php _e('This wizard will create shortcode based on your selected List, Groups and Vars, unlimited forms shortcodes can be genegrated. Once form shortcode is created you can simply put it in your Post/Page and even can put into widgets.', 'nm_mailchimp_plugin')?>
 </p>
 
 <div id="shortcode-container">
