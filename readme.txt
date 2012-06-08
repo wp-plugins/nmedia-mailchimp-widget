@@ -41,7 +41,7 @@ N-Media MailChimp Extended plugin is complete Newsletter Management application 
 <li>Delete campaigns</li>
 </ul>
 
-<a href="http://www.najeebmedia.com/n-media-mailchimp-plugin/">More info</a>
+<a href="http://www.najeebmedia.com/n-media-mailchimp-plugin/">More info (with video)</a>
 
 == Installation ==
 
@@ -172,8 +172,3 @@ Pull List (its variables, groups) and allow generate form using Wizard, it is ne
 = 3.1 =
 PRO features: create list variables and groups now free
 control redirect on successful subscription
-
-
-1. Select First/Last Name optionally
-2. Graphics background (Black, Blue, Green, Magenta, Pink and Green.)
-3. Multi instance supported
