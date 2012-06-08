@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 3.0
+Stable tag: 3.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,10 +12,12 @@ This plugin pulls all List, variables and groups from Mailchimp account then all
 
 == Description ==
 
-N-Media Mailchimp Version 3.0 is new Generation of this plugin. Now it allows you to see all your Lists, variables, Groups (Interest Groups) under one place, even List statistics like no. of subscribers, compaigngs sent etc. Control validation against each variable.
+N-Media Mailchimp Version 3.0 is new Generation of this plugin. Now it allows you to <strong>Create list variables and Interest Groups</strong> under one place, even List statistics like no. of subscribers, compaigngs sent etc. Control validation against each variable.
 
 <h3>Features</h3>
 <ul>
+	<li><h3>Create list variables</h3></li>
+	<li><h3>Create list Interest Groups</h3></li>
 	<li>Create unlimited subscription forms using Form Wizard Tool</li>
 	<li>Use shortcodes in Post/Pages</li>
 	<li>Widget support</li>
@@ -28,10 +30,18 @@ N-Media Mailchimp Version 3.0 is new Generation of this plugin. Now it allows yo
 <h3>Watch quick video</h3>
 <a href="http://www.najeebmedia.com/n-media-mailchimp-plugin-v-3/">Click here</a>
 
+<h3>Extended Version</h3>
+N-Media MailChimp Extended plugin is complete Newsletter Management application which is tightly integrated in Wordpress. This version is built on Free version of N-Media Mailchimp Plugin, so all above features are already packed in it. Extended version has extra ordinary features like: 
+<ul>
+<li>Create campaigns</li>
+<li>Test campaigns</li>
+<li>Create your own template using smart designer (Header, Sidebar, Footer)</li>
+<li>Test campaigns before you send it.</li>
+<li>Graphical reports</li>
+<li>Delete campaigns</li>
+</ul>
 
-<h3>What is hidden in Pro Version</h3>
-In addition to all standard features, the Pro version allows you to create new Variables, Groups, Interest within the plugin `List Manager` page. It was not easy to create variables and groups in Mailchimp Account but N-Media made it easy to do all these action in one place.
-<a href="http://www.najeebmedia.com/n-media-mailchimp-plugin-for-wordpress/">More info</a>
+<a href="http://www.najeebmedia.com/n-media-mailchimp-plugin/">More info (with video)</a>
 
 == Installation ==
 
@@ -112,6 +122,10 @@ Yes you can now enter your own color code for almost every element of this form.
 = 3.0 =
 * Pull List (its variables, groups) and allow generate form using Wizard, it is new generation of this plugin
 
+= 3.1 =
+* PRO features: create list variables and groups now free
+* control redirect on successful subscription
+
 
 == Upgrade Notice ==
 
@@ -155,7 +169,6 @@ just fixed a big BUG please update
 = 3.0 =
 Pull List (its variables, groups) and allow generate form using Wizard, it is new generation of this plugin
 
-
-1. Select First/Last Name optionally
-2. Graphics background (Black, Blue, Green, Magenta, Pink and Green.)
-3. Multi instance supported
+= 3.1 =
+PRO features: create list variables and groups now free
+control redirect on successful subscription
