@@ -16,8 +16,8 @@ N-Media Mailchimp Version 3.0 is new Generation of this plugin. Now it allows yo
 
 <h3>Features</h3>
 <ul>
-	<li><h3>Create list variables</h3></li>
-	<li><h3>Create list Interest Groups</h3></li>
+	<li><strong>Create list variables</strong></li>
+	<li><strong>Create list Interest Groups</strong></li>
 	<li>Create unlimited subscription forms using Form Wizard Tool</li>
 	<li>Use shortcodes in Post/Pages</li>
 	<li>Widget support</li>
@@ -25,6 +25,15 @@ N-Media Mailchimp Version 3.0 is new Generation of this plugin. Now it allows yo
 	<li>Write your own Style/CSS</li>
 	<li>Multilingual support (English, German, Turkish)</li>
 	<li>Other languages can be added very quickly using .po files</li>
+</ul>
+
+<h3>Langauges supported</h3>
+<ul>
+	<li>English</li>
+	<li>German</li>
+	<li>Italian</li>
+	<li>Spanish</li>
+	<li>Brazilian</li>
 </ul>
 
 <h3>Watch quick video</h3>
