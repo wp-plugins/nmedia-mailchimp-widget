@@ -7,7 +7,8 @@ String.prototype.trim = function () {
 
 function postToMailChimp(post_url, abspath, widget_id, redirect_to)
 {
-	//var img_loading = '<img src="http://theproductionarea.net/wp-content/plugins/nmedia-mailchimp-pro-v3/images/loading.gif">';
+	// var img_loading = '<img
+	// src="http://theproductionarea.net/wp-content/plugins/nmedia-mailchimp-pro-v3/images/loading.gif">';
 	jQuery("#nm-mc-loading").show();
 	
 	var e 		 = jQuery('#nm_mc_email-'+widget_id).val();
@@ -16,7 +17,7 @@ function postToMailChimp(post_url, abspath, widget_id, redirect_to)
 	var formmeta = Array();
 	jQuery("input[name^=nm-form-meta]").each(function (index)
 	{
-	    //alert(jQuery(this).val());
+	    // alert(jQuery(this).val());
 		formmeta.push(jQuery(this).val());
 	});
 		
@@ -24,11 +25,18 @@ function postToMailChimp(post_url, abspath, widget_id, redirect_to)
 	
 	//alert(php_serialize(formmeta));
 	
-	jQuery.post(post_url, 	{email: e,
-							form_id: formid,
-							form_meta: php_serialize(formmeta),
-							abs_path: abspath}, function(data){
-			//alert(data);
+	var post_data = {
+				'action': 'mailchimp_subscribe',
+				email: e,
+				form_id: formid,
+				form_meta: php_serialize(formmeta)		
+	};
+	
+	jQuery.post(mailchimp_vars.ajaxurl,
+			post_data,
+			
+			function(data){
+			//alert(data.status);
 			if(data.status == 'success' && redirect_to != '')
 			{
 				window.location = redirect_to;
@@ -40,7 +48,7 @@ function postToMailChimp(post_url, abspath, widget_id, redirect_to)
 				jQuery('#nm_mc_email-'+widget_id).val('');
 				jQuery('#nm_mc_fullname-'+widget_id).val('');
 			}
-	},'json');
+	}, 'json');
 }
 
 function php_serialize(obj)

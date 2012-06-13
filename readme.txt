@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 3.1
+Stable tag: 3.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -135,6 +135,9 @@ Yes you can now enter your own color code for almost every element of this form.
 * PRO features: create list variables and groups now free
 * control redirect on successful subscription
 
+= 3.2 =
+* some security issues is removed
+
 
 == Upgrade Notice ==
 
@@ -181,3 +184,6 @@ Pull List (its variables, groups) and allow generate form using Wizard, it is ne
 = 3.1 =
 PRO features: create list variables and groups now free
 control redirect on successful subscription
+
+= 3.2 =
+some security issues is removed

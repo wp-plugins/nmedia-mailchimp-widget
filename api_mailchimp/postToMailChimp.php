@@ -7,10 +7,6 @@ Do not modify this.
 */
 
 
-$path = $_POST['abs_path'] . 'wp-load.php';
-//echo $path; die;
-require( $path );
-
 class postToMailChimp
 {
 	var $email;
@@ -29,7 +25,14 @@ class postToMailChimp
 	*/
 	function saveToList()
 	{
-		require_once('MCAPI.class.php');
+		$mcapi = dirname(__FILE__).'/MCAPI.class.php';
+		if(file_exists($mcapi)){
+			require_once($mcapi);
+		}else
+		{
+			die('file not found '.$mcapi);
+		}
+		
 	
 		$comm = new MCAPI($this -> api_key);		
 
@@ -54,11 +57,8 @@ class postToMailChimp
 	/*
 	** validating posted data
 	*/
-	function validateCredentials($posted_meta)
+	function validateCredentials($posted_meta, $arrVars)
 	{
-		global $arrVars;
-		
-		
 		$i = 0;
 		$this -> errMessage = '<div class="nm_mc_error">';
 		foreach($arrVars as $key => $val):
@@ -112,13 +112,12 @@ exit; */
 $posted_meta = unserialize(stripcslashes($_POST['form_meta']));
 
 $meta = json_decode($form -> form_meta);
-$arrVars = $meta -> vars;
 
 $mailchimp -> list_id = $meta -> list_id;
 $mailchimp -> api_key = get_option('nm_mc_api_key');
 $mailchimp -> thanks  = get_option('nm_mc_thanks_message');
 
-$mailchimp -> validateCredentials($posted_meta);
+$mailchimp -> validateCredentials($posted_meta, $meta -> vars);
 
 /* pushing list interest/groups into VARS array */
 $interest = array();
