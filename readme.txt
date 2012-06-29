@@ -42,11 +42,10 @@ N-Media Mailchimp Version 3.0 is new Generation of this plugin. Now it allows yo
 <h3>Extended Version</h3>
 N-Media MailChimp Extended plugin is complete Newsletter Management application which is tightly integrated in Wordpress. This version is built on Free version of N-Media Mailchimp Plugin, so all above features are already packed in it. Extended version has extra ordinary features like: 
 <ul>
-<li>Create campaigns</li>
-<li>Test campaigns</li>
+<li>Create newsletters campaigns using Post/Pages contents</li>
 <li>Create your own template using smart designer (Header, Sidebar, Footer)</li>
 <li>Test campaigns before you send it.</li>
-<li>Graphical reports</li>
+<li>Campaign graphical reports</li>
 <li>Delete campaigns</li>
 </ul>
 
