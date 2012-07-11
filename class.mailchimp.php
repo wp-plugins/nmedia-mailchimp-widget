@@ -11,6 +11,8 @@ class clsMailchimp extends MCAPI
 {
 	var $mc;
 	
+	var $fieldTypes = array('text', 'number', 'radio', 'dropdown', 'date', 'address', 'phone', 'url', 'imageurl', 'zip', 'birthday');
+	
 	function __construct()
 	{
 		$this -> mc = new MCAPI(get_option('nm_mc_api_key'));
