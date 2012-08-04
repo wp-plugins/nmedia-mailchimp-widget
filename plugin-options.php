@@ -46,7 +46,7 @@ array( 	"name" => __("General Settings", "nm_mailchimp_plugin"),
 		array( "type" => "open"),
 		
 				
-		array( 	"name" => __("Button Text Color", "nm_mailchimp_plugin"),
+		array( 	"name" => __("CSS", "nm_mailchimp_plugin"),
 				"desc" => __("Style/css will be loaded on plugin page", "nm_mailchimp_plugin"),
 				"id" => $shortname."_custom_css",
 				"type" => "textarea",
