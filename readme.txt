@@ -3,8 +3,8 @@ Contributors: nmedia
 Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
-Tested up to: 3.3.1
-Stable tag: 3.2
+Tested up to: 3.4.2
+Stable tag: 3.2.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -137,6 +137,9 @@ Yes you can now enter your own color code for almost every element of this form.
 = 3.2 =
 * some security issues is removed
 
+= 3.2.1 =
+* A javascript bug fixed this plugin
+
 
 == Upgrade Notice ==
 
@@ -186,3 +189,6 @@ control redirect on successful subscription
 
 = 3.2 =
 some security issues is removed
+
+= 3.2.1 =
+A javascript bug fixed this plugin
