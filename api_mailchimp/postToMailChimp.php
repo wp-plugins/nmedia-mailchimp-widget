@@ -68,7 +68,7 @@ class postToMailChimp
 			if($val -> req == 1 and $posted_meta[$i] == '')
 			{
 				$this -> err = true;
-				$this -> errMessage .= $val -> tag." is required<br />";
+				$this -> errMessage .= $val -> label." is required<br />";
 			}
 			
 			$this -> vars [$tag] = sanitize_text_field($posted_meta[$i]);
