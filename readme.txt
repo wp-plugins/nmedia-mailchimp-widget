@@ -146,7 +146,9 @@ Yes you can now enter your own color code for almost every element of this form.
 = 3.2.3 =
 * Subscriber can now choose among Interest/Groups
 * Errors are now meaningful (No more FNMAE, LNAME)
+* Fixed some CSS issue with UL/LIs
 * Tightly scripted as per standards on WP
+* Pre-append text/html before form in widget
 
 == Upgrade Notice ==
 
@@ -206,4 +208,6 @@ Validation error are now more user fiendly, like: FNMAE is First Name :)
 = 3.2.3 =
 Subscriber can now choose among Interest/Groups
 Errors are now meaningful (No more FNMAE, LNAME)
+Fixed some CSS issue with UL/LIs
 Tightly scripted as per standards on WP
+Pre-append text/html before form in widget
