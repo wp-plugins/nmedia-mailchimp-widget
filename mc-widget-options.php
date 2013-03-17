@@ -6,6 +6,13 @@ $arrForms = nmMailChimp::getForms();
 <p>
 	<label><?php _e('Title', 'nm_mailchimp_plugin')?><br>
     <input type="text" class="widefat" id="<?php echo $field_id_title?>" name="<?php echo $field_name_title?>" value="<?php echo attribute_escape($instance['nm_mc_title'])?>" />
+    </label>   
+</p>
+
+<p>
+	<label><?php _e('Detail', 'nm_mailchimp_plugin')?><br>
+    <textarea rows="5" cols="20" class="widefat" id="<?php echo $field_id_detail?>" name="<?php echo $field_name_detail?>"><?php echo attribute_escape($instance['nm_mc_detail'])?></textarea>
+    <em><?php _e('If needed provide more detail to show above form', 'nm_mailchimp_plugin')?></em>
     </label>
    
 </p>

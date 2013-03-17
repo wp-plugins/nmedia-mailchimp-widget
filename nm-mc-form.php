@@ -26,10 +26,11 @@ echo '</pre>'; */
 	foreach($arrVars as $key => $val):
   		$tag = $val -> tag;
 		$label = $val -> label;
+		$the_id = $tag.'-'.$widget_id;
 	?>
     <li>
-      <label for="<?php echo $tag?>"><?php echo $label?></label>
-      <input type="text" name="<?php echo $tag?>" id="<?php echo $tag?>" class="nm_mc_input" data-required="<?php echo $val -> req?>" />
+      <label for="<?php echo $the_id?>"><?php echo $label?></label>
+      <input type="text" name="<?php echo $tag?>" id="<?php echo $the_id?>" class="nm_mc_input" data-required="<?php echo $val -> req?>" />
     </li>
     <?php endforeach;?>
     
@@ -50,8 +51,8 @@ echo '</pre>'; */
     		
     	?>  
     			<div class="nm_mc_interests">
-				<input type="checkbox" name="group[<?php echo $interest->id?>][<?php echo $g?>]" id="interest_11593_<?php echo $group?>" class="nm_mc_interest" value="<?php echo $group?>">
-				<label for="mc_interest_<?php echo $interest->id?>_<?php echo $group?>"	class="nm_mc_interest_label"><?php echo $group?></label>
+				<input type="checkbox" name="group[<?php echo $interest->id?>][<?php echo $g?>]" id="mc_<?php echo $interest->id?>_<?php echo $widget_id?>" class="nm_mc_interest" value="<?php echo $group?>">
+				<label for="mc_<?php echo $interest->id?>_<?php echo $widget_id?>"	class="nm_mc_interest_label"><?php echo $group?></label>
 		<?php
 		$g++;
     	} 

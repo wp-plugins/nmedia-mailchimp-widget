@@ -3,7 +3,7 @@
  Plugin Name: MailChimp Widget Leigh
 Plugin URI: http://www.najeebmedia.com/wordpress-mailchimp-plugin-2-0-released/
 Description: This is customized for - show groups on front-end
-Version: 3.2.3
+Version: 3.2.2
 Author: Najeeb Ahmad
 Author URI: http://www.najeebmedia.com/
 */
@@ -96,14 +96,15 @@ class nmMailChimp extends WP_Widget {
 	function widget($args, $instance) {
 		extract($args, EXTR_SKIP);
 		echo $before_widget;
-		$title = empty($instance['nm_mc_title']) ? '&nbsp;' : apply_filters('widget_title', $instance['nm_mc_title']);
+		$title = empty($instance['nm_mc_title']) ? '' : apply_filters('widget_title', $instance['nm_mc_title']);
 		if ( !empty( $title ) ) {
 			echo $before_title . $title . $after_title;
 		};
 
-		/*print_r($args);*/
+		/* print_r($args); */
 		nmMailChimp::nm_load_form(	$instance['nm_mc_form_id'],
 				$instance['nm_mc_box_title'],
+				$instance['nm_mc_detail'],
 				$instance['nm_mc_button_text'],
 				$args['widget_id']);
 
@@ -117,6 +118,7 @@ class nmMailChimp extends WP_Widget {
 	function update($new_instance, $old_instance) {
 		$instance = $old_instance;
 		$instance['nm_mc_title'] = strip_tags($new_instance['nm_mc_title']);
+		$instance['nm_mc_detail'] = $new_instance['nm_mc_detail'];
 		$instance['nm_mc_form_id'] = strip_tags($new_instance['nm_mc_form_id']);
 		$instance['nm_mc_button_text'] = strip_tags($new_instance['nm_mc_button_text']);
 		return $instance;
@@ -135,6 +137,9 @@ class nmMailChimp extends WP_Widget {
 
 		$field_id_title = $this->get_field_id('nm_mc_title');
 		$field_name_title = $this->get_field_name('nm_mc_title');
+		
+		$field_id_detail = $this->get_field_id('nm_mc_detail');
+		$field_name_detail = $this->get_field_name('nm_mc_detail');
 
 		$field_id_form = $this->get_field_id('nm_mc_form_id');
 		$field_name_form = $this->get_field_name('nm_mc_form_id');
@@ -226,9 +231,8 @@ class nmMailChimp extends WP_Widget {
 	/*
 	 ** this is rendering form in widget area
 	*/
-	function nm_load_form($fid, $boxTitle, $buttonText, $widget_id)
+	function nm_load_form($fid, $boxTitle, $detail, $buttonText, $widget_id)
 	{
-		 
 		$file = dirname(__FILE__).'/nm-mc-form-widget.php';
 		include($file);
 	}
