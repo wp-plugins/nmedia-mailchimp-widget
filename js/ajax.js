@@ -1,10 +1,8 @@
 // JavaScript Document
 jQuery(function($){
 	
-	$('.nm_mc_form').find('ul').css('margin',0);
-	$('.nm_mc_form').find('ul').css('margin',0);
-	$('.nm_mc_form').find('ul li').css('list-style','none');
-	$('.nm_mc_form').find('ul li').css('border','none');
+	$('.nm_mc_form').find('ul').css({'margin':0,'padding':0});
+	$('.nm_mc_form').find('ul li').css({'list-style':'none','border':'none','margin':0,'padding':0});
 });
 
 String.prototype.trim = function () {
