@@ -3,8 +3,8 @@ Contributors: nmedia
 Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: 3.2.2
+Tested up to: 3.5.1
+Stable tag: 3.2.3
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -143,6 +143,11 @@ Yes you can now enter your own color code for almost every element of this form.
 = 3.2.2 =
 * Validation error are now more user fiendly, like: FNMAE is First Name :)
 
+= 3.2.3 =
+* Subscriber can now choose among Interest/Groups
+* Errors are now meaningful (No more FNMAE, LNAME)
+* Tightly scripted as per standards on WP
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -197,3 +202,8 @@ A javascript bug fixed this plugin
 
 = 3.2.2 =
 Validation error are now more user fiendly, like: FNMAE is First Name :)
+
+= 3.2.3 =
+Subscriber can now choose among Interest/Groups
+Errors are now meaningful (No more FNMAE, LNAME)
+Tightly scripted as per standards on WP
