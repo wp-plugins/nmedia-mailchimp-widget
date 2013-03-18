@@ -3,7 +3,7 @@
  Plugin Name: MailChimp Widget Leigh
 Plugin URI: http://www.najeebmedia.com/wordpress-mailchimp-plugin-2-0-released/
 Description: This is customized for - show groups on front-end
-Version: 3.2.2
+Version: 3.2.3
 Author: Najeeb Ahmad
 Author URI: http://www.najeebmedia.com/
 */
