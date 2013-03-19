@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 3.2.3
+Stable tag: 3.2.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -150,6 +150,10 @@ Yes you can now enter your own color code for almost every element of this form.
 * Tightly scripted as per standards on WP
 * Pre-append text/html before form in widget
 
+= 3.2.4 =
+* Just fixed a MAJOR bug in plugin, please MUST update to this plugin
+
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -211,3 +215,6 @@ Errors are now meaningful (No more FNMAE, LNAME)
 Fixed some CSS issue with UL/LIs
 Tightly scripted as per standards on WP
 Pre-append text/html before form in widget
+
+= 3.2.4 =
+Just fixed a MAJOR bug in plugin, please MUST update to this plugin
