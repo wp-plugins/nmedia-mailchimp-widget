@@ -21,6 +21,7 @@ N-Media Mailchimp Version 3.0 is new Generation of this plugin. Now it allows yo
 	<li>Create unlimited subscription forms using Form Wizard Tool</li>
 	<li>Use shortcodes in Post/Pages</li>
 	<li>Widget support</li>
+	<li>Pre append text on Widgets</li>
 	<li>Control validation on each field</li>
 	<li>Write your own Style/CSS</li>
 	<li>Multilingual support (English, German, Turkish)</li>
