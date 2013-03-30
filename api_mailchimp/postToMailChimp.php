@@ -67,7 +67,7 @@ class postToMailChimp
 		if($val -> req == 1 and $posted_meta[$tag] == '')
 		{
 			$this -> err = true;
-			$this -> errMessage .= $val -> label." is required<br />";
+			$this -> errMessage .= $val -> label.__(" is required<br />","nm_mailchimp_plugin");
 		}
 			
 		$this -> vars [$tag] = sanitize_text_field($posted_meta[$tag]);
@@ -80,7 +80,7 @@ class postToMailChimp
 		/* populating checking validation for vars, email, list id and api key */
 		if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*$/i", $this -> email))
 		{
-			$this -> errMessage .=  'Email address is invalid '.$this -> email.'<br />';
+			$this -> errMessage .=  __('E-mail Address is invalid', 'nm_mailchimp_plugin');
 			$this -> err = true;
 		}
 
