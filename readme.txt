@@ -1,10 +1,10 @@
-=== Nmedia MailChimp Widget ===
+=== N-Media MailChimp Subscription ===
 Contributors: nmedia
 Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
-Tested up to: 3.9
-Stable tag: 3.2.4
+Tested up to: 4.1.1
+Stable tag: 4.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,51 +12,41 @@ This plugin pulls all List, variables and groups from Mailchimp account then all
 
 == Description ==
 
-N-Media Mailchimp Version 3.0 is new Generation of this plugin. Now it allows you to <strong>Create list variables and Interest Groups</strong> under one place, even List statistics like no. of subscribers, compaigngs sent etc. Control validation against each variable.
+Mailchimp Subscription is simple plugin to render Subscription Forms on your Wordpress Blog/Site. It pulls all Mailchimp Lists from your Account and allow admin to
+create Forms using Vars and Interest Group with Awesome <strong>AngularJS</strong> based Admin panel.
 
-<h3>Features</h3>
-<ul>
-	<li><strong>Create list variables</strong></li>
-	<li><strong>Create list Interest Groups</strong></li>
-	<li>Create unlimited subscription forms using Form Wizard Tool</li>
-	<li>Use shortcodes in Post/Pages</li>
-	<li>Widget support</li>
-	<li>Pre append text on Widgets</li>
-	<li>Control validation on each field</li>
-	<li>Write your own Style/CSS</li>
-	<li>MultilingualÂ support (English, German, Turkish)</li>
-	<li>Other languages can be added very quickly using .po files</li>
-</ul>
+= Features =
+* <strong>Create list variables</strong>
+* <strong>Create list Interest Groups</strong>
+* Create unlimited subscription forms using Form Wizard Tool
+* Use shortcodes in Post/Pages
+* Widget support
+* Pre append text on Widgets
+* Write your own Style/CSS
+* Multilingual Support
+* Create Popups
+* AngularJS Based Admin
 
-<h3>Langauges supported</h3>
-<ul>
-	<li>English</li>
-	<li>German</li>
-	<li>Italian</li>
-	<li>Spanish</li>
-	<li>Brazilian</li>
-</ul>
 
-<h3>Watch quick video</h3>
-<a href="http://www.najeebmedia.com/n-media-mailchimp-plugin-v-3/">Click here</a>
+= How it works (Pro Version) =
+[vimeo https://vimeo.com/122874502]
 
-<h3>Extended Version</h3>
-N-Media MailChimp Extended plugin is complete Newsletter Management application which is tightly integrated in Wordpress. This version is built on Free version of N-Media Mailchimp Plugin, so all above features are already packed in it. Extended version has extra ordinary features like: 
-<ul>
-<li>Create newsletters campaigns using Post/Pages contents</li>
-<li>Create your own template using smart designer (Header, Sidebar, Footer)</li>
-<li>Test campaigns before you send it.</li>
-<li>Campaign graphical reports</li>
-<li>Delete campaigns</li>
-</ul>
+= PRO Version =
+Now you can create Mailchimp Campaigns using Wordpress Posts/Pages. In few click Newsletter is ready to send to any List.
+* Create Campaigns using Post/Pages contents
+* Create your own Template with Custom Header (image, HTML) and Footer (HTML)
+* Test campaigns before you send it.
+* Campaign graphical reports
+* Delete campaigns
 
-<a href="http://www.najeebmedia.com/n-media-mailchimp-plugin/">More info (with video)</a>
+[More detail](http://najeebmedia.com/wordpress-plugin/wordpress-mailchimp-subscription-form-create-manage-campaigns/)
+
 
 == Installation ==
 
 1. Upload `nm_mailchimp` directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Once Plugin is activated, Set the MailChimp API key from `Admin / N-Media MailChimp / General Settings`
+3. Once Plugin is activated, Set the MailChimp API key from `Admin / MailChimp Campaign`
 
 == Frequently Asked Questions ==
 
@@ -66,15 +56,8 @@ Yes, you can. It is multi instance supported.
 
 = How to get API Keys =
 
-You can see this tutorial to get API Key from MailChimp: <a href="http://www.najeebmedia.com/where-can-i-find-my-mailchimp-api-key/" target="_blank">Click here</a>
+You can see this tutorial to get API Key from MailChimp: [Click here](http://www.najeebmedia.com/where-can-i-find-my-mailchimp-api-key/)
 
-= Can I use background boxes with different boxes? =
-
-Yes you can choose among six different color: Black, Blue, Green, Magenta, Pink and Green.
-
-= Can I use my own colors as box background? =
-
-Yes you can now enter your own color code for almost every element of this form.
 
 == Screenshots ==
 
@@ -154,6 +137,9 @@ Yes you can now enter your own color code for almost every element of this form.
 = 3.2.4 =
 * Just fixed a MAJOR bug in plugin, please MUST update to this plugin
 
+= 4.0 =
+* AngularJS based Admin
+* Popup Subscription Form
 
 == Upgrade Notice ==
 
