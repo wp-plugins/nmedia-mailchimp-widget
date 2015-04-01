@@ -16,9 +16,11 @@
   <div id="nm_mailchimp-campaigns" ng-controller="campaignController as camCtrl">
     <h2>
       <?php _e("Mailchimp Campaigns", 'nm-mailchimp');?>
+      <span style="color:red"><?php _e('It is PRO Feature', 'nm-mailchimp');?></span>
     </h2>
 
     <div class="grid">
+        
         <div class="col-6-12">
             <div class="content">
                 <h3><?php _e("Total campaigns found: ", 'nm-mailchimp');?> {{total_campaigns}}</h3>
@@ -249,8 +251,8 @@
                             <div class="buttons" style="text-align: center;">
                                 <button class="button-secondary" ng-click="setStep(2)"><?php _e( 'Back', 'nm-mailchimp' ); ?></button>
                                 <button class="button-secondary" ng-click="cancelCampaign()"><?php _e( 'Cancel', 'nm-mailchimp' ); ?></button>
-                                <button class="button-primary" ng-click="saveCampaign()" ng-disabled="createCamForm.$invalid"><?php _e( 'Create Campaign', 'nm-mailchimp' ); ?></button>
-                                <p><?php _e( 'Help: It will not SEND the campaign. You can Test this campaign before SEND after Creating it.', 'nm-mailchimp' ); ?></p>
+                                <a class="button-primary" href="http://najeebmedia.com/wordpress-plugin/wordpress-mailchimp-subscription-form-create-manage-campaigns/" target="_blank" ng-disabled="createCamForm.$invalid"><?php _e( 'Upgrade to PRO Version', 'nm-mailchimp' ); ?></a>
+                                <p><?php _e( 'You need to Upgrade PRO version to create Campaigns.', 'nm-mailchimp' ); ?></p>
                             </div>
                         </div> <!-- switch 3 -->
                         

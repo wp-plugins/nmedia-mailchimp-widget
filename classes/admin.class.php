@@ -20,13 +20,7 @@ class NMMailChimp_Admin extends NMMailChimp{
 		$this -> plugin_settings = get_option($this->plugin_meta['shortname'].'_settings');
 
 
-		/*
-		 * [1]
-		* TODO: change this for plugin admin pages
-		*/
-		if($this -> get_plugin_hashcode() == $this -> get_real_plugin_first()){
-			
-			$this -> menu_pages		= array(array(
+		$this -> menu_pages		= array(array(
 										'page_title'	=> $this->plugin_meta['name'],
 										'menu_title'	=> $this->plugin_meta['name'],
 										'cap'			=> 'manage_options',
@@ -59,23 +53,6 @@ class NMMailChimp_Admin extends NMMailChimp{
 										'parent_slug'	=> $this->plugin_meta['shortname'],),
 										
 		);
-
-		}else{
-			
-			$this->menu_pages = array (
-					array (
-							'page_title' => $this->plugin_meta ['name'],
-							'menu_title' => $this->plugin_meta ['name'] . ' - validate plugin',
-							'cap' => 'edit_plugins',
-							'slug' => $this->plugin_meta ['shortname'],
-							'callback' => 'activate_plugin',
-							'parent_slug' => ''
-					),
-					);
-			
-		}
-
-		
 
 
 		/*

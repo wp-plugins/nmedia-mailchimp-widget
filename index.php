@@ -1,8 +1,8 @@
 <?php 
 /**
- * Plugin Name: Mailchimp Campaign Creator
+ * Plugin Name: Mailchimp Subscription Form
  * Plugin URI: 
- * Description: Create subscriptions Forms with Mailchimp  Lists and Create Campaigns with Wordpress Posts and Pages.
+ * Description: Create subscriptions Forms with Mailchimp Lists and Create Campaigns with Wordpress Posts and Pages (PRO).
  * Version: 4.0
  * Author: nmedia
  * Author URI: http://najeebmedia.com
@@ -12,21 +12,6 @@
 /*ini_set('display_errors',1);
 error_reporting(E_ALL);*/
  
- 
-require 'plugin-update-checker/plugin-update-checker.php';
-$nmMailChimpUpdateChecker = PucFactory::buildUpdateChecker(
-		'http://wordpresspoets.com/wp-update-server/?action=get_metadata&slug=nm-mailchimp-campaign',
-		__FILE__
-);
-
-$nmMailChimpUpdateChecker->addQueryArgFilter('nm_mailchimp_update_checks');
-function nm_mailchimp_update_checks($queryArgs) {
-    $apikey = get_option('nm_mailchimp_apikey');
-    if ( !empty($apikey) ) {
-        $queryArgs['api_key'] = $apikey;
-    }
-    return $queryArgs;
-}
 
 /*
  * loading plugin config file

@@ -46,7 +46,7 @@ Now you can create Mailchimp Campaigns using Wordpress Posts/Pages. In few click
 
 1. Upload `nm_mailchimp` directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Once Plugin is activated, Set the MailChimp API key from `Admin / N-Media MailChimp / General Settings`
+3. Once Plugin is activated, Set the MailChimp API key from `Admin / MailChimp Campaign`
 
 == Frequently Asked Questions ==
 
