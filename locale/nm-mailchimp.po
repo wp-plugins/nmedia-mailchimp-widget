@@ -1,0 +1,443 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: nm-mailchimp-campaign/templates/render.subscription.php:48
+#: nm-mailchimp-campaign/templates/render.subscription.php:78
+#: nm-mailchimp-campaign/templates/admin/settings.php:32
+#: nm-mailchimp-campaign/templates/admin/settings.php:69
+msgid "%s"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:197
+msgid "An internal name to use for this campaign. By default, the campaign subject will be used"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:214
+msgid "Analytics Google"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:209
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:210
+msgid "Authenticate"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:229
+msgid "Auto Facebook Post"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:224
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:225
+msgid "Auto Tweet"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:161
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:247
+msgid "Back"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/classes/plugin.class.php:804
+msgid "Button Text"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:179
+msgid "Campaign Subject"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:248
+#: nm-mailchimp-campaign/templates/admin/lists.php:65
+msgid "Cancel"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/lists.php:112
+msgid "Click any List from left side to see it\\'s Groups"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/lists.php:97
+msgid "Click any List from left side to see it\\'s Variables"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/lists.php:71
+msgid "Copy above shortcode and paste into your page. This also can be access in widgets"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/forms.php:38
+msgid "Copy shortcode below and paste into anywhere in Page or Post. Widgets can also be dragged of these Forms."
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:29
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:249
+msgid "Create Campaign"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/forms.php:34
+msgid "Create Form"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/lists.php:50
+msgid "Create Subscription Form"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:58
+msgid "Delete it"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/lists.php:60
+msgid "Detail"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:239
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:240
+msgid "Ecomm360"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:119
+msgid "Enter Image url or use from media."
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:115
+msgid "Enter Text (You can also use HTML tags)"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:235
+msgid "Facebook Comment"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:234
+msgid "Facebook Comments"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:102
+msgid "Facebook likes"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:231
+msgid "Facebook pages IDs each fb page id separated by comma"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:216
+msgid "For Google Analytics tracking"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:90
+msgid "Forwarded"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:92
+msgid "Forwarded opens"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:184
+msgid "From Email"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:189
+msgid "From Name"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:219
+msgid "Generate Text"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:203
+msgid "HTML Click"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:78
+msgid "Hard bounces"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:250
+msgid "Help: It will not SEND the campaign. You can Test this campaign before SEND after Creating it."
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:241
+msgid "If set, our Ecommerce360 tracking will be enabled for links in the campaign"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:226
+msgid "If set, this campaign will be auto-tweeted when it is sent - defaults to false. Note that if a Twitter account isn\\'t linked, this will be silently ignored"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:236
+msgid "If true, the Facebook comments (and thus the archive bar will be displayed. If false, Facebook comments will not be enabled (does not imply no archive bar, see previous link). Defaults to \"true\""
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:117
+msgid "Image"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:117
+msgid "Insert It"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:98
+msgid "Last click"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:86
+msgid "Last open"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:117
+msgid "MailChimp Email Header Image"
+msgstr ""
+
+#. Text in function
+#: nm-mailchimp-campaign/classes/plugin.class.php:1
+msgid "MailChimp Widget"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:18
+msgid "Mailchimp Campaigns"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:39
+msgid "Mailchimp Campaigns Lists"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/lists.php:37
+msgid "Mailchimp Lists and Variables"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/lists.php:83
+msgid "Mialchimp Account Lists"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:163
+msgid "Next"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:52
+msgid "Not sent!"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:202
+msgid "Open"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:84
+msgid "Opened unique/total"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:30
+msgid "Please fill below form to create campaign."
+msgstr ""
+
+#. Text in function
+#: nm-mailchimp-campaign/classes/plugin.class.php:1
+msgid "Please try with different email"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/forms.php:47
+msgid "Remove"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/settings.php:92
+msgid "Save settings"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/classes/plugin.class.php:792
+msgid "Select"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:126
+msgid "Select Campaign Contents from Your Page/Post"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:172
+msgid "Select List"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/lists.php:56
+msgid "Select Merge Vars and Interest Groups of selected List given below."
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/classes/plugin.class.php:790
+msgid "Select form"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:175
+msgid "Select the list to send this campaign (required)"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:56
+msgid "Send Now"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:74
+msgid "Send from Email"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:72
+msgid "Send from Name"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:186
+msgid "Sender Email (required)"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:191
+msgid "Sender Name (required)"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:53
+msgid "Sending..."
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:211
+msgid "Set to true to enable SenderID, DomainKeys, and DKIM authentication, defaults to false"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:205
+msgid "Set which recipient actions will be tracked, as a struct of boolean values with the following keys: \"opens\", \"html_clicks\", and \"text_clicks\". By default, opens and HTML clicks will be tracked. Click tracking can not be disabled for Free accounts"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:55
+msgid "Show Details"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:80
+msgid "Soft bounces"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/forms.php:33
+msgid "Subscription Forms"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:104
+msgid "Successful deliveries"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:138
+msgid "Template Footer (You can also use HTML tags)"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:114
+msgid "Template Header"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:57
+msgid "Test Send"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:118
+msgid "Text"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:204
+msgid "Text Click"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:195
+msgid "Title"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:24
+msgid "Total campaigns found: "
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:96
+msgid "Total clicks"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/lists.php:45
+msgid "Total lists found: "
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:200
+msgid "Tracking"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/templates/admin/campaigns.php:221
+msgid "Whether of not to auto-generate your Text content from the HTML content. Note that this will be ignored if the Text part of the content passed is not empty, defaults to false"
+msgstr ""
+
+#. Text in echo
+#: nm-mailchimp-campaign/classes/plugin.class.php:783
+msgid "Widget Title"
+msgstr ""
