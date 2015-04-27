@@ -1,0 +1,66 @@
+<h3><span class="dashicons dashicons-grid-view"></span> Interest</h3>
+<p>{{listCtrl.selectedList.name}}</p>
+<img ng-show="loadingVars" ng-src="{{listCtrl.loadingImg}}" />
+
+<table class="wp-list-table fixed widefat">
+               <thead>
+    
+                   <tr>
+                       
+                       <th><a href ng-click="listCtrl.toggleMoreGroups()">[{{moreGroupIcon}}] <small>click to show groups</small></a></th>
+
+                   </tr>
+                </thead>
+               
+               <tbody>
+                   <tr ng-repeat="interests in currentGroups[listCtrl.selectedList.id]" ng-class-even="'alternate'">
+                       <td>
+                           <div ng-hide="createForm" class="dashicons dashicons-no" ng-click="listCtrl.delInterest($index, interests.id)"></div>
+                           <input type="checkbox" ng-show="createForm" id="interest-{{$index}}" value="{{interests.name}}" ng-change="updateInterest($index)" ng-model="interests.checked"  />
+                           {{interests.name}}
+                       
+                       <table ng-show="showGroups" class="wp-list-table fixed widefat">
+                           
+                           <tr ng-repeat="groups in interests.groups" ng-class-even="'alternate'">
+                               <td style="padding-left: 20px;">
+                                   <input type="checkbox" ng-show="createForm"  id="group-{{$index}}" value="{{groups.name}}" ng-model="groups.checked" /> 
+                                   {{groups.name}} 
+                               <div ng-hide="createForm" class="dashicons dashicons-no-alt" ng-click="listCtrl.delGroup($parent.$index, $index, groups.name, interests.id)"></td>
+                           </tr>
+                           
+                           <tr ng-hide="createForm">
+                               <td style="padding-left: 20px;">
+                                   {{newGroups[interests.id]}}<br>
+                                   
+                                   <input placeholder="Add Group" type="text" ng-model="newGroups[interests.id]" />
+                                   <a class="button" ng-click="listCtrl.addGroup($index, interests.id)" title="Add group"> <span class="dashicons dashicons-plus-alt"></span></a>
+                                   <img ng-show="savingGroups[interests.id]" ng-src="{{listCtrl.loadingImg}}" />
+                               </td>
+                           </tr>
+                       </table>
+                       
+                   </tr>
+                
+                    <tr ng-hide="showInterestForm || createForm">
+                        <td>
+                            <button class="button" ng-click="showInterestForm=true">Add Interest</button>
+                        </td>
+                    </tr>
+                   <tr ng-show="showInterestForm">
+                               <td style="padding-left: 20px;">
+                                   
+                                   <form name="interestForm" ng-submit="interestForm.$valid && listCtrl.addInterest($index, listCtrl.selectedList.id)" novalidate>
+                                       
+                                   <input placeholder="Add Interest" type="text" ng-model="newInterests.name" required />
+                                   <input ng-repeat="grp in [0,1,2]" placeholder="Group {{$index+1}}" ng-required="$index == 0" type="text" ng-model="newInterests.groups[$index]" />
+                                   
+                                   <p><input type="submit" class="button button-primary" value="Save in {{listCtrl.selectedList.name}}" /></p>
+                                   
+                                   <a class="button" ng-click="showInterestForm=false" title="Cancel"> <span class="dashicons dashicons-minus"></span></a>
+                                   <img ng-show="savingInterests[listCtrl.selectedList.id]" ng-src="{{listCtrl.loadingImg}}" />
+                                   
+                               </td>
+                           </tr>
+                </tbody>
+           </table>
+           
