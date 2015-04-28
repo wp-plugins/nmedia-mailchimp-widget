@@ -3,7 +3,7 @@
  * Plugin Name: Mailchimp Subscription Form
  * Plugin URI: 
  * Description: Create subscriptions Forms with Mailchimp Lists and Create Campaigns with Wordpress Posts and Pages (PRO).
- * Version: 4.0
+ * Version: 4.1
  * Author: nmedia
  * Author URI: http://najeebmedia.com
  * Text Domain: nm-mailchimp
