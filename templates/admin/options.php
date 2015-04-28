@@ -88,12 +88,12 @@ $this -> the_options = array('general_settings'	=> array(	'name'		=> __('Subscri
 														'meat'	=> $meatSubscription,
 														
 													),
-						'dialog_boxes'	=> array('name'		=> __('Messages', 'nm-mailchimp'),
+						/*'dialog_boxes'	=> array('name'		=> __('Messages', 'nm-mailchimp'),
 								'type'	=> 'tab',
 								'desc'	=> __('Set user message as per your need', 'nm-mailchimp'),
 								'meat'	=> $meatDialog,
 								
-						),
+						),*/
 		
 						
 					);
