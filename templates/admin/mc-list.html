@@ -1,0 +1,36 @@
+<table class="wp-list-table fixed widefat">
+               <thead>
+                   <tr>
+                       <th>Lists</th>
+                       <th>Stats</th>
+                   </tr>
+                </thead>
+               
+               <tbody>
+                   <tr ng-repeat="list in listCtrl.allLists" ng-class-even="'alternate'" ng-class="{'active-mc-list': listCtrl.selectedList.id == list.id}">
+                       <td><a href ng-click="listCtrl.expandList(list); listCtrl.getInterestGrouping(list)">{{list.name}}</a> <br>
+                           <small ng-show="listCtrl.showDetail">
+                                  ID: <strong>{{list.id}}</strong><br>
+                                  Created: <strong>{{list.date_created}}</strong><br>
+                                  From Name (default): <strong>{{list.default_from_name}}</strong><br>
+                                  From Email (default): <strong>{{list.default_from_email}}</strong><br>
+                                  Subject (default): <strong>{{list.default_subject}}</strong><br>
+                           </small>
+                       </td>
+                       
+                       <td>
+                           <small ng-show="listCtrl.showDetail">
+                           Members Count: <strong>{{list.stats.member_count}}</strong><br>
+                           Groups Count: <strong>{{list.stats.group_count}}</strong><br>
+                           Avg Subscription Rate: <strong>{{list.stats.avg_sub_rate}}</strong><br>
+                           Avg Unsubscription Rate: <strong>{{list.stats.avg_ubsub_rate}}</strong><br>
+                           Total Unsubscription: <strong>{{list.stats.unsubscribe_count}}</strong><br>
+                           Campaigns Count: <strong>{{list.stats.campaing_count}}</strong><br>
+                           Date Last Campaign: <strong>{{list.stats.date_last_campaign}}</strong><br>
+                           Click Rate: <strong>{{list.stats.click_rate | number:2}}</strong><br>
+                           Open Rate: <strong>{{list.stats.open_rate | number:2}}</strong><br>
+                           </small>
+                       </td>
+                   </tr>
+                </tbody>
+           </table>
