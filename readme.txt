@@ -34,7 +34,6 @@ create Forms using Vars and Interest Group with Awesome <strong>AngularJS</stron
 [vimeo https://vimeo.com/122874502]
 
 = PRO Version =
-Now you can create Mailchimp Campaigns using Wordpress Posts/Pages. In few click Newsletter is ready to send to any List.
 * Create Campaigns using Post/Pages contents
 * Create your own Template with Custom Header (image, HTML) and Footer (HTML)
 * Test campaigns before you send it.
