@@ -151,7 +151,7 @@ $this -> the_options = array('general_settings'	=> array(	'name'		=> __('Subscri
 						'woo-registration'	=> array('name'		=> __('WooCommerce Subscription', 'nm-mailchimp'),
 								'type'	=> 'tab',
 								'desc'	=> __('This is PRO featuer. It will enable user subscription on WooCommerce Checkout page after billing.', 'nm-mailchimp'),
-								'meat'	=> $meatWooRegistration,
+								'meat'	=> '',
 								
 						),
 		
