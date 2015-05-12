@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 4.2
-Stable tag: 4.1
+Stable tag: 4.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,8 @@ create Forms using Vars and Interest Group with Awesome <strong>AngularJS</stron
 = Features =
 * <strong>Create list variables</strong>
 * <strong>Create list Interest Groups</strong>
+* Visual form designer
+* Groups choices on front end
 * Create unlimited subscription forms using Form Wizard Tool
 * Use shortcodes in Post/Pages
 * Widget support
@@ -66,6 +68,7 @@ You can see this tutorial to get API Key from MailChimp: [Click here](http://www
 3. Pasting shortcode on page/post to render form
 4. Form rendered on page/post
 5. Widget
+6. Visual Form Designer
 
 == Changelog ==
 
@@ -144,6 +147,10 @@ You can see this tutorial to get API Key from MailChimp: [Click here](http://www
 = 4.1 =
 * Error handling if subscriber is already exists
 * remove Notices
+
+= 4.2 =
+* Added visual form designer
+* Show groups list on front end.
 
 == Upgrade Notice ==
 
