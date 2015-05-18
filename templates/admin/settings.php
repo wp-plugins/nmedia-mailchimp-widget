@@ -59,7 +59,9 @@ $this -> load_template('admin/options.php');
 		</p>
 
 		<table class="form-table">
-		<?php foreach($options['meat'] as $key => $data){
+		<?php 
+		if( $options['meat'] ){
+		foreach($options['meat'] as $key => $data){
 			
 				$label 		 	= $data['label'];
 				$help 			= (isset($data['help']) ? $data['help'] : '');
@@ -81,6 +83,7 @@ $this -> load_template('admin/options.php');
 			
 			<?php
 				}
+		}
 			?>
 		
 		</table>
