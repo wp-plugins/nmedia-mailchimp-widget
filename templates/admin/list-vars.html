@@ -1,0 +1,69 @@
+<h3><span class="dashicons dashicons-exerpt-view"></span> Variables</h3>
+<p>{{listCtrl.selectedList.name}}</p>
+<img ng-show="loadingVars" ng-src="{{listCtrl.loadingImg}}" />
+
+<table class="wp-list-table fixed widefat">
+               <thead>
+    
+                   <tr>
+                       
+                       <th>Name | Tag <img ng-show="deletingVars" ng-src="{{listCtrl.loadingImg}}" /> <a href ng-click="listCtrl.toggleMore()">[{{listCtrl.moreIcon}}]</a></th>
+
+                   </tr>
+                </thead>
+               
+               <tbody>
+                   <tr ng-repeat="vars in listCtrl.currentVars" ng-class-even="'alternate'">
+                       <td>
+                           <div ng-hide="createForm" class="dashicons dashicons-no" ng-click="listCtrl.delVar($index)"></div>
+                           <input type="checkbox" ng-show="createForm" value="{{vars.name}}" ng-change="updateVars($index)" ng-model="vars.checked"  />
+                           {{vars.name}} | {{vars.tag | uppercase}}
+                       <br>
+                       <small ng-show="listCtrl.showMore">
+                           <dl>
+                               <dt>Required</dt><dd>{{vars.req}}</dd>
+                               <dt>Publich</dt><dd>{{vars.public}}
+                               <dt>Show</dt> <dd>{{vars.show}}</dd>
+                               <dt>Size</dt><dd>{{vars.size}}</dd>
+                           </dl>
+                           </small>
+                        </td>
+                       
+                       
+                   </tr>
+                   
+                   <tr ng-show="showVarForm && !createForm">
+                       <td>{{newVar.name}} | {{newVar.tag | uppercase}} <br>
+                       <small ng-show="listCtrl.showMore">
+                           <dl>
+                               <dt>Size</dt><dd>{{newVar.options.size}}</dd>
+                               <dt>Size</dt><dd>{{newVar.options.helptext}}</dd>
+                               <dt>Required</dt><dd>{{newVar.options.req}}</dd>
+                               <dt>Publich</dt><dd>{{newVar.options.public}} |
+                               <dt>Show</dt> <dd>{{newVar.options.show}}</dd>
+                               
+                           </dl>
+                       </small>
+                       </td>
+                       
+                   </tr>
+                </tbody>
+           </table>
+           
+<p ng-hide="createForm"><button class="button" ng-click="showVarForm = true; listCtrl.showMore = false">Add Variables</button></p>
+              
+              <form name="varForm" ng-show="showVarForm && !createForm" ng-submit="varForm.$valid && listCtrl.addVar(employee)" novalidate>
+                  <input type="text" ng-model="newVar.name" placeholder="Variable Name" required />
+                  <input type="text" uppercase ng-model="newVar.tag" placeholder="TAG in UPPERCASE" required />
+                  <input type="number" ng-model="newVar.options.size" min="5" max="100" placeholder="Size"/>
+                  <input type="text" ng-model="newVar.options.helptext" min="5" max="100" placeholder="Help text"/>
+                  <br>
+                  <label for="v_required"><input id="v_required" type="checkbox" ng-model="newVar.options.req" />Required?</label>
+                  <label for="v_pub"><input id="v_pub" type="checkbox" ng-model="newVar.options.public" />Public?</label>
+                  <label for="v_show"><input id="v_show" type="checkbox" ng-model="newVar.options.show" />Show?</label>
+                  
+                  <p><input type="submit" class="button button-primary" value="Save in {{listCtrl.selectedList.name}}" />
+                  <a title="Cancel" class="button" href ng-click="showVarForm = false">X</a>
+                  <img ng-show="savingVars" ng-src="{{listCtrl.loadingImg}}" /></p>
+                  
+              </form>
