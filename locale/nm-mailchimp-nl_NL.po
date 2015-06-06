@@ -1,0 +1,639 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: nm-mailchimp\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Qamar Sheeraz <qsheeraz@yahoo.com>\n"
+"Language-Team: N-Media\n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_\n"
+"X-Poedit-Basepath: ..\\\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl_NL\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/admin.class.php:46 classes/admin.class.php:47
+#: templates/admin/forms.php:33
+msgid "Subscription Forms"
+msgstr "Abonnementsvormen"
+
+#: classes/admin.class.php:54 classes/admin.class.php:55
+msgid "Form Designer"
+msgstr "Ontwerper van het formulier"
+
+#: classes/admin.class.php:318
+msgid "All options are updated"
+msgstr "Alle opties worden bijgewerkt"
+
+#: classes/admin.class.php:379 classes/admin.class.php:391
+#: classes/plugin.class.php:669 templates/admin/settings.php:32
+#: templates/admin/settings.php:69
+#: templates/render.subscription.original.php:57
+#: templates/render.subscription.original.php:78
+#: templates/render.subscription.php:44 templates/render.subscription.php:80
+#: templates/render.subscription_my.php:66
+#: templates/render.subscription_my.php:105
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: classes/admin.class.php:529 templates/admin/forms.php:47
+msgid "Remove"
+msgstr "Verwijderen"
+
+#: classes/admin.class.php:552
+msgid "Provide API key below:"
+msgstr "API-sleutel hieronder bieden:"
+
+#: classes/admin.class.php:553
+msgid ""
+"If you don't know your API key, please login into your: <a target=\"_blank\" "
+"href=\"http://wordpresspoets.com/member-area\">Member area</a>"
+msgstr ""
+"Als u niet uw API-sleutel weet, gelieve in te loggen in uw: <a target="
+"\"_blank\" href=\"http://wordpresspoets.com/member-area\">Member area</a>"
+
+#: classes/admin.class.php:556
+msgid "Entery API key"
+msgstr "Entery API-sleutel"
+
+#: classes/plugin.class.php:104
+msgid "Please try with different email"
+msgstr "Probeer met een ander e-mailadres"
+
+#: classes/plugin.class.php:482
+msgid "Form added successfully"
+msgstr "Succesvol Toegevoegd"
+
+#: classes/plugin.class.php:489
+msgid "Error while savign form, please try again"
+msgstr "Fout terwijl savign formulier, probeer het a.u.b. opnieuw"
+
+#: classes/plugin.class.php:607 classes/plugin.class.php:700
+msgid "Please try again"
+msgstr "Probeer het alstublieft opnieuw."
+
+#: classes/plugin.class.php:632
+msgid "New user registration "
+msgstr "Registratie nieuwe gebruiker"
+
+#: classes/plugin.class.php:639
+msgid "Click here to login"
+msgstr "Klik hier om in te loggen"
+
+#: classes/plugin.class.php:927
+msgid "MailChimp Widget"
+msgstr "MailChimp Widget"
+
+#: classes/plugin.class.php:948
+msgid "Widget Title"
+msgstr "Widget titel"
+
+#: classes/plugin.class.php:955
+msgid "Select form"
+msgstr "Formulier selecteren"
+
+#: classes/plugin.class.php:957
+msgid "Select"
+msgstr "Selecteer"
+
+#: classes/plugin.class.php:969
+msgid "Button Text"
+msgstr "Knoppen tekst"
+
+#: templates/admin/campaigns.php:18
+msgid "Mailchimp Campaigns"
+msgstr "MailChimp campagnes"
+
+#: templates/admin/campaigns.php:24
+msgid "Total campaigns found: "
+msgstr "Totale campagnes gevonden:"
+
+#: templates/admin/campaigns.php:29 templates/admin/campaigns.php:252
+msgid "Create Campaign"
+msgstr "Campagne aanmaken"
+
+#: templates/admin/campaigns.php:30
+msgid "Please fill below form to create campaign."
+msgstr "Vul het onderstaande formulier om campagne te maken."
+
+#: templates/admin/campaigns.php:39
+msgid "Mailchimp Campaigns Lists"
+msgstr "MailChimp campagnes lijsten"
+
+#: templates/admin/campaigns.php:52
+msgid "Not sent!"
+msgstr "Niet verzonden!"
+
+#: templates/admin/campaigns.php:53
+msgid "Sending..."
+msgstr "Aan het verzenden"
+
+#: templates/admin/campaigns.php:55
+msgid "Show Details"
+msgstr "Toon details"
+
+#: templates/admin/campaigns.php:56
+msgid "Send Now"
+msgstr "Verstuur nu"
+
+#: templates/admin/campaigns.php:57
+msgid "Test Send"
+msgstr "Test verzenden"
+
+#: templates/admin/campaigns.php:58
+msgid "Delete it"
+msgstr "Verwijderen"
+
+#: templates/admin/campaigns.php:72
+msgid "Send from Name"
+msgstr "Verzenden van naam"
+
+#: templates/admin/campaigns.php:74
+msgid "Send from Email"
+msgstr "Verzenden van E-mail"
+
+#: templates/admin/campaigns.php:78
+msgid "Hard bounces"
+msgstr "Hard stuitert"
+
+#: templates/admin/campaigns.php:80
+msgid "Soft bounces"
+msgstr "Zachte stuitert"
+
+#: templates/admin/campaigns.php:84
+msgid "Opened unique/total"
+msgstr "Geopende unieke/totaal"
+
+#: templates/admin/campaigns.php:86
+msgid "Last open"
+msgstr "Laatst geopende"
+
+#: templates/admin/campaigns.php:90
+msgid "Forwarded"
+msgstr "Doorgestuurd"
+
+#: templates/admin/campaigns.php:92
+msgid "Forwarded opens"
+msgstr "Doorgestuurde opent"
+
+#: templates/admin/campaigns.php:96
+msgid "Total clicks"
+msgstr "Totaal aantal klikken"
+
+#: templates/admin/campaigns.php:98
+msgid "Last click"
+msgstr "Laatst klikt u op"
+
+#: templates/admin/campaigns.php:102
+msgid "Facebook likes"
+msgstr "Facebook houdt"
+
+#: templates/admin/campaigns.php:104
+msgid "Successful deliveries"
+msgstr "Succesvolle leveringen"
+
+#: templates/admin/campaigns.php:114
+msgid "Template Header"
+msgstr "Sjabloon Header"
+
+#: templates/admin/campaigns.php:115
+msgid "Enter Text (You can also use HTML tags)"
+msgstr "Voer tekst in (u kunt ook HTML-tags)"
+
+#: templates/admin/campaigns.php:117
+msgid "MailChimp Email Header Image"
+msgstr "MailChimp E-mail Header Image"
+
+#: templates/admin/campaigns.php:117
+msgid "Insert It"
+msgstr "Invoegen"
+
+#: templates/admin/campaigns.php:117
+msgid "Image"
+msgstr "Afbeelding"
+
+#: templates/admin/campaigns.php:118
+msgid "Text"
+msgstr "Tekst"
+
+#: templates/admin/campaigns.php:119
+msgid "Enter Image url or use from media."
+msgstr "Afbeeldings-url invoeren of gebruiken van media."
+
+#: templates/admin/campaigns.php:126
+msgid "Select Campaign Contents from Your Page/Post"
+msgstr "Selecteer campagne-inhoud in uw pagina/Post"
+
+#: templates/admin/campaigns.php:141
+msgid "Template Footer (You can also use HTML tags)"
+msgstr "Sjabloon voettekst (u kunt ook HTML-tags)"
+
+#: templates/admin/campaigns.php:164 templates/admin/campaigns.php:250
+msgid "Back"
+msgstr "Terug"
+
+#: templates/admin/campaigns.php:165 templates/admin/campaigns.php:251
+#: templates/admin/lists.php:65
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: templates/admin/campaigns.php:166
+msgid "Next"
+msgstr "Volgende"
+
+#: templates/admin/campaigns.php:175
+msgid "Select List"
+msgstr "Kies een Lijst"
+
+#: templates/admin/campaigns.php:178
+msgid "Select the list to send this campaign (required)"
+msgstr "Selecteer de lijst voor het verzenden van deze campagne (verplicht)"
+
+#: templates/admin/campaigns.php:182
+msgid "Campaign Subject"
+msgstr "Campagne onderwerp"
+
+#: templates/admin/campaigns.php:187
+msgid "From Email"
+msgstr "Van email"
+
+#: templates/admin/campaigns.php:189
+msgid "Sender Email (required)"
+msgstr "Afzender E-mail (required)"
+
+#: templates/admin/campaigns.php:192
+msgid "From Name"
+msgstr "Van Naam"
+
+#: templates/admin/campaigns.php:194
+msgid "Sender Name (required)"
+msgstr "Verzenden van naam"
+
+#: templates/admin/campaigns.php:198
+msgid "Title"
+msgstr "Widget titel"
+
+#: templates/admin/campaigns.php:200
+msgid ""
+"An internal name to use for this campaign. By default, the campaign subject "
+"will be used"
+msgstr ""
+"Een interne naam voor deze campagne. Standaard, zal het onderwerp van de "
+"campagne worden gebruikt"
+
+#: templates/admin/campaigns.php:203
+msgid "Tracking"
+msgstr "Tracking"
+
+#: templates/admin/campaigns.php:205
+msgid "Open"
+msgstr "Open"
+
+#: templates/admin/campaigns.php:206
+msgid "HTML Click"
+msgstr "HTML-Klik"
+
+#: templates/admin/campaigns.php:207
+msgid "Text Click"
+msgstr "Tekst Klik"
+
+#: templates/admin/campaigns.php:208
+msgid ""
+"Set which recipient actions will be tracked, as a struct of boolean values "
+"with the following keys: \"opens\", \"html_clicks\", and \"text_clicks\". By "
+"default, opens and HTML clicks will be tracked. Click tracking can not be "
+"disabled for Free accounts"
+msgstr ""
+"Bepalen welke geadresseerden acties zal worden bijgehouden, als een struct "
+"van Boole-waarden met de volgende toetsen: \"opent\", \"html_clicks\" en "
+"\"text_clicks\". Door standaard, opent en HTML zal klikken worden "
+"bijgehouden. Klik op bijhouden kan niet worden uitgeschakeld voor gratis "
+"accounts"
+
+#: templates/admin/campaigns.php:212 templates/admin/campaigns.php:213
+msgid "Authenticate"
+msgstr "Authenticatie"
+
+#: templates/admin/campaigns.php:214
+msgid ""
+"Set to true to enable SenderID, DomainKeys, and DKIM authentication, "
+"defaults to false"
+msgstr ""
+"Ingesteld op true DomainKeys, SenderID en DKIM-verificatie, wordt standaard "
+"ingesteld op ONWAAR inschakelen"
+
+#: templates/admin/campaigns.php:217
+msgid "Analytics Google"
+msgstr "Google Analytics"
+
+#: templates/admin/campaigns.php:219
+msgid "For Google Analytics tracking"
+msgstr "Voor Google Analytics-conversiecode"
+
+#: templates/admin/campaigns.php:222
+msgid "Generate Text"
+msgstr "Knoppen tekst"
+
+#: templates/admin/campaigns.php:224
+msgid ""
+"Whether of not to auto-generate your Text content from the HTML content. "
+"Note that this will be ignored if the Text part of the content passed is not "
+"empty, defaults to false"
+msgstr ""
+"Of van niet voor het auto-genereren van uw inhoud van de tekst van de HTML-"
+"inhoud. Merk op dat dit zal worden genegeerd als de tekst onderdeel van de "
+"inhoud doorgegeven niet leeg is, is standaard ingesteld op ONWAAR"
+
+#: templates/admin/campaigns.php:227 templates/admin/campaigns.php:228
+msgid "Auto Tweet"
+msgstr "Auto Tweet"
+
+#: templates/admin/campaigns.php:229
+msgid ""
+"If set, this campaign will be auto-tweeted when it is sent - defaults to "
+"false. Note that if a Twitter account isn't linked, this will be silently "
+"ignored"
+msgstr ""
+"Als stelt deze campagne zal worden auto-tweeted wanneer het wordt verzonden "
+"- standaardwaarde is false. Merk op dat als een Twitter-account is niet "
+"gekoppeld, zal dit worden stil genegeerd"
+
+#: templates/admin/campaigns.php:232
+msgid "Auto Facebook Post"
+msgstr "Auto Facebook Post"
+
+#: templates/admin/campaigns.php:234
+msgid "Facebook pages IDs each fb page id separated by comma"
+msgstr "Facebook pagina's id's elke fb pagina-id gescheiden door komma"
+
+#: templates/admin/campaigns.php:237
+msgid "Facebook Comments"
+msgstr "Facebook Reacties"
+
+#: templates/admin/campaigns.php:238
+msgid "Facebook Comment"
+msgstr "Facebook commentaar"
+
+#: templates/admin/campaigns.php:239
+msgid ""
+"If true, the Facebook comments (and thus the archive bar will be displayed. "
+"If false, Facebook comments will not be enabled (does not imply no archive "
+"bar, see previous link). Defaults to \"true\""
+msgstr ""
+"Als waar, de Facebook opmerkingen (en dus de archief-balk wordt weergegeven. "
+"Als de waarde false is, Facebook opmerkingen zal niet ingeschakeld "
+"(impliceert niet geen archief bar, zie vorige link). Wordt standaard "
+"ingesteld op 'true'"
+
+#: templates/admin/campaigns.php:242 templates/admin/campaigns.php:243
+msgid "Ecomm360"
+msgstr "Ecomm360"
+
+#: templates/admin/campaigns.php:244
+msgid ""
+"If set, our Ecommerce360 tracking will be enabled for links in the campaign"
+msgstr ""
+"Als ingesteld, onze Ecommerce360 bijhouden zal worden ingeschakeld voor "
+"koppelingen in de campagne"
+
+#: templates/admin/campaigns.php:253
+msgid ""
+"Help: It will not SEND the campaign. You can Test this campaign before SEND "
+"after Creating it."
+msgstr ""
+"Help: Het zal niet de campagne sturen. U kunt deze campagne before SEND na "
+"het maken van het testen."
+
+#: templates/admin/form-designer.php:112
+msgid "Mailchimp Form Designer"
+msgstr "MailChimp formulierontwerper"
+
+#: templates/admin/form-designer.php:117
+msgid "Live Preview"
+msgstr "Voorbeeld van formulier"
+
+#: templates/admin/form-designer.php:154
+msgid "Form Styling"
+msgstr "Formulier Styling"
+
+#: templates/admin/forms.php:34
+msgid "Create Form"
+msgstr "Formulier maken"
+
+#: templates/admin/forms.php:38
+msgid ""
+"Copy shortcode below and paste into anywhere in Page or Post. Widgets can "
+"also be dragged of these Forms."
+msgstr ""
+"Shortcode hieronder kopiëren en plakken overal in pagina of Post. Widgets "
+"kunnen ook gesleept worden van deze vormen."
+
+#: templates/admin/lists.php:37
+msgid "Mailchimp Lists and Variables"
+msgstr "MailChimp lijsten en variabelen"
+
+#: templates/admin/lists.php:45
+msgid "Total lists found: "
+msgstr "Totale lijsten gevonden:"
+
+#: templates/admin/lists.php:50
+msgid "Create Subscription Form"
+msgstr "Abonnementsformulier maken"
+
+#: templates/admin/lists.php:56
+msgid "Select Merge Vars and Interest Groups of selected List given below."
+msgstr ""
+"Selecteer samenvoegen Vars en belangengroepen van geselecteerde lijst "
+"hieronder gegeven."
+
+#: templates/admin/lists.php:60
+msgid "Detail"
+msgstr "Detail"
+
+#: templates/admin/lists.php:71
+msgid ""
+"Copy above shortcode and paste into your page. This also can be access in "
+"widgets"
+msgstr ""
+"Boven shortcode kopiëren en plakken in uw pagina. Dit kan ook toegang in "
+"widgets"
+
+#: templates/admin/lists.php:83
+msgid "Mialchimp Account Lists"
+msgstr "Mialchimp Account lijsten"
+
+#: templates/admin/lists.php:97
+msgid "Click any List from left side to see it's Variables"
+msgstr "Klik op een lijst van links om te zien het variabelen"
+
+#: templates/admin/lists.php:112
+msgid "Click any List from left side to see it's Groups"
+msgstr "Klik op een lijst van links om te zien dat het is groepen"
+
+#: templates/admin/options.php:4
+msgid "Mailchimp Account API"
+msgstr "MailChimp Account API"
+
+#: templates/admin/options.php:9
+msgid ""
+"Enter your MailChimp API Key, don't know where to get? please visit this "
+"link: <a href=\"http://www.najeebmedia.com/where-can-i-find-my-mailchimp-api-"
+"key/\" target=\"_blank\">Get API Key</a> "
+msgstr ""
+"Voer uw MailChimp API-sleutel, weet niet waar te krijgen? Bezoek deze link: "
+"<a href=\"http://www.najeebmedia.com/where-can-i-find-my-mailchimp-api-key/"
+"\" target=\"_blank\">API-sleutel krijgen</a>"
+
+#: templates/admin/options.php:11
+msgid "Button title"
+msgstr "Winkelwagen Knop Titel"
+
+#: templates/admin/options.php:12 templates/admin/options.php:19
+msgid "Subscription form button title"
+msgstr "Abonnement formulier knoptitel"
+
+#: templates/admin/options.php:18
+msgid "Message"
+msgstr "Bericht"
+
+#: templates/admin/options.php:23
+msgid "A message when subscrition completed"
+msgstr "Een bericht als subscrition voltooid"
+
+#: templates/admin/options.php:25
+msgid "Redirect URL"
+msgstr "Omleidings URL"
+
+#: templates/admin/options.php:26
+msgid "Set redirect URL when form is completed"
+msgstr "Omleidings-URL instellen wanneer het formulier is ingevuld"
+
+#: templates/admin/options.php:32
+msgid "Enable Modal/Lightbox"
+msgstr "Modal/Lightbox inschakelen"
+
+#: templates/admin/options.php:37 templates/admin/options.php:89
+#: templates/admin/options.php:113
+msgid "Yes"
+msgstr "Ja"
+
+#: templates/admin/options.php:38
+msgid "Show form in Modal Box rather rendering on page."
+msgstr "Formulier tonen in Modal vak eerder renderen op pagina."
+
+#: templates/admin/options.php:40 templates/admin/options.php:45
+msgid "Modal Title"
+msgstr "Modal Titel"
+
+#: templates/admin/options.php:47
+msgid "Modal Contents"
+msgstr "Modale inhoud"
+
+#: templates/admin/options.php:52
+msgid "Modal contents just before the form. you can use HTML"
+msgstr "Modale inhoud net voordat het formulier. u kunt HTML gebruiken"
+
+#: templates/admin/options.php:54
+msgid "Modal Size (W,H)"
+msgstr "Modale grootte (W, H)"
+
+#: templates/admin/options.php:59
+msgid "Modal contents like: 400,200 (width=400 & height=200)"
+msgstr "Modale inhoud zoals: 400,200 (breedte = 400 & hoogte = 200)"
+
+#: templates/admin/options.php:61
+msgid "Custom Styles"
+msgstr "Aangepaste stijlen"
+
+#: templates/admin/options.php:62
+msgid ""
+"You can define custom css. It will rendered just before the subsciption "
+"form. (the main wrapper class is): nm-mc-form. e.g: <pre>.nm-mc-form "
+"input[type=\"text\"] {\n"
+"    display: block;\n"
+"    border: 1px solid #ccc;\n"
+"    }</pre>"
+msgstr ""
+"U kunt aangepaste css definiëren. Het zal net voordat het abonnement "
+"formulier gemaakt. (de belangrijkste wrapper-klasse is): nm-mc-formulier. "
+"bijvoorbeeld:<pre>.nm-mc-vorminput [type = \"text\"] {\n"
+"    weergeven: blokkeren;\n"
+"    rand: 1px solid #ccc;\n"
+"    }</pre>"
+
+#: templates/admin/options.php:74
+msgid "Subscription completed message"
+msgstr "Voltooid abonnementsbericht"
+
+#: templates/admin/options.php:75
+msgid ""
+"This message will be shown when user subscrition form is successfully filled"
+msgstr ""
+"Dit bericht wordt getoond als subscrition gebruikersformulier met succes vol "
+"is"
+
+#: templates/admin/options.php:84 templates/admin/options.php:108
+msgid "Add option in WP Registration plugin to subscribe for lists?"
+msgstr ""
+"Voeg optie in registratie van WP plugin om je te abonneren voor lijsten?"
+
+#: templates/admin/options.php:90 templates/admin/options.php:114
+msgid "Adds a checkbox in wp registration signup form for your newsletter."
+msgstr ""
+"Voegt een checkbox in wp registratie aanmeldingsformulier voor uw "
+"nieuwsbrief."
+
+#: templates/admin/options.php:93 templates/admin/options.php:117
+msgid "Text for subscription checkbox option."
+msgstr "Tekst voor abonnement checkbox optie."
+
+#: templates/admin/options.php:98 templates/admin/options.php:122
+msgid "Enter text here to display on signup form under subscription option."
+msgstr ""
+"Typ hier tekst als op aanmeldingsformulier onder abonnement optie wilt "
+"weergeven."
+
+#: templates/admin/options.php:100 templates/admin/options.php:124
+msgid "Select list."
+msgstr "Kies een Lijst"
+
+#: templates/admin/options.php:104 templates/admin/options.php:128
+msgid "Select list to subscribe user."
+msgstr "Selecteer de lijst voor het verzenden van deze campagne (verplicht)"
+
+#: templates/admin/options.php:133
+msgid "Subscription Form"
+msgstr "Abonnementsformulier maken"
+
+#: templates/admin/options.php:135
+msgid "Fill following options as per description"
+msgstr "Vul na opties per beschrijving"
+
+#: templates/admin/options.php:139
+msgid "Messages"
+msgstr "Berichten"
+
+#: templates/admin/options.php:141
+msgid "Set user message as per your need"
+msgstr "Bericht van de gebruiker instellen volgens uw behoefte"
+
+#: templates/admin/options.php:145
+msgid "User Registration"
+msgstr "Registratie nieuwe gebruiker"
+
+#: templates/admin/options.php:147 templates/admin/options.php:153
+msgid "Set user registration settings as per your need"
+msgstr "Gebruiker registratie instellen volgens uw behoefte"
+
+#: templates/admin/options.php:151
+msgid "WooCommerce Registration"
+msgstr "WooCommerce registratie"
+
+#: templates/admin/settings.php:92
+msgid "Save settings"
+msgstr "Instellingen opslaan"

@@ -1,0 +1,636 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: nm-mailchimp\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Qamar Sheeraz <qsheeraz@yahoo.com>\n"
+"Language-Team: N-Media\n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_\n"
+"X-Poedit-Basepath: ..\\\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de_DE\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/admin.class.php:46 classes/admin.class.php:47
+#: templates/admin/forms.php:33
+msgid "Subscription Forms"
+msgstr "Abonnement-Formulare"
+
+#: classes/admin.class.php:54 classes/admin.class.php:55
+msgid "Form Designer"
+msgstr "Formular-Designer"
+
+#: classes/admin.class.php:318
+msgid "All options are updated"
+msgstr "Alle Optionen werden aktualisiert"
+
+#: classes/admin.class.php:379 classes/admin.class.php:391
+#: classes/plugin.class.php:669 templates/admin/settings.php:32
+#: templates/admin/settings.php:69
+#: templates/render.subscription.original.php:57
+#: templates/render.subscription.original.php:78
+#: templates/render.subscription.php:44 templates/render.subscription.php:80
+#: templates/render.subscription_my.php:66
+#: templates/render.subscription_my.php:105
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: classes/admin.class.php:529 templates/admin/forms.php:47
+msgid "Remove"
+msgstr "Entfernen"
+
+#: classes/admin.class.php:552
+msgid "Provide API key below:"
+msgstr "Bieten Sie API-Schlüssel unten:"
+
+#: classes/admin.class.php:553
+msgid ""
+"If you don't know your API key, please login into your: <a target=\"_blank\" "
+"href=\"http://wordpresspoets.com/member-area\">Member area</a>"
+msgstr ""
+"Wenn Sie Ihren API-Schlüssel nicht kennen, gehen Sie bitte in Ihrem: <a "
+"target=\"_blank\" href=\"http://wordpresspoets.com/member-area"
+"\">Mitgliederbereich</a>"
+
+#: classes/admin.class.php:556
+msgid "Entery API key"
+msgstr "Szene sein API-Schlüssel"
+
+#: classes/plugin.class.php:104
+msgid "Please try with different email"
+msgstr "Bitte versuchen Sie es mit anderen e-Mail"
+
+#: classes/plugin.class.php:482
+msgid "Form added successfully"
+msgstr "Formular erfolgreich hinzugefügt"
+
+#: classes/plugin.class.php:489
+msgid "Error while savign form, please try again"
+msgstr "Fehler beim Savign-Formular, bitte versuchen Sie es erneut"
+
+#: classes/plugin.class.php:607 classes/plugin.class.php:700
+msgid "Please try again"
+msgstr "Bitte versuchen Sie es erneut."
+
+#: classes/plugin.class.php:632
+msgid "New user registration "
+msgstr "Neue Benutzerregistrierung"
+
+#: classes/plugin.class.php:639
+msgid "Click here to login"
+msgstr "Klicke hier, um Dich anzumelden."
+
+#: classes/plugin.class.php:927
+msgid "MailChimp Widget"
+msgstr "MailChimp Widget"
+
+#: classes/plugin.class.php:948
+msgid "Widget Title"
+msgstr "Widget Titel"
+
+#: classes/plugin.class.php:955
+msgid "Select form"
+msgstr "Formular auswählen"
+
+#: classes/plugin.class.php:957
+msgid "Select"
+msgstr "Auswählen"
+
+#: classes/plugin.class.php:969
+msgid "Button Text"
+msgstr "Schaltflächen Text"
+
+#: templates/admin/campaigns.php:18
+msgid "Mailchimp Campaigns"
+msgstr "MailChimp Kampagnen"
+
+#: templates/admin/campaigns.php:24
+msgid "Total campaigns found: "
+msgstr "Gesamt Kampagnen gefunden:"
+
+#: templates/admin/campaigns.php:29 templates/admin/campaigns.php:252
+msgid "Create Campaign"
+msgstr "Kampagne erstellen"
+
+#: templates/admin/campaigns.php:30
+msgid "Please fill below form to create campaign."
+msgstr "Bitte füllen Sie untenstehende Formular Kampagne erstellen."
+
+#: templates/admin/campaigns.php:39
+msgid "Mailchimp Campaigns Lists"
+msgstr "MailChimp Kampagnen Listen"
+
+#: templates/admin/campaigns.php:52
+msgid "Not sent!"
+msgstr "Nicht gesendet!"
+
+#: templates/admin/campaigns.php:53
+msgid "Sending..."
+msgstr "Senden"
+
+#: templates/admin/campaigns.php:55
+msgid "Show Details"
+msgstr "Details anzeigen"
+
+#: templates/admin/campaigns.php:56
+msgid "Send Now"
+msgstr "Jetzt senden"
+
+#: templates/admin/campaigns.php:57
+msgid "Test Send"
+msgstr "Test senden"
+
+#: templates/admin/campaigns.php:58
+msgid "Delete it"
+msgstr "Löschen Sie es"
+
+#: templates/admin/campaigns.php:72
+msgid "Send from Name"
+msgstr "Senden von Name"
+
+#: templates/admin/campaigns.php:74
+msgid "Send from Email"
+msgstr "Senden von E-Mail"
+
+#: templates/admin/campaigns.php:78
+msgid "Hard bounces"
+msgstr "Hard bounces"
+
+#: templates/admin/campaigns.php:80
+msgid "Soft bounces"
+msgstr "Soft bounces"
+
+#: templates/admin/campaigns.php:84
+msgid "Opened unique/total"
+msgstr "Geöffnete einzigartige/gesamt"
+
+#: templates/admin/campaigns.php:86
+msgid "Last open"
+msgstr "Zuletzt öffnen"
+
+#: templates/admin/campaigns.php:90
+msgid "Forwarded"
+msgstr "Weitergeleitete"
+
+#: templates/admin/campaigns.php:92
+msgid "Forwarded opens"
+msgstr "Weitergeleitete öffnet"
+
+#: templates/admin/campaigns.php:96
+msgid "Total clicks"
+msgstr "Total Klicks"
+
+#: templates/admin/campaigns.php:98
+msgid "Last click"
+msgstr "Zuletzt klicken Sie auf"
+
+#: templates/admin/campaigns.php:102
+msgid "Facebook likes"
+msgstr "Facebook mag"
+
+#: templates/admin/campaigns.php:104
+msgid "Successful deliveries"
+msgstr "Erfolgreiche Lieferungen"
+
+#: templates/admin/campaigns.php:114
+msgid "Template Header"
+msgstr "Kopfzeile der Schablone"
+
+#: templates/admin/campaigns.php:115
+msgid "Enter Text (You can also use HTML tags)"
+msgstr "Geben Sie Text ein (Sie können auch HTML-Tags verwenden)"
+
+#: templates/admin/campaigns.php:117
+msgid "MailChimp Email Header Image"
+msgstr "MailChimp E-Mail-Header-Bild"
+
+#: templates/admin/campaigns.php:117
+msgid "Insert It"
+msgstr "Legen Sie diese"
+
+#: templates/admin/campaigns.php:117
+msgid "Image"
+msgstr "Bild"
+
+#: templates/admin/campaigns.php:118
+msgid "Text"
+msgstr "Text"
+
+#: templates/admin/campaigns.php:119
+msgid "Enter Image url or use from media."
+msgstr "Geben Sie Bild-Url oder von Medien."
+
+#: templates/admin/campaigns.php:126
+msgid "Select Campaign Contents from Your Page/Post"
+msgstr "Wählen Sie Ihre Seite/Post Kampagne Inhalt"
+
+#: templates/admin/campaigns.php:141
+msgid "Template Footer (You can also use HTML tags)"
+msgstr "Vorlage Fußzeile (Sie können auch HTML-Tags verwenden)"
+
+#: templates/admin/campaigns.php:164 templates/admin/campaigns.php:250
+msgid "Back"
+msgstr "Zurück"
+
+#: templates/admin/campaigns.php:165 templates/admin/campaigns.php:251
+#: templates/admin/lists.php:65
+msgid "Cancel"
+msgstr "Stornieren"
+
+#: templates/admin/campaigns.php:166
+msgid "Next"
+msgstr "Weiter"
+
+#: templates/admin/campaigns.php:175
+msgid "Select List"
+msgstr "Liste auswählen:"
+
+#: templates/admin/campaigns.php:178
+msgid "Select the list to send this campaign (required)"
+msgstr "Wählen Sie die Liste schicken diese Kampagne (erforderlich)"
+
+#: templates/admin/campaigns.php:182
+msgid "Campaign Subject"
+msgstr "Kampagne erstellen"
+
+#: templates/admin/campaigns.php:187
+msgid "From Email"
+msgstr "E-Mail-Adresse des Absenders"
+
+#: templates/admin/campaigns.php:189
+msgid "Sender Email (required)"
+msgstr "Absender Email (erforderlich)"
+
+#: templates/admin/campaigns.php:192
+msgid "From Name"
+msgstr "Absender Name"
+
+#: templates/admin/campaigns.php:194
+msgid "Sender Name (required)"
+msgstr "Absender-Name (erforderlich)"
+
+#: templates/admin/campaigns.php:198
+msgid "Title"
+msgstr "Titel"
+
+#: templates/admin/campaigns.php:200
+msgid ""
+"An internal name to use for this campaign. By default, the campaign subject "
+"will be used"
+msgstr ""
+"Einen internen Namen für diese Kampagne zu verwenden. Standardmäßig wird das "
+"Thema der Kampagne verwendet werden"
+
+#: templates/admin/campaigns.php:203
+msgid "Tracking"
+msgstr "Tracking"
+
+#: templates/admin/campaigns.php:205
+msgid "Open"
+msgstr "Zuletzt öffnen"
+
+#: templates/admin/campaigns.php:206
+msgid "HTML Click"
+msgstr "Individuelle Nachricht: (keine HTML-Tags)"
+
+#: templates/admin/campaigns.php:207
+msgid "Text Click"
+msgstr "Schaltflächen Text"
+
+#: templates/admin/campaigns.php:208
+msgid ""
+"Set which recipient actions will be tracked, as a struct of boolean values "
+"with the following keys: \"opens\", \"html_clicks\", and \"text_clicks\". By "
+"default, opens and HTML clicks will be tracked. Click tracking can not be "
+"disabled for Free accounts"
+msgstr ""
+"Festlegen, welche Empfänger Maßnahmen verfolgt werden, als Struktur von "
+"booleschen Werten mit den folgenden Tasten: \"öffnet\", \"Html_clicks\" und "
+"\"Text_clicks\". Standardmäßig öffnet und HTML werden Klicks verfolgt "
+"werden. Klick-tracking kann nicht für kostenlose Konten deaktiviert werden"
+
+#: templates/admin/campaigns.php:212 templates/admin/campaigns.php:213
+msgid "Authenticate"
+msgstr "Authentifizieren"
+
+#: templates/admin/campaigns.php:214
+msgid ""
+"Set to true to enable SenderID, DomainKeys, and DKIM authentication, "
+"defaults to false"
+msgstr ""
+"Aktivieren der SenderID, DomainKeys und DKIM-Authentifizierung, Standardwert "
+"False auf true festgelegt"
+
+#: templates/admin/campaigns.php:217
+msgid "Analytics Google"
+msgstr "Empfohlen: Google Chrome."
+
+#: templates/admin/campaigns.php:219
+msgid "For Google Analytics tracking"
+msgstr "Für Google Analytics-tracking"
+
+#: templates/admin/campaigns.php:222
+msgid "Generate Text"
+msgstr "Text generieren"
+
+#: templates/admin/campaigns.php:224
+msgid ""
+"Whether of not to auto-generate your Text content from the HTML content. "
+"Note that this will be ignored if the Text part of the content passed is not "
+"empty, defaults to false"
+msgstr ""
+"Ob der nicht um Ihren Textinhalt aus dem HTML-Inhalt automatisch generieren. "
+"Beachten Sie, dass dies wird ignoriert, wenn der Text-Teil des Inhalts "
+"übergeben nicht leer ist, wird standardmäßig auf False"
+
+#: templates/admin/campaigns.php:227 templates/admin/campaigns.php:228
+msgid "Auto Tweet"
+msgstr "Auto Tweet"
+
+#: templates/admin/campaigns.php:229
+msgid ""
+"If set, this campaign will be auto-tweeted when it is sent - defaults to "
+"false. Note that if a Twitter account isn't linked, this will be silently "
+"ignored"
+msgstr ""
+"Wenn gesetzt, diese Kampagne Auto-werden beim Senden tweeted werden - "
+"Standardwert ist False. Beachten Sie, dass wenn ein Twitter-Konto verknüpft "
+"ist nicht, wird dies stillschweigend ignoriert werden"
+
+#: templates/admin/campaigns.php:232
+msgid "Auto Facebook Post"
+msgstr "Auto-Facebook-Post"
+
+#: templates/admin/campaigns.php:234
+msgid "Facebook pages IDs each fb page id separated by comma"
+msgstr "Facebook-Seiten IDs jede fb-Seiten-Id durch Komma getrennt"
+
+#: templates/admin/campaigns.php:237
+msgid "Facebook Comments"
+msgstr "Bei Facebook posten?"
+
+#: templates/admin/campaigns.php:238
+msgid "Facebook Comment"
+msgstr "Bei Facebook posten?"
+
+#: templates/admin/campaigns.php:239
+msgid ""
+"If true, the Facebook comments (and thus the archive bar will be displayed. "
+"If false, Facebook comments will not be enabled (does not imply no archive "
+"bar, see previous link). Defaults to \"true\""
+msgstr ""
+"Wenn true, die Facebook-Kommentaren (und somit die Archiv-Leiste angezeigt "
+"wird. Wenn der Wert false, Facebook Kommentare nicht aktiviert werden "
+"(bedeutet nicht, dass kein Archiv bar, siehe vorherigen Link). Der "
+"Standardwert ist \"True\""
+
+#: templates/admin/campaigns.php:242 templates/admin/campaigns.php:243
+msgid "Ecomm360"
+msgstr "Ecomm360"
+
+#: templates/admin/campaigns.php:244
+msgid ""
+"If set, our Ecommerce360 tracking will be enabled for links in the campaign"
+msgstr ""
+"Wenn gesetzt, wird unser Ecommerce360-Tracking für Links in die Kampagne "
+"aktiviert"
+
+#: templates/admin/campaigns.php:253
+msgid ""
+"Help: It will not SEND the campaign. You can Test this campaign before SEND "
+"after Creating it."
+msgstr ""
+"Hilfe: Es wird nicht die Kampagne senden. Sie können diese Kampagne vor dem "
+"Senden nach der Erstellung testen."
+
+#: templates/admin/form-designer.php:112
+msgid "Mailchimp Form Designer"
+msgstr "MailChimp Formulardesigner"
+
+#: templates/admin/form-designer.php:117
+msgid "Live Preview"
+msgstr "Live Vorschau"
+
+#: templates/admin/form-designer.php:154
+msgid "Form Styling"
+msgstr "Formular-Styling"
+
+#: templates/admin/forms.php:34
+msgid "Create Form"
+msgstr "Formular erstellen"
+
+#: templates/admin/forms.php:38
+msgid ""
+"Copy shortcode below and paste into anywhere in Page or Post. Widgets can "
+"also be dragged of these Forms."
+msgstr ""
+"Kopieren Sie Kurzwahlnummer unten und fügen Sie in eine beliebige Stelle in "
+"der Seite oder per Post. Widgets können auch dieser Formen gezogen werden."
+
+#: templates/admin/lists.php:37
+msgid "Mailchimp Lists and Variables"
+msgstr "MailChimp Listen und Variablen"
+
+#: templates/admin/lists.php:45
+msgid "Total lists found: "
+msgstr "Gesamte Liste gefunden:"
+
+#: templates/admin/lists.php:50
+msgid "Create Subscription Form"
+msgstr "Erstellen Zeichnungsformular"
+
+#: templates/admin/lists.php:56
+msgid "Select Merge Vars and Interest Groups of selected List given below."
+msgstr ""
+"Wählen Sie zusammenführen Vars und Interessengruppen der ausgewählten Liste "
+"unten gegeben."
+
+#: templates/admin/lists.php:60
+msgid "Detail"
+msgstr "Detail"
+
+#: templates/admin/lists.php:71
+msgid ""
+"Copy above shortcode and paste into your page. This also can be access in "
+"widgets"
+msgstr ""
+"Über Kurzwahlnummer kopieren und in Ihre Seite einfügen. Dies kann auch "
+"Zugang in Text-Widgets sein."
+
+#: templates/admin/lists.php:83
+msgid "Mialchimp Account Lists"
+msgstr "Mialchimp Kontenlisten"
+
+#: templates/admin/lists.php:97
+msgid "Click any List from left side to see it's Variables"
+msgstr "Klicken Sie auf Liste von linken Seite sehen, dass es Variablen"
+
+#: templates/admin/lists.php:112
+msgid "Click any List from left side to see it's Groups"
+msgstr "Klicken Sie auf Liste von linken Seite sehen, dass es Gruppen"
+
+#: templates/admin/options.php:4
+msgid "Mailchimp Account API"
+msgstr "MailChimp Konto API"
+
+#: templates/admin/options.php:9
+msgid ""
+"Enter your MailChimp API Key, don't know where to get? please visit this "
+"link: <a href=\"http://www.najeebmedia.com/where-can-i-find-my-mailchimp-api-"
+"key/\" target=\"_blank\">Get API Key</a> "
+msgstr ""
+"Geben Sie Ihren MailChimp API Key, weiß nicht, wo zu bekommen? Bitte "
+"besuchen Sie diesen Link: <a href=\"http://www.najeebmedia.com/where-can-i-"
+"find-my-mailchimp-api-key/\" target=\"_blank\">API-Schlüssel abrufen</a>"
+
+#: templates/admin/options.php:11
+msgid "Button title"
+msgstr "Schaltfläche Titel"
+
+#: templates/admin/options.php:12 templates/admin/options.php:19
+msgid "Subscription form button title"
+msgstr "Abonnement Schaltfläche Formulartitel"
+
+#: templates/admin/options.php:18
+msgid "Message"
+msgstr "Nachricht"
+
+#: templates/admin/options.php:23
+msgid "A message when subscrition completed"
+msgstr "Eine Nachricht, wenn Expert Typen abgeschlossen"
+
+#: templates/admin/options.php:25
+msgid "Redirect URL"
+msgstr "Umleitungs-URL"
+
+#: templates/admin/options.php:26
+msgid "Set redirect URL when form is completed"
+msgstr "Umleitungs-URL festgelegt, wenn Formular ausgefüllt ist"
+
+#: templates/admin/options.php:32
+msgid "Enable Modal/Lightbox"
+msgstr "Aktivieren von Modal/Leuchtkasten"
+
+#: templates/admin/options.php:37 templates/admin/options.php:89
+#: templates/admin/options.php:113
+msgid "Yes"
+msgstr "Ja"
+
+#: templates/admin/options.php:38
+msgid "Show form in Modal Box rather rendering on page."
+msgstr "Zeigen Sie Formular Modal im eher Rendern auf Seite an."
+
+#: templates/admin/options.php:40 templates/admin/options.php:45
+msgid "Modal Title"
+msgstr "Modale Titel"
+
+#: templates/admin/options.php:47
+msgid "Modal Contents"
+msgstr "Modalen Inhalt"
+
+#: templates/admin/options.php:52
+msgid "Modal contents just before the form. you can use HTML"
+msgstr "Modalen Inhalt vor Form. Sie können HTML verwenden."
+
+#: templates/admin/options.php:54
+msgid "Modal Size (W,H)"
+msgstr "Modale Größe (W, H)"
+
+#: templates/admin/options.php:59
+msgid "Modal contents like: 400,200 (width=400 & height=200)"
+msgstr "Modalen Inhalt wie: 400.200 (Breite = 400 & Höhe = 200)"
+
+#: templates/admin/options.php:61
+msgid "Custom Styles"
+msgstr "Benutzerdefinierte Styles"
+
+#: templates/admin/options.php:62
+msgid ""
+"You can define custom css. It will rendered just before the subsciption "
+"form. (the main wrapper class is): nm-mc-form. e.g: <pre>.nm-mc-form "
+"input[type=\"text\"] {\n"
+"    display: block;\n"
+"    border: 1px solid #ccc;\n"
+"    }</pre>"
+msgstr ""
+"Sie können benutzerdefinierte Css definieren. Es wird kurz vor der Anmeldung-"
+"Formular gerendert. (die wichtigsten Wrapper-Klasse ist): nm-Mc-Form. z.B.:"
+"<pre>.nm-Mc-Formulareingabe [Typ = \"Text\"] {\n"
+"    display: block;\n"
+"    Border: 1px Solid #ccc;\n"
+"    }</pre>"
+
+#: templates/admin/options.php:74
+msgid "Subscription completed message"
+msgstr "Abonnement abgeschlossen-Nachricht"
+
+#: templates/admin/options.php:75
+msgid ""
+"This message will be shown when user subscrition form is successfully filled"
+msgstr ""
+"Diese Meldung wird angezeigt, wenn Benutzer Expert Typen Form erfolgreich "
+"gefüllt ist"
+
+#: templates/admin/options.php:84 templates/admin/options.php:108
+msgid "Add option in WP Registration plugin to subscribe for lists?"
+msgstr "Fügen Sie die Option im Plugin WP-Registrierung für Listen abonnieren?"
+
+#: templates/admin/options.php:90 templates/admin/options.php:114
+msgid "Adds a checkbox in wp registration signup form for your newsletter."
+msgstr ""
+"Fügt eine Checkbox in wp anmelden Anmeldeformular für Ihren Newsletter."
+
+#: templates/admin/options.php:93 templates/admin/options.php:117
+msgid "Text for subscription checkbox option."
+msgstr "Text für Abonnement-Checkbox-Option."
+
+#: templates/admin/options.php:98 templates/admin/options.php:122
+msgid "Enter text here to display on signup form under subscription option."
+msgstr ""
+"Geben Sie Text hier auf Anmeldeformular unter Abonnement-Option angezeigt."
+
+#: templates/admin/options.php:100 templates/admin/options.php:124
+msgid "Select list."
+msgstr "Liste auswählen"
+
+#: templates/admin/options.php:104 templates/admin/options.php:128
+msgid "Select list to subscribe user."
+msgstr "SELECT-Liste Benutzer abonnieren."
+
+#: templates/admin/options.php:133
+msgid "Subscription Form"
+msgstr "Erstellen Zeichnungsformular"
+
+#: templates/admin/options.php:135
+msgid "Fill following options as per description"
+msgstr "Füllen Sie nach Options gem. Beschreibung"
+
+#: templates/admin/options.php:139
+msgid "Messages"
+msgstr "Nachrichten"
+
+#: templates/admin/options.php:141
+msgid "Set user message as per your need"
+msgstr "Set Benutzermeldung sowie Sie brauchen"
+
+#: templates/admin/options.php:145
+msgid "User Registration"
+msgstr "Neue Benutzerregistrierung"
+
+#: templates/admin/options.php:147 templates/admin/options.php:153
+msgid "Set user registration settings as per your need"
+msgstr "Registrierung Benutzereinstellungen nach Ihrem Bedarf festlegen"
+
+#: templates/admin/options.php:151
+msgid "WooCommerce Registration"
+msgstr "WooCommerce Registrierung"
+
+#: templates/admin/settings.php:92
+msgid "Save settings"
+msgstr "Einstellungen speichern"
