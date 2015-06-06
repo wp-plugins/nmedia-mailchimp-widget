@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 4.2
-Stable tag: 4.2
+Stable tag: 4.3
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,7 @@ create Forms using Vars and Interest Group with Awesome <strong>AngularJS</stron
 [vimeo https://vimeo.com/122874502]
 
 = PRO Version =
+Now you can create Mailchimp Campaigns using Wordpress Posts/Pages. In few click Newsletter is ready to send to any List.
 * Create Campaigns using Post/Pages contents
 * Create your own Template with Custom Header (image, HTML) and Footer (HTML)
 * Test campaigns before you send it.
@@ -67,7 +68,6 @@ You can see this tutorial to get API Key from MailChimp: [Click here](http://www
 3. Pasting shortcode on page/post to render form
 4. Form rendered on page/post
 5. Widget
-6. Visual Form Designer
 
 == Changelog ==
 
@@ -150,6 +150,10 @@ You can see this tutorial to get API Key from MailChimp: [Click here](http://www
 = 4.2 =
 * Added visual form designer
 * Show groups list on front end.
+
+= 4.3 =
+* Form designer issue fixed
+* Multi language support fixed
 
 == Upgrade Notice ==
 
