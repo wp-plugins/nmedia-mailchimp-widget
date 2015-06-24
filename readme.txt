@@ -154,11 +154,12 @@ You can see this tutorial to get API Key from MailChimp: [Click here](http://www
 = 4.3 =
 * Form designer issue fixed
 * Multi language support fixed
-
 = 4.4 =
-== Upgrade Notice ==
 * Bug fixed: Mailchimp API class name conflict removed with other mailchimp plugins
 * trim the api key for extra spaces
+
+
+== Upgrade Notice ==
 
 = 1.0 =
 To must upgrad to this version, jquery bug is fixed in this release.
