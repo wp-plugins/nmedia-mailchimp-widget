@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: mailchimp, newsletters subscription, email subscription, email form
 Requires at least: 3.0
 Tested up to: 4.2
-Stable tag: 4.3
+Stable tag: 4.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -155,7 +155,10 @@ You can see this tutorial to get API Key from MailChimp: [Click here](http://www
 * Form designer issue fixed
 * Multi language support fixed
 
+= 4.4 =
 == Upgrade Notice ==
+* Bug fixed: Mailchimp API class name conflict removed with other mailchimp plugins
+* trim the api key for extra spaces
 
 = 1.0 =
 To must upgrad to this version, jquery bug is fixed in this release.
