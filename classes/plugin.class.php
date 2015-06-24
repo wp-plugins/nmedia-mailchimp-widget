@@ -15,7 +15,7 @@ if(!class_exists('NM_Framwork_V2_nm_mailchimp')){
 
 
 /* ======= adding Mailchimp API =========== */
-if(!class_exists('Mailchimp')){
+if(!class_exists('NM_Mailchimp')){
 	$mc_api = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'mailchimp/Mailchimp.php';
 	if( file_exists($mc_api))
 		include_once($mc_api);
